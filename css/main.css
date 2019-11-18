@@ -1179,7 +1179,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #0b93c8;
+  background: #4d0624;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2367,4 +2367,10 @@ embed {
 .sidebar {
   transition: all 0.4s;
   width: 320px;
+}
+body {
+  background-image: url("https://w.wallhaven.cc/full/nk/wallhaven-nk96oq.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
 }
