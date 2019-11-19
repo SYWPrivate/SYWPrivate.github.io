@@ -1179,7 +1179,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #0ea6ff;
+  background: #ad5741;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1345,7 +1345,6 @@ pre .javascript .function {
   line-height: 1.8;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .post-toc .nav .nav-child {
   display: none;
@@ -2370,7 +2369,7 @@ embed {
 }
 body {
   background-image: url("https://w.wallhaven.cc/full/nk/wallhaven-nk96oq.jpg");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 50% 50%;
+  background-position: botton;
 }
