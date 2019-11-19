@@ -61,7 +61,7 @@
 <meta property="og:site_name" content="SYW">
 <meta property="og:description" content="概述&amp;#8195;这是一个被写的尽量全面而浅显的完整的工程项目实例。&amp;#8195;语言：C#&amp;#8195;框架：Windows窗体应用程序&amp;#8195;通讯：串口通信（协议：Modbus）&amp;#8195;数据库：Oracle。&amp;#8195;这个项目实现了与一个或多个自动化设备通信，自动的读取、修改设备的当前数据、状态，并将需要保存的数据放入Oracle数据库，可以按要求调出查看。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-19T07:58:04.997Z">
+<meta property="og:updated_time" content="2019-11-19T08:06:29.764Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/2019/11/19/Sensorproject/">
@@ -216,7 +216,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2019-11-19 13:58:23 / 修改时间：15:58:04" itemprop="dateCreated datePublished" datetime="2019-11-19T13:58:23+08:00">2019-11-19</time>
+              <time title="创建时间：2019-11-19 13:58:23 / 修改时间：16:06:29" itemprop="dateCreated datePublished" datetime="2019-11-19T13:58:23+08:00">2019-11-19</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -250,7 +250,7 @@
   <!-- <p><span>本文标题:</span><a href="/2019/11/19/Sensorproject/">Windows窗体应用程序</a></p>  -->
   <!-- <p><span>文章作者:</span><a href="/" title="访问 SYW 的个人博客">SYW</a></p>  -->
   <!-- <p><span>发布时间:</span>2019年11月19日 - 13:11</p> -->
-  <!-- <p><span>最后更新:</span>2019年11月19日 - 15:11</p>  -->
+  <!-- <p><span>最后更新:</span>2019年11月19日 - 16:11</p>  -->
   <p><span>原始链接:</span><a href="/2019/11/19/Sensorproject/" title="Windows窗体应用程序">http://yoursite.com/2019/11/19/Sensorproject/</a></p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)"> BY-NC-ND 4.0 </a> 转载请注明出处。</p>  
 </div>
@@ -275,7 +275,7 @@
 <h2 id="8195-副主函数（副窗体）"><a href="#8195-副主函数（副窗体）" class="headerlink" title="&#8195;副主函数（副窗体）"></a>&#8195;副主函数（副窗体）</h2><p>&#8195;<strong>如果你没有副窗体，那这就是你的主窗体！</strong><br>&#8195;在窗体上放上你需要的控件，选择合适的事件，编写代码。  </p>
 <h1 id="串口通信"><a href="#串口通信" class="headerlink" title="串口通信"></a>串口通信</h1><h2 id="概述-1"><a href="#概述-1" class="headerlink" title="概述"></a>概述</h2><p>&#8195;物理通信方式（不重要）：<a href="https://baike.baidu.com/item/RS-232" target="_blank" rel="noopener"><strong>RS-232</strong></a>全双工通信。<br>&#8195;通讯协议（Modbus）:RTU模式，自动化领域常用。（下面会简单介绍怎么用）<br>&#8195;<strong>程序通信方式</strong>：收发分开。</p>
 <h2 id="通信报文"><a href="#通信报文" class="headerlink" title="通信报文"></a>通信报文</h2><ul>
-<li>写入串口（发）：设备地址+功能代码+数据+<a href="https://baike.baidu.com/item/CRC/1453359" target="_blank" rel="noopener">CRC</a>校验<br>&#8195;设备地址：0x00<del>0xF7(可连接248个设备)，假设接入一个设备（地址01）。<br>&#8195;功能代码：0x01</del>0xFF。假设：01（读数据）、02（写数据），这个需要通信协议。<br>&#8195;数据：寄存器首地址+寄存器数量。这就相当于数组首地址（2 byte）+读取长度（2 byte）。比如：00 FF + 00 01（从地址为255的寄存器开始读一个寄存器数据）。<br>&#8195;CRC校验：占两个字节（2 byte）。可以自己百度下相关内容。下面是我百度后自己写的一个。将：01 01 00 FF 00 01 传入CRC，算出校验码：CD FA。<br>所以，写入串口：01 01 <strong>00 FF 00 01</strong> CD FA</li>
+<li>写入串口（发）：设备地址+功能代码+数据+<a href="https://baike.baidu.com/item/CRC/1453359" target="_blank" rel="noopener">CRC</a>校验<br>&#8195;设备地址：0x00~0xF7(可连接248个设备)，假设接入一个设备（地址01）。<br>&#8195;功能代码：0x01~0xFF。假设：01（读数据）、02（写数据），这个需要通信协议。<br>&#8195;数据：寄存器首地址+寄存器数量。这就相当于数组首地址（2 byte）+读取长度（2 byte）。比如：00 FF + 00 01（从地址为255的寄存器开始读一个寄存器数据）。<br>&#8195;CRC校验：占两个字节（2 byte）。可以自己百度下相关内容。下面是我百度后自己写的一个。将：01 01 00 FF 00 01 传入CRC，算出校验码：CD FA。<br>所以，写入串口：01 01 <strong>00 FF 00 01</strong> CD FA</li>
 <li>读取数据（收）：设备地址+功能代码+数据+CRC<br>&#8195;这里唯一不同的就是数据：数据字节数+数据。例如：01 + 01 。<br>&#8195;就是返回了一个字节数据，返回的数据为：0x01，就是返回值为：1 。<br>&#8195;所以返回的报文是：01 01 <strong>01 01</strong> 90 48<br>&#8195;<strong>加粗部分为数据</strong></li>
 </ul>
 <pre><code>public static byte[] CRC(byte[] source)//CRC校验码计算
