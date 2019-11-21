@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>环回网络</title>
+    <url>/2019/11/20/LoopbackNetwork/</url>
+    <content><![CDATA[<p>如何打开<strong>环回网络</strong>安装向导？  </p><ul>
+<li>组合键： Win+R  </li>
+<li>输入框内，输入：hdwwiz   </li>
+<li>回车</li>
+</ul>]]></content>
+      <categories>
+        <category>Oracle</category>
+      </categories>
+      <tags>
+        <tag>notes</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ORA-01045</title>
+    <url>/2019/11/20/ORA01045/</url>
+    <content><![CDATA[<p><code>ORA-01045: user 某某用户 lacks CREATE SESSION privilege; logon denied</code><br><strong>权限问题</strong>：以system用户登录，运行以下指令。<br><code>grant create session,resource  to 某某用户；</code></p>]]></content>
+      <categories>
+        <category>Oracle</category>
+      </categories>
+      <tags>
+        <tag>notes</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ORA-00911</title>
+    <url>/2019/11/20/ORA00911/</url>
+    <content><![CDATA[<p>外部程序操作数据库，书写SQL语句，若如下：<br><code>insert into syw.tempdata(TEMP,TIME) values</code><br> <code>(200,to_date(&#39;2019/11/20 9:46:06&#39;,&#39;YYYY-MM-DD HH24:MI:SS&#39;));</code>   </p><a id="more"></a>
+<p>会报错：ORA-00911<br>因为外部程序中书写SQL语句末尾不用加 <strong>“;”</strong> 号。</p>
+]]></content>
+      <categories>
+        <category>Oracle</category>
+      </categories>
+      <tags>
+        <tag>notes</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows窗体应用程序</title>
+    <url>/2019/11/19/Sensorproject/</url>
+    <content><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>&#8195;这是一个被写的尽量<strong>全面而浅显</strong>的<strong>完整的工程项目实例</strong>。<br>&#8195;<strong>语言：C#<br>&#8195;框架：Windows窗体应用程序<br>&#8195;通讯：串口通信（协议：Modbus）<br>&#8195;数据库：Oracle。</strong>    </p>
+<a id="more"></a>
+<p>&#8195;这个项目实现了与一个或多个自动化设备通信，自动的读取、修改设备的当前数据、状态，并将需要保存的数据放入Oracle数据库，可以按要求调出查看。</p>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>&#8195;写一个完整的项目，不仅需要<strong>浅显易懂的变量名</strong>，而且需要<strong>非常清晰的错误文档</strong>。这两点非常非常重要！！！在写程序之前，有必要先讨论一下这两点。 </p>
+<p>&#8195;1. 变量名<br>&#8195;举例：GetHexStrFrombytes(byte[] byteSource) {…}<br>&#8195;这个函数的作用是：将传入的字节数组转换成<strong>十六进制字符串</strong>（如：”0106A3C2FF002FE2”）。<br>&#8195;那么显而易见的：GetBytesFromHexStr(string strSource) {…}<br>&#8195;这个函数的作用就是：将传入的十六进制字符串转换为字节数组。<br>&#8195;每写一个函数，都需要在旁边<strong>注释清楚</strong>这个函数的功能。  </p>
+<p>&#8195;2. <strong>错误文档</strong>：<br>&#8195;原因：一个工程项目的线程不少，功能模块更多，正常调试很多问题根本发现不了。<br>&#8195;比如通讯过程中串口断开，是因为哪个线程，哪个功能，还是串口松了，还是设备问题。你很难调试的明白。<br>&#8195;方法：<br>&#8195;1. <strong>给各个线程及功能添加特有Tags，catch异常时，将Tags传入写异常函数(将异常字符串写入List&lt;string&gt; StrlistException)。</strong><br>&#8195;2. <strong>各个线程需要调用同一函数写异常，否则程序易爆炸。</strong><br>&#8195;3. <strong>不同线程可用数字标记，这样调试时（写异常函数）可指定线程写异常，方便追踪。</strong><br>&#8195;4. <strong>关于异常：请加上足够多的修饰（例如：当时的输入、时间、相关的全局变量值等等）。</strong><br>&#8195;上述这些内容对于一个完整工程真的很重要！！！切记。   </p>
+<h1 id="主函数"><a href="#主函数" class="headerlink" title="主函数"></a>主函数</h1><p>&#8195;概述：基本是废话。<br>&#8195;主函数内容相对简单，页面布局也是个人喜好。<br>&#8195;功能：切换页面（如果只用一个界面都不用切；如果要切，百度一下，很简单）。  </p>
+<h2 id="8195-副主函数（副窗体）"><a href="#8195-副主函数（副窗体）" class="headerlink" title="&#8195;副主函数（副窗体）"></a>&#8195;副主函数（副窗体）</h2><p>&#8195;<strong>如果你没有副窗体，那这就是你的主窗体！</strong><br>&#8195;在窗体上放上你需要的控件，选择合适的事件，编写代码。  </p>
+<h1 id="串口通信"><a href="#串口通信" class="headerlink" title="串口通信"></a>串口通信</h1><h2 id="概述-1"><a href="#概述-1" class="headerlink" title="概述"></a>概述</h2><p>&#8195;物理通信方式（不重要）：<a href="https://baike.baidu.com/item/RS-232" target="_blank" rel="noopener"><strong>RS-232</strong></a>全双工通信。<br>&#8195;通讯协议（Modbus）:RTU模式，自动化领域常用。（下面会简单介绍怎么用）<br>&#8195;<strong>程序通信方式</strong>：收发分开。</p>
+<h2 id="通信报文"><a href="#通信报文" class="headerlink" title="通信报文"></a>通信报文</h2><ul>
+<li>写入串口（发）：设备地址+功能代码+数据+<a href="https://baike.baidu.com/item/CRC/1453359" target="_blank" rel="noopener">CRC</a>校验<br>&#8195;设备地址：0x00~0xF7(可连接248个设备)，假设接入一个设备（地址01）。<br>&#8195;功能代码：0x01~0xFF。假设：01（读数据）、02（写数据），这个需要通信协议。<br>&#8195;数据：寄存器首地址+寄存器数量。这就相当于数组首地址（2 byte）+读取长度（2 byte）。比如：00 FF + 00 01（从地址为255的寄存器开始读一个寄存器数据）。<br>&#8195;CRC校验：占两个字节（2 byte）。可以自己百度下相关内容。下面是我百度后自己写的一个。将：01 01 00 FF 00 01 传入CRC，算出校验码：CD FA。<br>所以，写入串口：01 01 <strong>00 FF 00 01</strong> CD FA</li>
+<li>读取数据（收）：设备地址+功能代码+数据+CRC<br>&#8195;这里唯一不同的就是数据：数据字节数+数据。例如：01 + 01 。<br>&#8195;就是返回了一个字节数据，返回的数据为：0x01，就是返回值为：1 。<br>&#8195;所以返回的报文是：01 01 <strong>01 01</strong> 90 48<br>&#8195;<strong>加粗部分为数据</strong></li>
+</ul>
+<pre><code>public static byte[] CRC(byte[] source)//CRC校验码计算
+      {
+          UInt16 res = 0xffff;
+          for (int i = 0; i &lt; source.Length; i++)
+          {
+              res ^= source[i];
+              for (int j = 0; j &lt; 8; j++)
+              {
+                  int a = res &amp; 1;
+                  res &gt;&gt;= 1;
+                  if (a == 1) res ^= 0xA001;
+              }
+          }
+          byte[] result = new byte[2];
+          int m = res &amp; 0xff;
+          result[0] = (byte)m;
+          m = res &gt;&gt; 8;
+          result[1] = (byte)m;
+          return result;
+      }</code></pre><h2 id="通信实现"><a href="#通信实现" class="headerlink" title="通信实现"></a>通信实现</h2><h3 id="概述-2"><a href="#概述-2" class="headerlink" title="概述"></a>概述</h3><p>&#8195;通信其实一般都不会采用：发送报文–等待接收–接收到–程序继续，这种方式，我也不多说。<br>&#8195;通信的一般方法是：<br><code>public List&lt;string&gt; arrDataToPort = null, arrDataFromPort = null;</code><br>&#8195;发送：创建发送报文线程（DataSend()），不停检查arrDataToPort是否为空，不为空，则lock(arrDataToPort),发出报文，清空arrDataToPort。<br>&#8195;有要发送的报文，就lock(arrDataToPort)，写入报文即可。<br>&#8195;接收：接收自有<strong>接收响应事件</strong>，这里的重点是：将接收到的所有内容放到一个<a href="https://baike.baidu.com/item/StringBuilder" target="_blank" rel="noopener">StringBuilder</a> strData中，然后处理字符串即可。（这个在处理接收数据中再详细讨论）</p>
+<h1 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h1><p>&#8195;？？？</p>
+<h1 id="绘图"><a href="#绘图" class="headerlink" title="绘图"></a>绘图</h1><p>&#8195;：：：</p>
+<h1 id="通用"><a href="#通用" class="headerlink" title="通用"></a>通用</h1><p>&#8195;：：</p>
+]]></content>
+      <categories>
+        <category>C#</category>
+      </categories>
+      <tags>
+        <tag>C#窗体程序</tag>
+        <tag>通讯</tag>
+        <tag>数据库</tag>
+        <tag>绘图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《爱如半夜汽笛》</title>
+    <url>/2019/11/14/beautifulwords/</url>
+    <content><![CDATA[<blockquote>
+<p>女孩问男孩：“你喜欢我喜欢到什么程度？”</p>
+</blockquote>
+<a id="more"></a>
+<blockquote>
+<p>少年想了想，用沉静的声音说：“半夜汽笛那个程度。”</p>
+</blockquote>
+<blockquote>
+<p>少女默默地等待下文，里面肯定有什么故事。 </p>
+</blockquote>
+<blockquote>
+<p>“一次，半夜突然醒来，”他开始讲述，“确切时间不清楚，大约两三点吧。也就那个时间，什么时候并不重要。总之是夜深时分，我完完全全孤单一人，身边谁也没有，好吗？请你想象一下，四下漆黑一片，什么也看不见，什么也听不见，就连时钟声都听不见，也可能钟停了。我忽然觉得自己正被隔离开来，远离自己认识的人，远离自己熟悉的场所，远得无法置信。在这广大世界上不为任何人所爱，不为任何人理解，不为任何人记起，我发现自己成了这样的存在。”</p>
+</blockquote>
+<blockquote>
+<p>“即使我就这么消失不见，也没有人察觉，那种心情简直就像被塞进厚铁箱沉入深海底。由于气压的关系，心脏开始痛，痛得像要咔哧咔哧裂成两半，这滋味你可知道。”</p>
+</blockquote>
+<blockquote>
+<p>少女点点头，想必她是知道的。</p>
+</blockquote>
+<blockquote>
+<p>少年继续说道，“这大概是人活着的过程中所能体验到的最难以忍受的一种感觉，又伤心又难过，<br>恨不得直接死掉算了。不，不是这样，不是死掉算了，而是假如放在那里不管，就真的死掉了。因为铁箱里的空气越来越稀薄了，这可不是什么比喻，是真的，这也就是深夜里孤单单醒来的含义，这你也明白？”</p>
+</blockquote>
+<blockquote>
+<p>少女再次默默点头，少年停了一会儿。</p>
+</blockquote>
+<blockquote>
+<p>“不过当时听见很远很远的地方有汽笛声，非常非常遥远，到底什么地方有铁路呢？莫名其妙，总之就那么远，声音若有若无，但我知道那是火车的汽笛声，肯定是！黑暗中我竖耳细听，于是又一次听到了汽笛声。很快，我的心脏不再痛了，时针开始走动，铁箱朝海面慢慢浮升，而这都是因为那微弱的汽笛声的关系。”</p>
+</blockquote>
+<blockquote>
+<p>汽笛声的确微弱，听见没听见都分不清，而我就像爱那汽笛一样爱你。</p>
+</blockquote>
+<blockquote>
+<p><strong><p align="right">——村上春树</p></strong>  </p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>文学</category>
+      </categories>
+      <tags>
+        <tag>让人倾心的文字</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>&lt;p align=&quot;left&quot;&gt;要把所有的夜归还给星河，&lt;/p&gt;&lt;p align=&quot;left&quot;&gt;把所有的春光归还给疏疏篱落，&lt;/p&gt;&lt;p align=&quot;left&quot;&gt;把所有的慵慵沉迷与不前，归还给过去的我。&lt;/p&gt;&lt;p align=&quot;left&quot;&gt;明日之我，胸中有丘壑，立马振山河。&lt;p align=&quot;right&quot;&gt;------德卡先生的信箱&lt;/p&gt;</title>
+    <url>/2019/11/13/hello-world/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>文学</category>
+      </categories>
+      <tags>
+        <tag>让人倾心的文字</tag>
+      </tags>
+  </entry>
+</search>
