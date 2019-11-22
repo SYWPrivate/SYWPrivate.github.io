@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-22T06:33:21.879Z</updated>
+  <updated>2019-11-22T08:18:25.806Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Oracle语句</title>
+    <link href="http://yoursite.com/2019/11/22/oraclestate/"/>
+    <id>http://yoursite.com/2019/11/22/oraclestate/</id>
+    <published>2019-11-22T06:38:52.000Z</published>
+    <updated>2019-11-22T08:18:25.806Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="基础语句"><a href="#基础语句" class="headerlink" title="基础语句"></a>基础语句</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><ul><li>Oracle语句与SQL语句还是有很多不一样的地方。</li><li>都是些基础的，毕竟我也是业余的。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;基础语句&quot;&gt;&lt;a href=&quot;#基础语句&quot; class=&quot;headerlink&quot; title=&quot;基础语句&quot;&gt;&lt;/a&gt;基础语句&lt;/h1&gt;&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h
+      
+    
+    </summary>
+    
+    
+      <category term="Oracle" scheme="http://yoursite.com/categories/Oracle/"/>
+    
+    
+      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
   
   <entry>
     <title>解数独</title>
@@ -40,32 +66,28 @@
   </entry>
   
   <entry>
-    <title>环回网络</title>
-    <link href="http://yoursite.com/2019/11/20/LoopbackNetwork/"/>
-    <id>http://yoursite.com/2019/11/20/LoopbackNetwork/</id>
+    <title>Windows指令</title>
+    <link href="http://yoursite.com/2019/11/20/runwindows/"/>
+    <id>http://yoursite.com/2019/11/20/runwindows/</id>
     <published>2019-11-20T10:14:38.000Z</published>
-    <updated>2019-11-20T10:29:23.367Z</updated>
+    <updated>2019-11-22T08:12:00.834Z</updated>
     
-    <content type="html"><![CDATA[<p>如何打开<strong>环回网络</strong>安装向导？  </p><ul><li>组合键： Win+R  </li><li>输入框内，输入：hdwwiz   </li><li>回车</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本文主要关于Windows相关指令，<strong>Win+R</strong>打开输入框。输入以下指令即可打开不同功能。  </p><h1 id="环回网络"><a href="#环回网络" class="headerlink" title="环回网络"></a>环回网络</h1><ul><li>hdwwiz  <h1 id="远程桌面"><a href="#远程桌面" class="headerlink" title="远程桌面"></a>远程桌面</h1></li><li>mstsc</li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;如何打开&lt;strong&gt;环回网络&lt;/strong&gt;安装向导？  &lt;/p&gt;&lt;ul&gt;
-&lt;li&gt;组合键： Win+R  &lt;/li&gt;
-&lt;li&gt;输入框内，输入：hdwwiz   &lt;/li&gt;
-&lt;li&gt;回车&lt;/li&gt;
-&lt;/ul&gt;
+        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;本文主要关于Windows相关指令，&lt;strong&gt;Win+R&lt;/strong&gt;打开输入框。输入以下指令即可打开不同功能。  &lt;/p&gt;&lt;h1
       
     
     </summary>
     
     
-      <category term="Oracle" scheme="http://yoursite.com/categories/Oracle/"/>
+      <category term="工具" scheme="http://yoursite.com/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-      <category term="notes" scheme="http://yoursite.com/tags/notes/"/>
+      <category term="随记" scheme="http://yoursite.com/tags/%E9%9A%8F%E8%AE%B0/"/>
     
   </entry>
   
@@ -74,7 +96,7 @@
     <link href="http://yoursite.com/2019/11/20/ORA01045/"/>
     <id>http://yoursite.com/2019/11/20/ORA01045/</id>
     <published>2019-11-20T10:05:45.000Z</published>
-    <updated>2019-11-20T10:29:11.116Z</updated>
+    <updated>2019-11-22T06:47:36.635Z</updated>
     
     <content type="html"><![CDATA[<p><code>ORA-01045: user 某某用户 lacks CREATE SESSION privilege; logon denied</code><br><strong>权限问题</strong>：以system用户登录，运行以下指令。<br><code>grant create session,resource  to 某某用户；</code></p>]]></content>
     
@@ -91,7 +113,7 @@
       <category term="Oracle" scheme="http://yoursite.com/categories/Oracle/"/>
     
     
-      <category term="notes" scheme="http://yoursite.com/tags/notes/"/>
+      <category term="随记" scheme="http://yoursite.com/tags/%E9%9A%8F%E8%AE%B0/"/>
     
   </entry>
   
@@ -100,7 +122,7 @@
     <link href="http://yoursite.com/2019/11/20/ORA00911/"/>
     <id>http://yoursite.com/2019/11/20/ORA00911/</id>
     <published>2019-11-20T05:51:56.000Z</published>
-    <updated>2019-11-20T10:32:00.680Z</updated>
+    <updated>2019-11-22T06:47:22.863Z</updated>
     
     <content type="html"><![CDATA[<p>外部程序操作数据库，书写SQL语句，若如下：<br><code>insert into syw.tempdata(TEMP,TIME) values</code><br> <code>(200,to_date(&#39;2019/11/20 9:46:06&#39;,&#39;YYYY-MM-DD HH24:MI:SS&#39;));</code>   </p><a id="more"></a><p>会报错：ORA-00911<br>因为外部程序中书写SQL语句末尾不用加 <strong>“;”</strong> 号。</p>]]></content>
     
@@ -114,7 +136,7 @@
       <category term="Oracle" scheme="http://yoursite.com/categories/Oracle/"/>
     
     
-      <category term="notes" scheme="http://yoursite.com/tags/notes/"/>
+      <category term="随记" scheme="http://yoursite.com/tags/%E9%9A%8F%E8%AE%B0/"/>
     
   </entry>
   

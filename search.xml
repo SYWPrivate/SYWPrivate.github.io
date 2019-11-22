@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Oracle语句</title>
+    <url>/2019/11/22/oraclestate/</url>
+    <content><![CDATA[<h1 id="基础语句"><a href="#基础语句" class="headerlink" title="基础语句"></a>基础语句</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><ul>
+<li>Oracle语句与SQL语句还是有很多不一样的地方。</li>
+<li>都是些基础的，毕竟我也是业余的。</li>
+</ul>]]></content>
+      <categories>
+        <category>Oracle</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>解数独</title>
     <url>/2019/11/22/shudu/</url>
     <content><![CDATA[<p>主要分享一下解数独的源代码，用到了比较重要的回溯算法！</p>
@@ -21,18 +35,17 @@
       </tags>
   </entry>
   <entry>
-    <title>环回网络</title>
-    <url>/2019/11/20/LoopbackNetwork/</url>
-    <content><![CDATA[<p>如何打开<strong>环回网络</strong>安装向导？  </p><ul>
-<li>组合键： Win+R  </li>
-<li>输入框内，输入：hdwwiz   </li>
-<li>回车</li>
+    <title>Windows指令</title>
+    <url>/2019/11/20/runwindows/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本文主要关于Windows相关指令，<strong>Win+R</strong>打开输入框。输入以下指令即可打开不同功能。  </p><h1 id="环回网络"><a href="#环回网络" class="headerlink" title="环回网络"></a>环回网络</h1><ul>
+<li>hdwwiz  <h1 id="远程桌面"><a href="#远程桌面" class="headerlink" title="远程桌面"></a>远程桌面</h1></li>
+<li>mstsc</li>
 </ul>]]></content>
       <categories>
-        <category>Oracle</category>
+        <category>工具</category>
       </categories>
       <tags>
-        <tag>notes</tag>
+        <tag>随记</tag>
       </tags>
   </entry>
   <entry>
@@ -43,7 +56,7 @@
         <category>Oracle</category>
       </categories>
       <tags>
-        <tag>notes</tag>
+        <tag>随记</tag>
       </tags>
   </entry>
   <entry>
@@ -56,7 +69,7 @@
         <category>Oracle</category>
       </categories>
       <tags>
-        <tag>notes</tag>
+        <tag>随记</tag>
       </tags>
   </entry>
   <entry>
