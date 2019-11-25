@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-22T08:18:25.806Z</updated>
+  <updated>2019-11-25T06:49:13.757Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C#随记</title>
+    <link href="http://yoursite.com/2019/11/25/C-Notes/"/>
+    <id>http://yoursite.com/2019/11/25/C-Notes/</id>
+    <published>2019-11-25T06:02:01.000Z</published>
+    <updated>2019-11-25T06:49:13.757Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><ul><li>写C#窗体程序的相关记录。本文仅仅是自己的一些见解和遇到的问题，<strong>并不完全正确！请注意！</strong> <h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><h2 id="程序调试运行无反应"><a href="#程序调试运行无反应" class="headerlink" title="程序调试运行无反应"></a>程序调试运行无反应</h2></li><li>加载各个窗体时，有一个窗体初始化函数内，写了一个<strong>需要一直循环的函数</strong>。点击调试运行时，初始化函数一直在运行，所以界面加载不出来，看起来就毫无反应。</li><li><strong>解：</strong> 写了个线程，加载时打开线程，在线程中<code>while(true){...}</code>做需要一直做的事，就行了。<h1 id="随笔"><a href="#随笔" class="headerlink" title="随笔"></a>随笔</h1><h2 id="绘图"><a href="#绘图" class="headerlink" title="绘图"></a>绘图</h2></li><li>Graphics绘图  </li><li><strong>优点：</strong> 全面：所有线条，字体等等都由自己选择。  </li><li><strong>缺点：</strong> 绘制动图有点费劲，<code>Graphics.Clear(60,255,255,255);</code>//Clear函数只能以指定颜色重绘画布Bitmap，参数1：透明度（可不写），参数234：三原色。<h3 id="控件Panel"><a href="#控件Panel" class="headerlink" title="控件Panel"></a>控件Panel</h3>&#8195;Panel外观：Backgroundimage，可以Panel.Backgroundimage=Bitmap加载图画。而且Panel.Paint事件可以在加载的背景上绘图。  </li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;写C#窗体程序的相关记录。本文仅仅是自己的一些见解和遇到的问题，&lt;strong&gt;并不完全正确！请注意！&lt;/strong&gt; &lt;h1
+      
+    
+    </summary>
+    
+    
+      <category term="C#" scheme="http://yoursite.com/categories/C/"/>
+    
+    
+      <category term="随记" scheme="http://yoursite.com/tags/%E9%9A%8F%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>Oracle语句</title>
@@ -70,15 +97,16 @@
     <link href="http://yoursite.com/2019/11/20/runwindows/"/>
     <id>http://yoursite.com/2019/11/20/runwindows/</id>
     <published>2019-11-20T10:14:38.000Z</published>
-    <updated>2019-11-25T01:40:53.424Z</updated>
+    <updated>2019-11-25T06:50:09.057Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本文主要关于Windows相关指令，<strong>Win+R</strong>打开输入框。输入以下指令即可打开不同功能。  </p><h1 id="环回网络"><a href="#环回网络" class="headerlink" title="环回网络"></a>环回网络</h1><ul><li>hdwwiz  <h1 id="远程桌面"><a href="#远程桌面" class="headerlink" title="远程桌面"></a>远程桌面</h1></li><li>mstsc</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><ul><li><p>本文主要关于Windows相关指令，<strong>Win+R</strong>打开输入框。输入以下指令即可打开不同功能。  </p><h1 id="环回网络"><a href="#环回网络" class="headerlink" title="环回网络"></a>环回网络</h1></li><li><p>hdwwiz  </p><h1 id="远程桌面"><a href="#远程桌面" class="headerlink" title="远程桌面"></a>远程桌面</h1></li><li><p>mstsc</p></li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;本文主要关于Windows相关指令，&lt;strong&gt;Win+R&lt;/strong&gt;打开输入框。输入以下指令即可打开不同功能。  &lt;/p&gt;&lt;h1
+        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;本文主要关于Windows相关指令，&lt;strong&gt;Win+R&lt;/strong&gt;打开输入框。输入以下指令即可打开不同功能。
       
     
     </summary>
@@ -159,11 +187,11 @@
       <category term="C#" scheme="http://yoursite.com/categories/C/"/>
     
     
-      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
       <category term="C#窗体程序" scheme="http://yoursite.com/tags/C-%E7%AA%97%E4%BD%93%E7%A8%8B%E5%BA%8F/"/>
     
       <category term="通讯" scheme="http://yoursite.com/tags/%E9%80%9A%E8%AE%AF/"/>
+    
+      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
       <category term="绘图" scheme="http://yoursite.com/tags/%E7%BB%98%E5%9B%BE/"/>
     

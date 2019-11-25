@@ -53,18 +53,18 @@
   };
 </script>
 
-  <meta name="description" content="ORA-01045: user 某某用户 lacks CREATE SESSION privilege; logon denied权限问题：以system用户登录，运行以下指令。grant create session,resource  to 某某用户；">
+  <meta name="description" content="概述 写C#窗体程序的相关记录。本文仅仅是自己的一些见解和遇到的问题，并不完全正确！请注意！ 问题程序调试运行无反应 加载各个窗体时，有一个窗体初始化函数内，写了一个需要一直循环的函数。点击调试运行时，初始化函数一直在运行，所以界面加载不出来，看起来就毫无反应。 解： 写了个线程，加载时打开线程，在线程中while(true){...}做需要一直做的事，就行了。随笔绘图 Graphics绘图">
 <meta name="keywords" content="随记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ORA-01045">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;20&#x2F;ORA01045&#x2F;index.html">
+<meta property="og:title" content="C#随记">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;25&#x2F;C-Notes&#x2F;index.html">
 <meta property="og:site_name" content="SYW">
-<meta property="og:description" content="ORA-01045: user 某某用户 lacks CREATE SESSION privilege; logon denied权限问题：以system用户登录，运行以下指令。grant create session,resource  to 某某用户；">
+<meta property="og:description" content="概述 写C#窗体程序的相关记录。本文仅仅是自己的一些见解和遇到的问题，并不完全正确！请注意！ 问题程序调试运行无反应 加载各个窗体时，有一个窗体初始化函数内，写了一个需要一直循环的函数。点击调试运行时，初始化函数一直在运行，所以界面加载不出来，看起来就毫无反应。 解： 写了个线程，加载时打开线程，在线程中while(true){...}做需要一直做的事，就行了。随笔绘图 Graphics绘图">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-22T06:47:36.635Z">
+<meta property="og:updated_time" content="2019-11-25T06:49:13.757Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2019/11/20/ORA01045/">
+<link rel="canonical" href="http://yoursite.com/2019/11/25/C-Notes/">
 
 
 <script id="page-configurations">
@@ -78,7 +78,7 @@
   };
 </script>
 
-  <title>ORA-01045 | SYW</title>
+  <title>C#随记 | SYW</title>
   
 
 
@@ -217,7 +217,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/20/ORA01045/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/25/C-Notes/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -230,7 +230,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          ORA-01045
+          C#随记
         </h1>
 
         <div class="post-meta">
@@ -239,24 +239,18 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2019-11-20 18:05:45" itemprop="dateCreated datePublished" datetime="2019-11-20T18:05:45+08:00">2019-11-20</time>
+              <time title="创建时间：2019-11-25 14:02:01 / 修改时间：14:49:13" itemprop="dateCreated datePublished" datetime="2019-11-25T14:02:01+08:00">2019-11-25</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-22 14:47:36" itemprop="dateModified" datetime="2019-11-22T14:47:36+08:00">2019-11-22</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Oracle/" itemprop="url" rel="index">
-                    <span itemprop="name">Oracle</span>
+                  <a href="/categories/C/" itemprop="url" rel="index">
+                    <span itemprop="name">C#</span>
                   </a>
                 </span>
             </span>
@@ -278,11 +272,11 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <!-- <p><span>本文标题:</span><a href="/2019/11/20/ORA01045/">ORA-01045</a></p>  -->
+  <!-- <p><span>本文标题:</span><a href="/2019/11/25/C-Notes/">C#随记</a></p>  -->
   <!-- <p><span>文章作者:</span><a href="/" title="访问 SYW 的个人博客">SYW</a></p>  -->
-  <!-- <p><span>发布时间:</span>2019年11月20日 - 18:11</p> -->
-  <!-- <p><span>最后更新:</span>2019年11月22日 - 14:11</p>  -->
-  <p><span>原始链接:</span><a href="/2019/11/20/ORA01045/" title="ORA-01045">http://yoursite.com/2019/11/20/ORA01045/</a></p>
+  <!-- <p><span>发布时间:</span>2019年11月25日 - 14:11</p> -->
+  <!-- <p><span>最后更新:</span>2019年11月25日 - 14:11</p>  -->
+  <p><span>原始链接:</span><a href="/2019/11/25/C-Notes/" title="C#随记">http://yoursite.com/2019/11/25/C-Notes/</a></p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)"> BY-NC-ND 4.0 </a> 转载请注明出处。</p>  
 </div>
 
@@ -298,7 +292,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><code>ORA-01045: user 某某用户 lacks CREATE SESSION privilege; logon denied</code><br><strong>权限问题</strong>：以system用户登录，运行以下指令。<br><code>grant create session,resource  to 某某用户；</code></p>
+        <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><ul>
+<li>写C#窗体程序的相关记录。本文仅仅是自己的一些见解和遇到的问题，<strong>并不完全正确！请注意！</strong> <h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><h2 id="程序调试运行无反应"><a href="#程序调试运行无反应" class="headerlink" title="程序调试运行无反应"></a>程序调试运行无反应</h2></li>
+<li>加载各个窗体时，有一个窗体初始化函数内，写了一个<strong>需要一直循环的函数</strong>。点击调试运行时，初始化函数一直在运行，所以界面加载不出来，看起来就毫无反应。</li>
+<li><strong>解：</strong> 写了个线程，加载时打开线程，在线程中<code>while(true){...}</code>做需要一直做的事，就行了。<h1 id="随笔"><a href="#随笔" class="headerlink" title="随笔"></a>随笔</h1><h2 id="绘图"><a href="#绘图" class="headerlink" title="绘图"></a>绘图</h2></li>
+<li>Graphics绘图  </li>
+<li><strong>优点：</strong> 全面：所有线条，字体等等都由自己选择。  </li>
+<li><strong>缺点：</strong> 绘制动图有点费劲，<code>Graphics.Clear(60,255,255,255);</code>//Clear函数只能以指定颜色重绘画布Bitmap，参数1：透明度（可不写），参数234：三原色。<h3 id="控件Panel"><a href="#控件Panel" class="headerlink" title="控件Panel"></a>控件Panel</h3>&#8195;Panel外观：Backgroundimage，可以Panel.Backgroundimage=Bitmap加载图画。而且Panel.Paint事件可以在加载的背景上绘图。  </li>
+</ul>
     </div>
 
     
@@ -322,17 +323,14 @@
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/2019/11/20/ORA00911/" rel="next" title="ORA-00911">
-                  <i class="fa fa-chevron-left"></i> ORA-00911
+                <a href="/2019/11/22/oraclestate/" rel="next" title="Oracle语句">
+                  <i class="fa fa-chevron-left"></i> Oracle语句
                 </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/2019/11/20/runwindows/" rel="prev" title="Windows指令">
-                  Windows指令 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
       </footer>
@@ -371,6 +369,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#问题"><span class="nav-number">2.</span> <span class="nav-text">问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#程序调试运行无反应"><span class="nav-number">2.1.</span> <span class="nav-text">程序调试运行无反应</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#随笔"><span class="nav-number">3.</span> <span class="nav-text">随笔</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#绘图"><span class="nav-number">3.1.</span> <span class="nav-text">绘图</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#控件Panel"><span class="nav-number">3.1.1.</span> <span class="nav-text">控件Panel</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
