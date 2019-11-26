@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-25T09:59:11.745Z</updated>
+  <updated>2019-11-26T03:15:07.011Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《数据结构与算法分析——C语言描述》--学习笔记</title>
+    <link href="http://yoursite.com/2019/11/26/CDataLenCode/"/>
+    <id>http://yoursite.com/2019/11/26/CDataLenCode/</id>
+    <published>2019-11-26T02:34:14.000Z</published>
+    <updated>2019-11-26T03:15:07.011Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第一章：引论"><a href="#第一章：引论" class="headerlink" title="第一章：引论"></a>第一章：引论</h1><h2 id="此书讨论的内容"><a href="#此书讨论的内容" class="headerlink" title="此书讨论的内容"></a>此书讨论的内容</h2><h2 id="涉及的数学知识"><a href="#涉及的数学知识" class="headerlink" title="涉及的数学知识"></a>涉及的数学知识</h2><h3 id="指数"><a href="#指数" class="headerlink" title="指数"></a>指数</h3><h3 id="对数"><a href="#对数" class="headerlink" title="对数"></a>对数</h3><h3 id="级数"><a href="#级数" class="headerlink" title="级数"></a>级数</h3><h3 id="模运算"><a href="#模运算" class="headerlink" title="模运算"></a>模运算</h3><h3 id="证明方法"><a href="#证明方法" class="headerlink" title="证明方法"></a>证明方法</h3><ul><li><p>反证法</p></li><li><p>数学归纳法</p><h3 id="递归简论"><a href="#递归简论" class="headerlink" title="递归简论"></a>递归简论</h3><h1 id="第二章：算法分析"><a href="#第二章：算法分析" class="headerlink" title="第二章：算法分析"></a>第二章：算法分析</h1><h2 id="数学基础"><a href="#数学基础" class="headerlink" title="数学基础"></a>数学基础</h2><h2 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h2><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><h2 id="运行时间计算"><a href="#运行时间计算" class="headerlink" title="运行时间计算"></a>运行时间计算</h2><h3 id="一个简单的例子"><a href="#一个简单的例子" class="headerlink" title="一个简单的例子"></a>一个简单的例子</h3><h3 id="一般法则"><a href="#一般法则" class="headerlink" title="一般法则"></a>一般法则</h3><h3 id="最大子序列和问题的解"><a href="#最大子序列和问题的解" class="headerlink" title="最大子序列和问题的解"></a>最大子序列和问题的解</h3></li><li><p><em>这里我只给出两种解*</em>  </p></li><li><p>次优</p></li><li><p>时间复杂度O(N log N )</p></li><li><p>递归+分治</p><pre><code>#include&lt;stdio.h&gt;void main(){  int MaxSubSum(int A[], int Left, int Right);  int A[8] = { 4,-3,5,-2,-1,2,6,-2 };  int a = MaxSubSum(A, 0, 7);  printf(&quot;%d\n&quot;, a);}int MaxSubSum(int A[], int Left, int Right){  int MaxThree(int a, int b, int c);  int MaxLeftSum, MaxRightSum;  int MaxLeftBorderSum, MaxRightBorderSum;  int LeftBorderSum, RightBorderSum;  int Center, i;  if (Left == Right)  {      if (A[Left] &gt; 0)          return A[Left];      else          return 0;  }  Center = (Left + Right) / 2;  MaxLeftSum = MaxSubSum(A, Left, Center);  MaxRightSum = MaxSubSum(A, Center + 1, Right);  MaxLeftBorderSum = 0;  LeftBorderSum = 0;  for (i = Center; i &gt;= Left; i--)  {      LeftBorderSum += A[i];      if (LeftBorderSum &gt; MaxLeftBorderSum)          MaxLeftBorderSum = LeftBorderSum;  }  MaxRightBorderSum = 0;  RightBorderSum = 0;  for (i = Center + 1; i &lt;= Right; i++)  {      RightBorderSum += A[i];      if (RightBorderSum &gt; MaxRightBorderSum)          MaxRightBorderSum = RightBorderSum;  }  return MaxThree(MaxLeftSum, MaxRightSum, MaxLeftBorderSum + MaxRightBorderSum);}int MaxThree(int a, int b, int c){  if (a &gt; b&amp;&amp;a &gt; c)      return a;  else if (b &gt; c)      return b;  else return c;}  </code></pre></li><li><p><strong>最优</strong></p><h1 id="第三章：表、栈和队列"><a href="#第三章：表、栈和队列" class="headerlink" title="第三章：表、栈和队列"></a>第三章：表、栈和队列</h1><h2 id="抽象数据类型（ADT）"><a href="#抽象数据类型（ADT）" class="headerlink" title="抽象数据类型（ADT）"></a>抽象数据类型（ADT）</h2><h2 id="表ADT"><a href="#表ADT" class="headerlink" title="表ADT"></a>表ADT</h2><h3 id="表的简单数组实现"><a href="#表的简单数组实现" class="headerlink" title="表的简单数组实现"></a>表的简单数组实现</h3><h3 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h3><h3 id="程序设计细节"><a href="#程序设计细节" class="headerlink" title="程序设计细节"></a>程序设计细节</h3><h3 id="常见错误"><a href="#常见错误" class="headerlink" title="常见错误"></a>常见错误</h3><h3 id="双链表"><a href="#双链表" class="headerlink" title="双链表"></a>双链表</h3><h3 id="循环链表"><a href="#循环链表" class="headerlink" title="循环链表"></a>循环链表</h3><h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><h3 id="链表的游标实现"><a href="#链表的游标实现" class="headerlink" title="链表的游标实现"></a>链表的游标实现</h3><h2 id="栈ADT"><a href="#栈ADT" class="headerlink" title="栈ADT"></a>栈ADT</h2></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;第一章：引论&quot;&gt;&lt;a href=&quot;#第一章：引论&quot; class=&quot;headerlink&quot; title=&quot;第一章：引论&quot;&gt;&lt;/a&gt;第一章：引论&lt;/h1&gt;&lt;h2 id=&quot;此书讨论的内容&quot;&gt;&lt;a href=&quot;#此书讨论的内容&quot; class=&quot;headerlink&quot; ti
+      
+    
+    </summary>
+    
+    
+      <category term="C" scheme="http://yoursite.com/categories/C/"/>
+    
+    
+      <category term="C-Book" scheme="http://yoursite.com/tags/C-Book/"/>
+    
+  </entry>
   
   <entry>
     <title>C#随记</title>
@@ -184,11 +210,11 @@
       <category term="C#" scheme="http://yoursite.com/categories/C/"/>
     
     
-      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
       <category term="C#窗体程序" scheme="http://yoursite.com/tags/C-%E7%AA%97%E4%BD%93%E7%A8%8B%E5%BA%8F/"/>
     
       <category term="通讯" scheme="http://yoursite.com/tags/%E9%80%9A%E8%AE%AF/"/>
+    
+      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
       <category term="绘图" scheme="http://yoursite.com/tags/%E7%BB%98%E5%9B%BE/"/>
     
