@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>文字之美</title>
+    <url>/2019/11/26/WordsCollection/</url>
+    <content><![CDATA[<p><strong>记录下别人的文采，打磨自己的鲁钝。</strong></p>
+<a id="more"></a>
+<h1 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h1><blockquote>
+<p>&#8195;开国大典的时候飞机不够。您说飞两遍，现在再也不需要飞两遍了，要多少有多少。这盛世，如您所愿吧，山河犹在，国泰民安。当年送您的十里长安街，如今已是十里繁荣。</p>
+<p align="right">致：周总理</p>  
+<p align="right">---佚名</p>  
+</blockquote>
+<h1 id="灵魂"><a href="#灵魂" class="headerlink" title="灵魂"></a>灵魂</h1><blockquote>
+<p>&#8195;我所有的自负都来自我的自卑，所有的英雄气概都来自于我内心的软弱，所有的振振有词都因为心中满是疑惑。我假装无情，其实痛恨自己深情。我以为人生的意义在于四处游荡流亡，其实只是掩饰至今没有找到愿意驻足的地方。</p>
+<p align="right">---马良《坦白书》</p>    
+</blockquote>
+<blockquote>
+<p>&#8195;一生中总会遇到这样的时候，你的内心已经兵荒马乱天翻地覆了，可是在别人看来你只是比平时沉默了一点，没人会觉得奇怪。这种战争，注定单枪匹马。</p>
+<p align="right">---白岩松《痛并快乐着》</p>   </blockquote>
+]]></content>
+      <categories>
+        <category>文学</category>
+      </categories>
+      <tags>
+        <tag>随记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《数据结构与算法分析——C语言描述》--学习笔记</title>
     <url>/2019/11/26/CDataLenCode/</url>
-    <content><![CDATA[<h1 id="第一章：引论"><a href="#第一章：引论" class="headerlink" title="第一章：引论"></a>第一章：引论</h1><h2 id="此书讨论的内容"><a href="#此书讨论的内容" class="headerlink" title="此书讨论的内容"></a>此书讨论的内容</h2><h2 id="涉及的数学知识"><a href="#涉及的数学知识" class="headerlink" title="涉及的数学知识"></a>涉及的数学知识</h2><h3 id="指数"><a href="#指数" class="headerlink" title="指数"></a>指数</h3><h3 id="对数"><a href="#对数" class="headerlink" title="对数"></a>对数</h3><h3 id="级数"><a href="#级数" class="headerlink" title="级数"></a>级数</h3><h3 id="模运算"><a href="#模运算" class="headerlink" title="模运算"></a>模运算</h3><h3 id="证明方法"><a href="#证明方法" class="headerlink" title="证明方法"></a>证明方法</h3><ul>
+    <content><![CDATA[<p><strong>无聊是一件非常可怕的事情！因为它会让我想去学习。</strong></p>
+<a id="more"></a>
+<h1 id="第一章：引论"><a href="#第一章：引论" class="headerlink" title="第一章：引论"></a>第一章：引论</h1><h2 id="此书讨论的内容"><a href="#此书讨论的内容" class="headerlink" title="此书讨论的内容"></a>此书讨论的内容</h2><h2 id="涉及的数学知识"><a href="#涉及的数学知识" class="headerlink" title="涉及的数学知识"></a>涉及的数学知识</h2><h3 id="指数"><a href="#指数" class="headerlink" title="指数"></a>指数</h3><h3 id="对数"><a href="#对数" class="headerlink" title="对数"></a>对数</h3><h3 id="级数"><a href="#级数" class="headerlink" title="级数"></a>级数</h3><h3 id="模运算"><a href="#模运算" class="headerlink" title="模运算"></a>模运算</h3><h3 id="证明方法"><a href="#证明方法" class="headerlink" title="证明方法"></a>证明方法</h3><ul>
 <li><p>反证法</p>
 </li>
 <li><p>数学归纳法</p>
@@ -68,7 +95,8 @@ int MaxThree(int a, int b, int c)
 }  </code></pre></li>
 <li><p><strong>最优</strong></p>
 <h1 id="第三章：表、栈和队列"><a href="#第三章：表、栈和队列" class="headerlink" title="第三章：表、栈和队列"></a>第三章：表、栈和队列</h1><h2 id="抽象数据类型（ADT）"><a href="#抽象数据类型（ADT）" class="headerlink" title="抽象数据类型（ADT）"></a>抽象数据类型（ADT）</h2><h2 id="表ADT"><a href="#表ADT" class="headerlink" title="表ADT"></a>表ADT</h2><h3 id="表的简单数组实现"><a href="#表的简单数组实现" class="headerlink" title="表的简单数组实现"></a>表的简单数组实现</h3><h3 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h3><h3 id="程序设计细节"><a href="#程序设计细节" class="headerlink" title="程序设计细节"></a>程序设计细节</h3><h3 id="常见错误"><a href="#常见错误" class="headerlink" title="常见错误"></a>常见错误</h3><h3 id="双链表"><a href="#双链表" class="headerlink" title="双链表"></a>双链表</h3><h3 id="循环链表"><a href="#循环链表" class="headerlink" title="循环链表"></a>循环链表</h3><h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><h3 id="链表的游标实现"><a href="#链表的游标实现" class="headerlink" title="链表的游标实现"></a>链表的游标实现</h3><h2 id="栈ADT"><a href="#栈ADT" class="headerlink" title="栈ADT"></a>栈ADT</h2></li>
-</ul>]]></content>
+</ul>
+]]></content>
       <categories>
         <category>C</category>
       </categories>
@@ -86,7 +114,18 @@ int MaxThree(int a, int b, int c)
 <li><strong>解：</strong> 写了个线程，加载时打开线程，在线程中<code>while(true){...}</code>做需要一直做的事，就行了。<h1 id="随笔"><a href="#随笔" class="headerlink" title="随笔"></a>随笔</h1><h2 id="绘图"><a href="#绘图" class="headerlink" title="绘图"></a>绘图</h2></li>
 <li>Graphics绘图  </li>
 <li><strong>优点：</strong> 全面：所有线条，字体等等都由自己选择。  </li>
-<li><strong>缺点：</strong> 绘制动图有点费劲，<code>Graphics.Clear(60,255,255,255);</code>//Clear函数只能以指定颜色重绘画布Bitmap，参数1：透明度（可不写），参数234：三原色。<h3 id="控件Panel"><a href="#控件Panel" class="headerlink" title="控件Panel"></a>控件Panel</h3>&#8195;Panel外观：Backgroundimage，可以Panel.Backgroundimage=Bitmap加载图画。而且Panel.Paint事件可以在加载的背景上绘图。  </li>
+<li><strong>缺点：</strong> 绘制动图有点费劲，<code>Graphics.Clear(60,255,255,255);</code>//Clear函数只能以指定颜色重绘画布Bitmap，参数1：透明度（可不写），参数234：三原色。<h3 id="控件Panel"><a href="#控件Panel" class="headerlink" title="控件Panel"></a>控件Panel</h3>&#8195;Panel外观：Backgroundimage，可以Panel.Backgroundimage=Bitmap加载图画。而且Panel.Paint事件可以在加载的背景上绘图。  <h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><h2 id="Time"><a href="#Time" class="headerlink" title="Time"></a>Time</h2><h3 id="时间格式"><a href="#时间格式" class="headerlink" title="时间格式"></a>时间格式</h3><code>DateTime TimeNow= DateTime.Now.ToString();//2019-12-12 1:12:12 Length=18</code></li>
+<li>我们需要的是<strong>固定长度和格式</strong>的时间或字符串。<br><code>&quot;2019-12-12 01:12:12//Length=19&quot;</code>  </li>
+<li>所以<code>DateTime TimeNow= DateTime.Now.ToString(&quot;yyyy/MM/dd HH:mm:ss&quot;);//是必须的</code>  <h3 id="时间转换"><a href="#时间转换" class="headerlink" title="时间转换"></a>时间转换</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">DateTime TimeNow = DateTime.Parse(&quot;2019/12/12 01:00:01&quot;);</span><br><span class="line">label1.Text = TimeNow.ToString();//  2019/12/12 1:00:01</span><br></pre></td></tr></table></figure>
+<h3 id="时间计算"><a href="#时间计算" class="headerlink" title="时间计算"></a>时间计算</h3></li>
+<li>时间差计算<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">DateTime TimeNow, TimePast;  // 意思意思，没赋值</span><br><span class="line">TimeSpan TimeDiffer = TimeNow.Subtract(TimePast);</span><br><span class="line">//以下都是  double</span><br><span class="line">TimeDiffer.TotalDays;</span><br><span class="line">TimeDiffer.TotalHours;</span><br><span class="line">TimeDiffer.TotalMinutes;</span><br><span class="line">TimeDiffer.TotalSeconds;</span><br></pre></td></tr></table></figure></li>
+<li>时间加减计算<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">DateTime TimeNow, TimePast;</span><br><span class="line">TimeNow=TimePast.AddHours(-4);</span><br><span class="line">TimeNow=TimePast.AddMinutes(-100);</span><br></pre></td></tr></table></figure>
+<h2 id="绘图-1"><a href="#绘图-1" class="headerlink" title="绘图"></a>绘图</h2><h3 id="Graphics"><a href="#Graphics" class="headerlink" title="Graphics"></a>Graphics</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Bitmap Background = new Bitmap(1200,680);//画板</span><br><span class="line">Graphics Grap = Graphics.FromImage(Background);//加载画板</span><br><span class="line">Grap.DrawLine(int,int,int,int);</span><br><span class="line">Grap.DrawLine(Pen pen,float x1,float y1,float x2,float y2);</span><br></pre></td></tr></table></figure>
+<h2 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h2></li>
+<li>创建并打开线程<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Thread Study = new Thread(new ThreadStart(StudyFunction));</span><br><span class="line">Study.Start();</span><br><span class="line">private void StudyFunction()</span><br><span class="line">&#123;</span><br><span class="line"> while(true)&#123;</span><br><span class="line">     ......</span><br><span class="line">     Thread.Sleep(1000*30)//线程睡30S</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>操作线程<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Study.Suspend()//挂起，暂时不做了</span><br><span class="line">Study.Resume()//恢复，继续刚才没做完的</span><br><span class="line">Study.Abort()//停止，杀死该进程</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Study.Join()//等待Study完成主线程继续</span><br><span class="line">Study.Join(1000*30)//主线程等待30S</span><br></pre></td></tr></table></figure>
+
+</li>
 </ul>
 ]]></content>
       <categories>
