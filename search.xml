@@ -3,9 +3,12 @@
   <entry>
     <title>Hexo Next6.0</title>
     <url>/2019/11/27/HexoNotes/</url>
-    <content><![CDATA[<h1 id="8194-字色"><a href="#8194-字色" class="headerlink" title="&#8194;字色"></a>&#8194;字色</h1><p>在next\source\css_variables\base.styl文件中<br><strong>$grey-dim  = #666;</strong> 这个颜色是写文章普通用字的颜色，就是写的最多的字的颜色，改成自己需要的即可。  </p><a id="more"></a>
+    <content><![CDATA[<h1 id="8194-字色"><a href="#8194-字色" class="headerlink" title="&#8194;字色"></a>&#8194;字色</h1><p>&#8195;在next\source\css_variables\base.styl文件中<br>&#8195;<strong>$grey-dim  = #666;</strong> 这个颜色是写文章普通用字的颜色，就是写的最多的字的颜色，改成自己需要的即可。  </p><a id="more"></a>
 <ul>
-<li>例：$grey-dim  = #000;（黑色）</li>
+<li>例：$grey-dim  = #000;（黑色）<h1 id="8194-文章背景"><a href="#8194-文章背景" class="headerlink" title="&#8194;文章背景"></a>&#8194;文章背景</h1>&#8195;在next\source\css_schemes\Muse\_menu.styl文件中（注：_schemes\Muse的Muse是主题配置文件中所选用的主题，请进入你选用的主题文件夹），加入：<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.main-inner &#123;</span><br><span class="line">		background: #f5f5dc;//文章背景颜色</span><br><span class="line">		opacity: 0.8;//文章背景透明度</span><br><span class="line">&#125;</span><br><span class="line">``` </span><br><span class="line"># &amp;#8194;网页背景图片</span><br><span class="line">&amp;#8195;在博客源目录\source\_data中创建styles.styl文件，写入代码：</span><br></pre></td></tr></table></figure>
+body {<br> background-image:url(/images/back.png);<br> background-repeat: no-repeat;<br> background-attachment:fixed;<br> background-position:50% 50%;<br> }<br>```</li>
+<li>本地文件夹：博客源目录\public\images</li>
+<li>外部链接直接写入<code>url(...);</code>括号内。</li>
 </ul>
 ]]></content>
       <categories>
@@ -22,7 +25,7 @@
 <p align="left">要把所有的夜归还给星河，</p><p align="left">把所有的春光归还给疏疏篱落，</p><p align="left">把所有的慵慵沉迷与不前，归还给过去的我。</p><p align="left">明日之我，胸中有丘壑，立马振山河。</p><p align="right">---德卡先生的信箱</p>  
 </blockquote>
 <a id="more"></a>
-<h1 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h1><blockquote>
+<h1 id="8194-历史"><a href="#8194-历史" class="headerlink" title="&#8194;历史"></a>&#8194;历史</h1><blockquote>
 <p>&#8195;开国大典的时候飞机不够。您说飞两遍，现在再也不需要飞两遍了，要多少有多少。这盛世，如您所愿吧，山河犹在，国泰民安。当年送您的十里长安街，如今已是十里繁荣。</p>
 <p align="right">致：周总理</p>  
 <p align="right">---佚名</p>   
@@ -35,7 +38,7 @@
 <p>&#8195;成功虽无把握，成仁却有决心。</p>
 <p align="right">---黄景升</p>
 </blockquote>
-<h1 id="灵魂"><a href="#灵魂" class="headerlink" title="灵魂"></a>灵魂</h1><blockquote>
+<h1 id="8194-灵魂"><a href="#8194-灵魂" class="headerlink" title="&#8194;灵魂"></a>&#8194;灵魂</h1><blockquote>
 <p>&#8195;我所有的自负都来自我的自卑，所有的英雄气概都来自于我内心的软弱，所有的振振有词都因为心中满是疑惑。我假装无情，其实痛恨自己深情。我以为人生的意义在于四处游荡流亡，其实只是掩饰至今没有找到愿意驻足的地方。</p>
 <p align="right">---马良《坦白书》</p>    
 </blockquote>
@@ -47,7 +50,7 @@
 <p>&#8195;这些年一直在提醒自己一件事情，千万不要感动自己，大部分人看似努力，不过是愚蠢导致的。什么熬夜看书到天亮，连续几天睡几个小时，多久没放假案了。如果这些东西也值得炫耀，那么富士康流水线上任何一个人都比你努力的多了。人难免天生有自怜情绪，唯有时刻保持清醒，才能看清真正的价值在哪里。  </p>
 <p align="right">---于宙《我们这一代人的困惑》</p> 
 </blockquote>
-<h1 id="爱情"><a href="#爱情" class="headerlink" title="爱情"></a>爱情</h1><blockquote>
+<h1 id="8194-爱情"><a href="#8194-爱情" class="headerlink" title="&#8194;爱情"></a>&#8194;爱情</h1><blockquote>
 <p>&#8195;我希望有个如你一般的人，如山间清爽的风，如古城温暖的光。从清晨到傍晚，由山野到书房。只要最后是你，就好。</p>
 <p align="right">---《从你的全世界路过》</p> </blockquote>
 ]]></content>
@@ -158,8 +161,8 @@ int MaxThree(int a, int b, int c)
 <h2 id="8194-线程"><a href="#8194-线程" class="headerlink" title="&#8194;线程"></a>&#8194;线程</h2></li>
 <li>创建并打开线程<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Thread Study = new Thread(new ThreadStart(StudyFunction));</span><br><span class="line">Study.Start();</span><br><span class="line">private void StudyFunction()</span><br><span class="line">&#123;</span><br><span class="line"> while(true)&#123;</span><br><span class="line">     ......</span><br><span class="line">     Thread.Sleep(1000*30)//线程睡30S</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 <li>操作线程<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Study.Suspend()//挂起，暂时不做了</span><br><span class="line">Study.Resume()//恢复，继续刚才没做完的</span><br><span class="line">Study.Abort()//停止，杀死该进程</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Study.Join()//等待Study完成主线程继续</span><br><span class="line">Study.Join(1000*30)//主线程等待30S</span><br></pre></td></tr></table></figure>
-
-</li>
+<h2 id="8194-事件"><a href="#8194-事件" class="headerlink" title="&#8194;事件"></a>&#8194;事件</h2></li>
+<li><code>MouseClick = MouseDown + MouseUp</code>（一般执行完Down/Up会自动继续执行Click）</li>
 </ul>
 ]]></content>
       <categories>
@@ -174,7 +177,7 @@ int MaxThree(int a, int b, int c)
     <url>/2019/11/22/oraclestate/</url>
     <content><![CDATA[<h1 id="8194-基础语句"><a href="#8194-基础语句" class="headerlink" title="&#8194;基础语句"></a>&#8194;基础语句</h1><h2 id="8194-概述"><a href="#8194-概述" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h2><ul>
 <li>Oracle语句与SQL语句还是有很多不一样的地方。</li>
-<li>都是些基础的，毕竟我也是业余的。</li>
+<li>都是些基础的，毕竟我也是业余的。<h2 id="8194-查询"><a href="#8194-查询" class="headerlink" title="&#8194;查询"></a>&#8194;查询</h2><h3 id="8194-时间"><a href="#8194-时间" class="headerlink" title="&#8194;时间"></a>&#8194;时间</h3><code>select * from 表名 where sysdate-1 &lt;=Time  //Time为表中，时间列，列名（此句：查找一天内数据）</code><br><code>select * from 表名 where sysdate-1/24 &lt;=Time  //Time为表中，时间列，列名（此句：查找1H内数据）</code> </li>
 </ul>]]></content>
       <categories>
         <category>Oracle</category>
@@ -289,9 +292,9 @@ int MaxThree(int a, int b, int c)
         <category>C#</category>
       </categories>
       <tags>
-        <tag>数据库</tag>
         <tag>C#窗体程序</tag>
         <tag>通讯</tag>
+        <tag>数据库</tag>
         <tag>绘图</tag>
       </tags>
   </entry>

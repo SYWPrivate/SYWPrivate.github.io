@@ -1179,7 +1179,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffffab;
+  background: #3b69ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2483,7 +2483,7 @@ embed {
   width: 320px;
 }
 body {
-  background-image: url("/images/back.png");
+  background-image: url("https://w.wallhaven.cc/full/4l/wallhaven-4lewzl.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;

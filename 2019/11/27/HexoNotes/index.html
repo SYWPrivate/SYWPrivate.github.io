@@ -26,7 +26,7 @@
     scheme: 'Muse',
     version: '7.5.0',
     exturl: false,
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    sidebar: {"position":"left","Muse":240,"display":"post","offset":12,"onmobile":false},
     copycode: {"enable":true,"show_result":true,"style":null},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
@@ -53,15 +53,15 @@
   };
 </script>
 
-  <meta name="description" content="&amp;#8194;字色在next\source\css_variables\base.styl文件中$grey-dim  = #666; 这个颜色是写文章普通用字的颜色，就是写的最多的字的颜色，改成自己需要的即可。">
+  <meta name="description" content="&amp;#8194;字色&amp;#8195;在next\source\css_variables\base.styl文件中&amp;#8195;$grey-dim  = #666; 这个颜色是写文章普通用字的颜色，就是写的最多的字的颜色，改成自己需要的即可。">
 <meta name="keywords" content="随记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo Next6.0">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;27&#x2F;HexoNotes&#x2F;index.html">
 <meta property="og:site_name" content="SYW">
-<meta property="og:description" content="&amp;#8194;字色在next\source\css_variables\base.styl文件中$grey-dim  = #666; 这个颜色是写文章普通用字的颜色，就是写的最多的字的颜色，改成自己需要的即可。">
+<meta property="og:description" content="&amp;#8194;字色&amp;#8195;在next\source\css_variables\base.styl文件中&amp;#8195;$grey-dim  = #666; 这个颜色是写文章普通用字的颜色，就是写的最多的字的颜色，改成自己需要的即可。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-27T06:06:29.499Z">
+<meta property="og:updated_time" content="2019-11-27T06:32:59.712Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/2019/11/27/HexoNotes/">
@@ -241,7 +241,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2019-11-27 13:23:33 / 修改时间：14:06:29" itemprop="dateCreated datePublished" datetime="2019-11-27T13:23:33+08:00">2019-11-27</time>
+              <time title="创建时间：2019-11-27 13:23:33 / 修改时间：14:32:59" itemprop="dateCreated datePublished" datetime="2019-11-27T13:23:33+08:00">2019-11-27</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -292,9 +292,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="8194-字色"><a href="#8194-字色" class="headerlink" title="&#8194;字色"></a>&#8194;字色</h1><p>在next\source\css_variables\base.styl文件中<br><strong>$grey-dim  = #666;</strong> 这个颜色是写文章普通用字的颜色，就是写的最多的字的颜色，改成自己需要的即可。  </p><a id="more"></a>
+        <h1 id="8194-字色"><a href="#8194-字色" class="headerlink" title="&#8194;字色"></a>&#8194;字色</h1><p>&#8195;在next\source\css_variables\base.styl文件中<br>&#8195;<strong>$grey-dim  = #666;</strong> 这个颜色是写文章普通用字的颜色，就是写的最多的字的颜色，改成自己需要的即可。  </p><a id="more"></a>
 <ul>
-<li>例：$grey-dim  = #000;（黑色）</li>
+<li>例：$grey-dim  = #000;（黑色）<h1 id="8194-文章背景"><a href="#8194-文章背景" class="headerlink" title="&#8194;文章背景"></a>&#8194;文章背景</h1>&#8195;在next\source\css_schemes\Muse\_menu.styl文件中（注：_schemes\Muse的Muse是主题配置文件中所选用的主题，请进入你选用的主题文件夹），加入：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.main-inner &#123;</span><br><span class="line">		background: #f5f5dc;//文章背景颜色</span><br><span class="line">		opacity: 0.8;//文章背景透明度</span><br><span class="line">&#125;</span><br><span class="line">``` </span><br><span class="line"># &amp;#8194;网页背景图片</span><br><span class="line">&amp;#8195;在博客源目录\source\_data中创建styles.styl文件，写入代码：</span><br></pre></td></tr></table></figure>
+body {<br> background-image:url(/images/back.png);<br> background-repeat: no-repeat;<br> background-attachment:fixed;<br> background-position:50% 50%;<br> }<br>```</li>
+<li>本地文件夹：博客源目录\public\images</li>
+<li>外部链接直接写入<code>url(...);</code>括号内。</li>
 </ul>
 
     </div>
@@ -366,7 +369,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-字色"><span class="nav-number">1.</span> <span class="nav-text"> 字色</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-字色"><span class="nav-number">1.</span> <span class="nav-text"> 字色</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-文章背景"><span class="nav-number">2.</span> <span class="nav-text"> 文章背景</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

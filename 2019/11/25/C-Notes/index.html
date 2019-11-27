@@ -26,7 +26,7 @@
     scheme: 'Muse',
     version: '7.5.0',
     exturl: false,
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    sidebar: {"position":"left","Muse":240,"display":"post","offset":12,"onmobile":false},
     copycode: {"enable":true,"show_result":true,"style":null},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
@@ -61,7 +61,7 @@
 <meta property="og:site_name" content="SYW">
 <meta property="og:description" content="&amp;#8194;概述 写C#窗体程序的相关记录。本文仅仅是自己的一些见解和遇到的问题，并不完全正确！请注意！">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-27T06:07:29.322Z">
+<meta property="og:updated_time" content="2019-11-27T09:27:57.704Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/2019/11/25/C-Notes/">
@@ -247,7 +247,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-27 14:07:29" itemprop="dateModified" datetime="2019-11-27T14:07:29+08:00">2019-11-27</time>
+                <time title="修改时间：2019-11-27 17:27:57" itemprop="dateModified" datetime="2019-11-27T17:27:57+08:00">2019-11-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -281,7 +281,7 @@
   <!-- <p><span>本文标题:</span><a href="/2019/11/25/C-Notes/">C#随记</a></p>  -->
   <!-- <p><span>文章作者:</span><a href="/" title="访问 SYW 的个人博客">SYW</a></p>  -->
   <!-- <p><span>发布时间:</span>2019年11月25日 - 14:11</p> -->
-  <!-- <p><span>最后更新:</span>2019年11月27日 - 14:11</p>  -->
+  <!-- <p><span>最后更新:</span>2019年11月27日 - 17:11</p>  -->
   <p><span>原始链接:</span><a href="/2019/11/25/C-Notes/" title="C#随记">http://yoursite.com/2019/11/25/C-Notes/</a></p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)"> BY-NC-ND 4.0 </a> 转载请注明出处。</p>  
 </div>
@@ -315,8 +315,8 @@
 <h2 id="8194-线程"><a href="#8194-线程" class="headerlink" title="&#8194;线程"></a>&#8194;线程</h2></li>
 <li>创建并打开线程<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Thread Study = new Thread(new ThreadStart(StudyFunction));</span><br><span class="line">Study.Start();</span><br><span class="line">private void StudyFunction()</span><br><span class="line">&#123;</span><br><span class="line"> while(true)&#123;</span><br><span class="line">     ......</span><br><span class="line">     Thread.Sleep(1000*30)//线程睡30S</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 <li>操作线程<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Study.Suspend()//挂起，暂时不做了</span><br><span class="line">Study.Resume()//恢复，继续刚才没做完的</span><br><span class="line">Study.Abort()//停止，杀死该进程</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Study.Join()//等待Study完成主线程继续</span><br><span class="line">Study.Join(1000*30)//主线程等待30S</span><br></pre></td></tr></table></figure>
-
-</li>
+<h2 id="8194-事件"><a href="#8194-事件" class="headerlink" title="&#8194;事件"></a>&#8194;事件</h2></li>
+<li><code>MouseClick = MouseDown + MouseUp</code>（一般执行完Down/Up会自动继续执行Click）</li>
 </ul>
 
     </div>
@@ -391,7 +391,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-概述"><span class="nav-number">1.</span> <span class="nav-text"> 概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-问题"><span class="nav-number">2.</span> <span class="nav-text"> 问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-程序调试运行无反应"><span class="nav-number">2.1.</span> <span class="nav-text"> 程序调试运行无反应</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-随笔"><span class="nav-number">3.</span> <span class="nav-text"> 随笔</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-绘图"><span class="nav-number">3.1.</span> <span class="nav-text"> 绘图</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8194-控件Panel"><span class="nav-number">3.1.1.</span> <span class="nav-text"> 控件Panel</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-知识点"><span class="nav-number">4.</span> <span class="nav-text"> 知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-Time"><span class="nav-number">4.1.</span> <span class="nav-text"> Time</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8194-时间格式"><span class="nav-number">4.1.1.</span> <span class="nav-text"> 时间格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8194-时间转换"><span class="nav-number">4.1.2.</span> <span class="nav-text"> 时间转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8194-时间计算"><span class="nav-number">4.1.3.</span> <span class="nav-text"> 时间计算</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-绘图-1"><span class="nav-number">4.2.</span> <span class="nav-text"> 绘图</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8194-Graphics"><span class="nav-number">4.2.1.</span> <span class="nav-text"> Graphics</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-线程"><span class="nav-number">4.3.</span> <span class="nav-text"> 线程</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-概述"><span class="nav-number">1.</span> <span class="nav-text"> 概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-问题"><span class="nav-number">2.</span> <span class="nav-text"> 问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-程序调试运行无反应"><span class="nav-number">2.1.</span> <span class="nav-text"> 程序调试运行无反应</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-随笔"><span class="nav-number">3.</span> <span class="nav-text"> 随笔</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-绘图"><span class="nav-number">3.1.</span> <span class="nav-text"> 绘图</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8194-控件Panel"><span class="nav-number">3.1.1.</span> <span class="nav-text"> 控件Panel</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-知识点"><span class="nav-number">4.</span> <span class="nav-text"> 知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-Time"><span class="nav-number">4.1.</span> <span class="nav-text"> Time</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8194-时间格式"><span class="nav-number">4.1.1.</span> <span class="nav-text"> 时间格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8194-时间转换"><span class="nav-number">4.1.2.</span> <span class="nav-text"> 时间转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8194-时间计算"><span class="nav-number">4.1.3.</span> <span class="nav-text"> 时间计算</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-绘图-1"><span class="nav-number">4.2.</span> <span class="nav-text"> 绘图</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8194-Graphics"><span class="nav-number">4.2.1.</span> <span class="nav-text"> Graphics</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-线程"><span class="nav-number">4.3.</span> <span class="nav-text"> 线程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-事件"><span class="nav-number">4.4.</span> <span class="nav-text"> 事件</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

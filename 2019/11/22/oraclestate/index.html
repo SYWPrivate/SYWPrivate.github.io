@@ -26,7 +26,7 @@
     scheme: 'Muse',
     version: '7.5.0',
     exturl: false,
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    sidebar: {"position":"left","Muse":240,"display":"post","offset":12,"onmobile":false},
     copycode: {"enable":true,"show_result":true,"style":null},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
@@ -53,15 +53,15 @@
   };
 </script>
 
-  <meta name="description" content="&amp;#8194;基础语句&amp;#8194;概述 Oracle语句与SQL语句还是有很多不一样的地方。 都是些基础的，毕竟我也是业余的。">
+  <meta name="description" content="&amp;#8194;基础语句&amp;#8194;概述 Oracle语句与SQL语句还是有很多不一样的地方。 都是些基础的，毕竟我也是业余的。&amp;#8194;查询&amp;#8194;时间select * from 表名 where sysdate-1 &amp;lt;=Time  &#x2F;&#x2F;Time为表中，时间列，列名（此句：查找一天内数据）select * from 表名 where sysdate-1&#x2F;24 &amp;lt;=Time">
 <meta name="keywords" content="数据库">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Oracle语句">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;22&#x2F;oraclestate&#x2F;index.html">
 <meta property="og:site_name" content="SYW">
-<meta property="og:description" content="&amp;#8194;基础语句&amp;#8194;概述 Oracle语句与SQL语句还是有很多不一样的地方。 都是些基础的，毕竟我也是业余的。">
+<meta property="og:description" content="&amp;#8194;基础语句&amp;#8194;概述 Oracle语句与SQL语句还是有很多不一样的地方。 都是些基础的，毕竟我也是业余的。&amp;#8194;查询&amp;#8194;时间select * from 表名 where sysdate-1 &amp;lt;=Time  &#x2F;&#x2F;Time为表中，时间列，列名（此句：查找一天内数据）select * from 表名 where sysdate-1&#x2F;24 &amp;lt;=Time">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-27T06:14:52.228Z">
+<meta property="og:updated_time" content="2019-11-27T07:16:33.311Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/2019/11/22/oraclestate/">
@@ -247,7 +247,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-27 14:14:52" itemprop="dateModified" datetime="2019-11-27T14:14:52+08:00">2019-11-27</time>
+                <time title="修改时间：2019-11-27 15:16:33" itemprop="dateModified" datetime="2019-11-27T15:16:33+08:00">2019-11-27</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -281,7 +281,7 @@
   <!-- <p><span>本文标题:</span><a href="/2019/11/22/oraclestate/">Oracle语句</a></p>  -->
   <!-- <p><span>文章作者:</span><a href="/" title="访问 SYW 的个人博客">SYW</a></p>  -->
   <!-- <p><span>发布时间:</span>2019年11月22日 - 14:11</p> -->
-  <!-- <p><span>最后更新:</span>2019年11月27日 - 14:11</p>  -->
+  <!-- <p><span>最后更新:</span>2019年11月27日 - 15:11</p>  -->
   <p><span>原始链接:</span><a href="/2019/11/22/oraclestate/" title="Oracle语句">http://yoursite.com/2019/11/22/oraclestate/</a></p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)"> BY-NC-ND 4.0 </a> 转载请注明出处。</p>  
 </div>
@@ -300,7 +300,7 @@
       
         <h1 id="8194-基础语句"><a href="#8194-基础语句" class="headerlink" title="&#8194;基础语句"></a>&#8194;基础语句</h1><h2 id="8194-概述"><a href="#8194-概述" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h2><ul>
 <li>Oracle语句与SQL语句还是有很多不一样的地方。</li>
-<li>都是些基础的，毕竟我也是业余的。</li>
+<li>都是些基础的，毕竟我也是业余的。<h2 id="8194-查询"><a href="#8194-查询" class="headerlink" title="&#8194;查询"></a>&#8194;查询</h2><h3 id="8194-时间"><a href="#8194-时间" class="headerlink" title="&#8194;时间"></a>&#8194;时间</h3><code>select * from 表名 where sysdate-1 &lt;=Time  //Time为表中，时间列，列名（此句：查找一天内数据）</code><br><code>select * from 表名 where sysdate-1/24 &lt;=Time  //Time为表中，时间列，列名（此句：查找1H内数据）</code> </li>
 </ul>
     </div>
 
@@ -374,7 +374,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-基础语句"><span class="nav-number">1.</span> <span class="nav-text"> 基础语句</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-概述"><span class="nav-number">1.1.</span> <span class="nav-text"> 概述</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-基础语句"><span class="nav-number">1.</span> <span class="nav-text"> 基础语句</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-概述"><span class="nav-number">1.1.</span> <span class="nav-text"> 概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-查询"><span class="nav-number">1.2.</span> <span class="nav-text"> 查询</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8194-时间"><span class="nav-number">1.2.1.</span> <span class="nav-text"> 时间</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
