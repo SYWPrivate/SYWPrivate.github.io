@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo Next6.0</title>
+    <url>/2019/11/27/HexoNotes/</url>
+    <content><![CDATA[<h1 id="8194-字色"><a href="#8194-字色" class="headerlink" title="&#8194;字色"></a>&#8194;字色</h1><p>在next\source\css_variables\base.styl文件中<br><strong>$grey-dim  = #666;</strong> 这个颜色是写文章普通用字的颜色，就是写的最多的字的颜色，改成自己需要的即可。  </p><a id="more"></a>
+<ul>
+<li>例：$grey-dim  = #000;（黑色）</li>
+</ul>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>随记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>文字之美</title>
     <url>/2019/11/26/WordsCollection/</url>
     <content><![CDATA[<blockquote>
@@ -46,25 +61,23 @@
   <entry>
     <title>《数据结构与算法分析——C语言描述》--学习笔记</title>
     <url>/2019/11/26/CDataLenCode/</url>
-    <content><![CDATA[<p><strong>无聊是一件非常可怕的事情！因为它会让我想去学习。</strong></p>
+    <content><![CDATA[<p>&#8195;<strong>无聊是一件非常可怕的事情！因为它会让我想去学习。</strong></p>
 <a id="more"></a>
-<h1 id="第一章：引论"><a href="#第一章：引论" class="headerlink" title="第一章：引论"></a>第一章：引论</h1><h2 id="此书讨论的内容"><a href="#此书讨论的内容" class="headerlink" title="此书讨论的内容"></a>此书讨论的内容</h2><p><strong><center> 代码的运行时间 </center></strong></p>
-<h2 id="涉及的数学知识"><a href="#涉及的数学知识" class="headerlink" title="涉及的数学知识"></a>涉及的数学知识</h2><h3 id="指数"><a href="#指数" class="headerlink" title="指数"></a>指数</h3><h3 id="对数"><a href="#对数" class="headerlink" title="对数"></a>对数</h3><h3 id="级数"><a href="#级数" class="headerlink" title="级数"></a>级数</h3><h3 id="模运算"><a href="#模运算" class="headerlink" title="模运算"></a>模运算</h3><h3 id="证明方法"><a href="#证明方法" class="headerlink" title="证明方法"></a>证明方法</h3><ul>
+<h1 id="8194-第一章：引论"><a href="#8194-第一章：引论" class="headerlink" title="&#8194;第一章：引论"></a>&#8194;第一章：引论</h1><h2 id="8194-此书讨论的内容"><a href="#8194-此书讨论的内容" class="headerlink" title="&#8194;此书讨论的内容"></a>&#8194;此书讨论的内容</h2><p><strong><center> 代码的运行时间 </center></strong></p>
+<h2 id="8194-涉及的数学知识"><a href="#8194-涉及的数学知识" class="headerlink" title="&#8194;涉及的数学知识"></a>&#8194;涉及的数学知识</h2><h3 id="8194-指数"><a href="#8194-指数" class="headerlink" title="&#8194;指数"></a>&#8194;指数</h3><h3 id="8194-对数"><a href="#8194-对数" class="headerlink" title="&#8194;对数"></a>&#8194;对数</h3><h3 id="8194-级数"><a href="#8194-级数" class="headerlink" title="&#8194;级数"></a>&#8194;级数</h3><h3 id="8194-模运算"><a href="#8194-模运算" class="headerlink" title="&#8194;模运算"></a>&#8194;模运算</h3><h3 id="8194-证明方法"><a href="#8194-证明方法" class="headerlink" title="&#8194;证明方法"></a>&#8194;证明方法</h3><ul>
 <li><p>反证法</p>
 </li>
 <li><p>例：</p>
 <center>证明：存在无穷多个素数。</center>  
 </li>
 <li><p>数学归纳法</p>
-<h3 id="递归简论"><a href="#递归简论" class="headerlink" title="递归简论"></a>递归简论</h3><h1 id="第二章：算法分析"><a href="#第二章：算法分析" class="headerlink" title="第二章：算法分析"></a>第二章：算法分析</h1><h2 id="数学基础"><a href="#数学基础" class="headerlink" title="数学基础"></a>数学基础</h2><h2 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h2><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><h2 id="运行时间计算"><a href="#运行时间计算" class="headerlink" title="运行时间计算"></a>运行时间计算</h2><h3 id="一个简单的例子"><a href="#一个简单的例子" class="headerlink" title="一个简单的例子"></a>一个简单的例子</h3><h3 id="一般法则"><a href="#一般法则" class="headerlink" title="一般法则"></a>一般法则</h3><h3 id="最大子序列和问题的解"><a href="#最大子序列和问题的解" class="headerlink" title="最大子序列和问题的解"></a>最大子序列和问题的解</h3></li>
-<li><p><em>这里我只给出两种解*</em>  </p>
-</li>
-<li><p>次优</p>
-</li>
-<li><p>时间复杂度O(N log N )</p>
-</li>
-<li><p>递归+分治</p>
-<pre><code>#include&lt;stdio.h&gt;
+<h3 id="8194-递归简论"><a href="#8194-递归简论" class="headerlink" title="&#8194;递归简论"></a>&#8194;递归简论</h3><h1 id="8194-第二章：算法分析"><a href="#8194-第二章：算法分析" class="headerlink" title="&#8194;第二章：算法分析"></a>&#8194;第二章：算法分析</h1><h2 id="8194-数学基础"><a href="#8194-数学基础" class="headerlink" title="&#8194;数学基础"></a>&#8194;数学基础</h2><h2 id="8194-模型"><a href="#8194-模型" class="headerlink" title="&#8194;模型"></a>&#8194;模型</h2><h2 id="8194-问题"><a href="#8194-问题" class="headerlink" title="&#8194;问题"></a>&#8194;问题</h2><h2 id="8194-运行时间计算"><a href="#8194-运行时间计算" class="headerlink" title="&#8194;运行时间计算"></a>&#8194;运行时间计算</h2><h3 id="8194-一个简单的例子"><a href="#8194-一个简单的例子" class="headerlink" title="&#8194;一个简单的例子"></a>&#8194;一个简单的例子</h3><h3 id="8194-一般法则"><a href="#8194-一般法则" class="headerlink" title="&#8194;一般法则"></a>&#8194;一般法则</h3><h3 id="8194-最大子序列和问题的解"><a href="#8194-最大子序列和问题的解" class="headerlink" title="&#8194;最大子序列和问题的解"></a>&#8194;最大子序列和问题的解</h3></li>
+</ul>
+<p>&#8194;<strong>这里我只给出两种解：</strong>  </p>
+<ul>
+<li>次优</li>
+<li>时间复杂度O(N log N )</li>
+<li>递归+分治<pre><code>#include&lt;stdio.h&gt;
 void main()
 {
   int MaxSubSum(int A[], int Left, int Right);
@@ -115,8 +128,7 @@ int MaxThree(int a, int b, int c)
       return b;
   else return c;
 }  </code></pre></li>
-<li><p><strong>最优</strong></p>
-<h1 id="第三章：表、栈和队列"><a href="#第三章：表、栈和队列" class="headerlink" title="第三章：表、栈和队列"></a>第三章：表、栈和队列</h1><h2 id="抽象数据类型（ADT）"><a href="#抽象数据类型（ADT）" class="headerlink" title="抽象数据类型（ADT）"></a>抽象数据类型（ADT）</h2><h2 id="表ADT"><a href="#表ADT" class="headerlink" title="表ADT"></a>表ADT</h2><h3 id="表的简单数组实现"><a href="#表的简单数组实现" class="headerlink" title="表的简单数组实现"></a>表的简单数组实现</h3><h3 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h3><h3 id="程序设计细节"><a href="#程序设计细节" class="headerlink" title="程序设计细节"></a>程序设计细节</h3><h3 id="常见错误"><a href="#常见错误" class="headerlink" title="常见错误"></a>常见错误</h3><h3 id="双链表"><a href="#双链表" class="headerlink" title="双链表"></a>双链表</h3><h3 id="循环链表"><a href="#循环链表" class="headerlink" title="循环链表"></a>循环链表</h3><h3 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h3><h3 id="链表的游标实现"><a href="#链表的游标实现" class="headerlink" title="链表的游标实现"></a>链表的游标实现</h3><h2 id="栈ADT"><a href="#栈ADT" class="headerlink" title="栈ADT"></a>栈ADT</h2></li>
+<li><strong>最优</strong><h1 id="8194-第三章：表、栈和队列"><a href="#8194-第三章：表、栈和队列" class="headerlink" title="&#8194;第三章：表、栈和队列"></a>&#8194;第三章：表、栈和队列</h1><h2 id="8194-抽象数据类型（ADT）"><a href="#8194-抽象数据类型（ADT）" class="headerlink" title="&#8194;抽象数据类型（ADT）"></a>&#8194;抽象数据类型（ADT）</h2><h2 id="8194-表ADT"><a href="#8194-表ADT" class="headerlink" title="&#8194;表ADT"></a>&#8194;表ADT</h2><h3 id="8194-表的简单数组实现"><a href="#8194-表的简单数组实现" class="headerlink" title="&#8194;表的简单数组实现"></a>&#8194;表的简单数组实现</h3><h3 id="8194-链表"><a href="#8194-链表" class="headerlink" title="&#8194;链表"></a>&#8194;链表</h3><h3 id="8194-程序设计细节"><a href="#8194-程序设计细节" class="headerlink" title="&#8194;程序设计细节"></a>&#8194;程序设计细节</h3><h3 id="8194-常见错误"><a href="#8194-常见错误" class="headerlink" title="&#8194;常见错误"></a>&#8194;常见错误</h3><h3 id="8194-双链表"><a href="#8194-双链表" class="headerlink" title="&#8194;双链表"></a>&#8194;双链表</h3><h3 id="8194-循环链表"><a href="#8194-循环链表" class="headerlink" title="&#8194;循环链表"></a>&#8194;循环链表</h3><h3 id="8194-例子"><a href="#8194-例子" class="headerlink" title="&#8194;例子"></a>&#8194;例子</h3><h3 id="8194-链表的游标实现"><a href="#8194-链表的游标实现" class="headerlink" title="&#8194;链表的游标实现"></a>&#8194;链表的游标实现</h3><h2 id="8194-栈ADT"><a href="#8194-栈ADT" class="headerlink" title="&#8194;栈ADT"></a>&#8194;栈ADT</h2></li>
 </ul>
 ]]></content>
       <categories>
@@ -129,21 +141,21 @@ int MaxThree(int a, int b, int c)
   <entry>
     <title>C#随记</title>
     <url>/2019/11/25/C-Notes/</url>
-    <content><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><ul>
+    <content><![CDATA[<h1 id="8194-概述"><a href="#8194-概述" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h1><ul>
 <li>写C#窗体程序的相关记录。本文仅仅是自己的一些见解和遇到的问题，<strong>并不完全正确！请注意！</strong> <a id="more"></a>
-<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><h2 id="程序调试运行无反应"><a href="#程序调试运行无反应" class="headerlink" title="程序调试运行无反应"></a>程序调试运行无反应</h2></li>
+<h1 id="8194-问题"><a href="#8194-问题" class="headerlink" title="&#8194;问题"></a>&#8194;问题</h1><h2 id="8194-程序调试运行无反应"><a href="#8194-程序调试运行无反应" class="headerlink" title="&#8194;程序调试运行无反应"></a>&#8194;程序调试运行无反应</h2></li>
 <li>加载各个窗体时，有一个窗体初始化函数内，写了一个<strong>需要一直循环的函数</strong>。点击调试运行时，初始化函数一直在运行，所以界面加载不出来，看起来就毫无反应。</li>
-<li><strong>解：</strong> 写了个线程，加载时打开线程，在线程中<code>while(true){...}</code>做需要一直做的事，就行了。<h1 id="随笔"><a href="#随笔" class="headerlink" title="随笔"></a>随笔</h1><h2 id="绘图"><a href="#绘图" class="headerlink" title="绘图"></a>绘图</h2></li>
+<li><strong>解：</strong> 写了个线程，加载时打开线程，在线程中<code>while(true){...}</code>做需要一直做的事，就行了。<h1 id="8194-随笔"><a href="#8194-随笔" class="headerlink" title="&#8194;随笔"></a>&#8194;随笔</h1><h2 id="8194-绘图"><a href="#8194-绘图" class="headerlink" title="&#8194;绘图"></a>&#8194;绘图</h2></li>
 <li>Graphics绘图  </li>
 <li><strong>优点：</strong> 全面：所有线条，字体等等都由自己选择。  </li>
-<li><strong>缺点：</strong> 绘制动图有点费劲，<code>Graphics.Clear(60,255,255,255);</code>//Clear函数只能以指定颜色重绘画布Bitmap，参数1：透明度（可不写），参数234：三原色。<h3 id="控件Panel"><a href="#控件Panel" class="headerlink" title="控件Panel"></a>控件Panel</h3>&#8195;Panel外观：Backgroundimage，可以Panel.Backgroundimage=Bitmap加载图画。而且Panel.Paint事件可以在加载的背景上绘图。  <h1 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h1><h2 id="Time"><a href="#Time" class="headerlink" title="Time"></a>Time</h2><h3 id="时间格式"><a href="#时间格式" class="headerlink" title="时间格式"></a>时间格式</h3><code>DateTime TimeNow= DateTime.Now.ToString();//2019-12-12 1:12:12 Length=18</code></li>
+<li><strong>缺点：</strong> 绘制动图有点费劲，<code>Graphics.Clear(60,255,255,255);</code>//Clear函数只能以指定颜色重绘画布Bitmap，参数1：透明度（可不写），参数234：三原色。<h3 id="8194-控件Panel"><a href="#8194-控件Panel" class="headerlink" title="&#8194;控件Panel"></a>&#8194;控件Panel</h3>&#8195;Panel外观：Backgroundimage，可以Panel.Backgroundimage=Bitmap加载图画。而且Panel.Paint事件可以在加载的背景上绘图。  <h1 id="8194-知识点"><a href="#8194-知识点" class="headerlink" title="&#8194;知识点"></a>&#8194;知识点</h1><h2 id="8194-Time"><a href="#8194-Time" class="headerlink" title="&#8194;Time"></a>&#8194;Time</h2><h3 id="8194-时间格式"><a href="#8194-时间格式" class="headerlink" title="&#8194;时间格式"></a>&#8194;时间格式</h3><code>DateTime TimeNow= DateTime.Now.ToString();//2019-12-12 1:12:12 Length=18</code></li>
 <li>我们需要的是<strong>固定长度和格式</strong>的时间或字符串。<br><code>&quot;2019-12-12 01:12:12//Length=19&quot;</code>  </li>
-<li>所以<code>DateTime TimeNow= DateTime.Now.ToString(&quot;yyyy/MM/dd HH:mm:ss&quot;);//是必须的</code>  <h3 id="时间转换"><a href="#时间转换" class="headerlink" title="时间转换"></a>时间转换</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">DateTime TimeNow = DateTime.Parse(&quot;2019/12/12 01:00:01&quot;);</span><br><span class="line">label1.Text = TimeNow.ToString();//  2019/12/12 1:00:01</span><br></pre></td></tr></table></figure>
-<h3 id="时间计算"><a href="#时间计算" class="headerlink" title="时间计算"></a>时间计算</h3></li>
+<li>所以<code>DateTime TimeNow= DateTime.Now.ToString(&quot;yyyy/MM/dd HH:mm:ss&quot;);//是必须的</code>  <h3 id="8194-时间转换"><a href="#8194-时间转换" class="headerlink" title="&#8194;时间转换"></a>&#8194;时间转换</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">DateTime TimeNow = DateTime.Parse(&quot;2019/12/12 01:00:01&quot;);</span><br><span class="line">label1.Text = TimeNow.ToString();//  2019/12/12 1:00:01</span><br></pre></td></tr></table></figure>
+<h3 id="8194-时间计算"><a href="#8194-时间计算" class="headerlink" title="&#8194;时间计算"></a>&#8194;时间计算</h3></li>
 <li>时间差计算<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">DateTime TimeNow, TimePast;  // 意思意思，没赋值</span><br><span class="line">TimeSpan TimeDiffer = TimeNow.Subtract(TimePast);</span><br><span class="line">//以下都是  double</span><br><span class="line">TimeDiffer.TotalDays;</span><br><span class="line">TimeDiffer.TotalHours;</span><br><span class="line">TimeDiffer.TotalMinutes;</span><br><span class="line">TimeDiffer.TotalSeconds;</span><br></pre></td></tr></table></figure></li>
 <li>时间加减计算<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">DateTime TimeNow, TimePast;</span><br><span class="line">TimeNow=TimePast.AddHours(-4);</span><br><span class="line">TimeNow=TimePast.AddMinutes(-100);</span><br></pre></td></tr></table></figure>
-<h2 id="绘图-1"><a href="#绘图-1" class="headerlink" title="绘图"></a>绘图</h2><h3 id="Graphics"><a href="#Graphics" class="headerlink" title="Graphics"></a>Graphics</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Bitmap Background = new Bitmap(1200,680);//画板</span><br><span class="line">Graphics Grap = Graphics.FromImage(Background);//加载画板</span><br><span class="line">Grap.DrawLine(int,int,int,int);</span><br><span class="line">Grap.DrawLine(Pen pen,float x1,float y1,float x2,float y2);</span><br></pre></td></tr></table></figure>
-<h2 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h2></li>
+<h2 id="8194-绘图-1"><a href="#8194-绘图-1" class="headerlink" title="&#8194;绘图"></a>&#8194;绘图</h2><h3 id="8194-Graphics"><a href="#8194-Graphics" class="headerlink" title="&#8194;Graphics"></a>&#8194;Graphics</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Bitmap Background = new Bitmap(1200,680);//画板</span><br><span class="line">Graphics Grap = Graphics.FromImage(Background);//加载画板</span><br><span class="line">Grap.DrawLine(int,int,int,int);</span><br><span class="line">Grap.DrawLine(Pen pen,float x1,float y1,float x2,float y2);</span><br></pre></td></tr></table></figure>
+<h2 id="8194-线程"><a href="#8194-线程" class="headerlink" title="&#8194;线程"></a>&#8194;线程</h2></li>
 <li>创建并打开线程<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Thread Study = new Thread(new ThreadStart(StudyFunction));</span><br><span class="line">Study.Start();</span><br><span class="line">private void StudyFunction()</span><br><span class="line">&#123;</span><br><span class="line"> while(true)&#123;</span><br><span class="line">     ......</span><br><span class="line">     Thread.Sleep(1000*30)//线程睡30S</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 <li>操作线程<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Study.Suspend()//挂起，暂时不做了</span><br><span class="line">Study.Resume()//恢复，继续刚才没做完的</span><br><span class="line">Study.Abort()//停止，杀死该进程</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Study.Join()//等待Study完成主线程继续</span><br><span class="line">Study.Join(1000*30)//主线程等待30S</span><br></pre></td></tr></table></figure>
 
@@ -160,7 +172,7 @@ int MaxThree(int a, int b, int c)
   <entry>
     <title>Oracle语句</title>
     <url>/2019/11/22/oraclestate/</url>
-    <content><![CDATA[<h1 id="基础语句"><a href="#基础语句" class="headerlink" title="基础语句"></a>基础语句</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><ul>
+    <content><![CDATA[<h1 id="8194-基础语句"><a href="#8194-基础语句" class="headerlink" title="&#8194;基础语句"></a>&#8194;基础语句</h1><h2 id="8194-概述"><a href="#8194-概述" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h2><ul>
 <li>Oracle语句与SQL语句还是有很多不一样的地方。</li>
 <li>都是些基础的，毕竟我也是业余的。</li>
 </ul>]]></content>
@@ -174,7 +186,7 @@ int MaxThree(int a, int b, int c)
   <entry>
     <title>解数独</title>
     <url>/2019/11/22/shudu/</url>
-    <content><![CDATA[<p>主要分享一下解数独的源代码，用到了比较重要的回溯算法！</p>
+    <content><![CDATA[<p>&#8195;主要分享一下解数独的源代码，用到了比较重要的回溯算法！</p>
 <a id="more"></a>
 <center>程序界面</center> 
 
@@ -194,11 +206,11 @@ int MaxThree(int a, int b, int c)
   <entry>
     <title>Windows指令</title>
     <url>/2019/11/20/runwindows/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><ul>
+    <content><![CDATA[<h1 id="8194-前言"><a href="#8194-前言" class="headerlink" title="&#8194;前言"></a>&#8194;前言</h1><ul>
 <li><p>本文主要关于Windows相关指令，<strong>Win+R</strong>打开输入框。输入以下指令即可打开不同功能。  </p>
-<h1 id="环回网络"><a href="#环回网络" class="headerlink" title="环回网络"></a>环回网络</h1></li>
+<h1 id="8194-环回网络"><a href="#8194-环回网络" class="headerlink" title="&#8194;环回网络"></a>&#8194;环回网络</h1></li>
 <li><p>hdwwiz  </p>
-<h1 id="远程桌面"><a href="#远程桌面" class="headerlink" title="远程桌面"></a>远程桌面</h1></li>
+<h1 id="8194-远程桌面"><a href="#8194-远程桌面" class="headerlink" title="&#8194;远程桌面"></a>&#8194;远程桌面</h1></li>
 <li><p>mstsc</p>
 </li>
 </ul>]]></content>
@@ -236,16 +248,16 @@ int MaxThree(int a, int b, int c)
   <entry>
     <title>Windows窗体应用程序</title>
     <url>/2019/11/19/Sensorproject/</url>
-    <content><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>&#8195;这是一个被写的尽量<strong>全面而浅显</strong>的<strong>完整的工程项目实例</strong>。<br>&#8195;<strong>语言：C#<br>&#8195;框架：Windows窗体应用程序<br>&#8195;通讯：串口通信（协议：Modbus）<br>&#8195;数据库：Oracle。</strong>    </p>
+    <content><![CDATA[<h1 id="8194-概述"><a href="#8194-概述" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h1><p>&#8195;这是一个被写的尽量<strong>全面而浅显</strong>的<strong>完整的工程项目实例</strong>。<br>&#8195;<strong>语言：C#<br>&#8195;框架：Windows窗体应用程序<br>&#8195;通讯：串口通信（协议：Modbus）<br>&#8195;数据库：Oracle。</strong>    </p>
 <a id="more"></a>
 <p>&#8195;这个项目实现了与一个或多个自动化设备通信，自动的读取、修改设备的当前数据、状态，并将需要保存的数据放入Oracle数据库，可以按要求调出查看。</p>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>&#8195;写一个完整的项目，不仅需要<strong>浅显易懂的变量名</strong>，而且需要<strong>非常清晰的错误文档</strong>。这两点非常非常重要！！！在写程序之前，有必要先讨论一下这两点。 </p>
+<h1 id="8194-前言"><a href="#8194-前言" class="headerlink" title="&#8194;前言"></a>&#8194;前言</h1><p>&#8195;写一个完整的项目，不仅需要<strong>浅显易懂的变量名</strong>，而且需要<strong>非常清晰的错误文档</strong>。这两点非常非常重要！！！在写程序之前，有必要先讨论一下这两点。 </p>
 <p>&#8195;1. 变量名<br>&#8195;举例：GetHexStrFrombytes(byte[] byteSource) {…}<br>&#8195;这个函数的作用是：将传入的字节数组转换成<strong>十六进制字符串</strong>（如：”0106A3C2FF002FE2”）。<br>&#8195;那么显而易见的：GetBytesFromHexStr(string strSource) {…}<br>&#8195;这个函数的作用就是：将传入的十六进制字符串转换为字节数组。<br>&#8195;每写一个函数，都需要在旁边<strong>注释清楚</strong>这个函数的功能。  </p>
 <p>&#8195;2. <strong>错误文档</strong>：<br>&#8195;原因：一个工程项目的线程不少，功能模块更多，正常调试很多问题根本发现不了。<br>&#8195;比如通讯过程中串口断开，是因为哪个线程，哪个功能，还是串口松了，还是设备问题。你很难调试的明白。<br>&#8195;方法：<br>&#8195;1. <strong>给各个线程及功能添加特有Tags，catch异常时，将Tags传入写异常函数(将异常字符串写入List&lt;string&gt; StrlistException)。</strong><br>&#8195;2. <strong>各个线程需要调用同一函数写异常，否则程序易爆炸。</strong><br>&#8195;3. <strong>不同线程可用数字标记，这样调试时（写异常函数）可指定线程写异常，方便追踪。</strong><br>&#8195;4. <strong>关于异常：请加上足够多的修饰（例如：当时的输入、时间、相关的全局变量值等等）。</strong><br>&#8195;上述这些内容对于一个完整工程真的很重要！！！切记。   </p>
-<h1 id="主函数"><a href="#主函数" class="headerlink" title="主函数"></a>主函数</h1><p>&#8195;概述：基本是废话。<br>&#8195;主函数内容相对简单，页面布局也是个人喜好。<br>&#8195;功能：切换页面（如果只用一个界面都不用切；如果要切，百度一下，很简单）。  </p>
+<h1 id="8194-主函数"><a href="#8194-主函数" class="headerlink" title="&#8194;主函数"></a>&#8194;主函数</h1><p>&#8195;概述：基本是废话。<br>&#8195;主函数内容相对简单，页面布局也是个人喜好。<br>&#8195;功能：切换页面（如果只用一个界面都不用切；如果要切，百度一下，很简单）。  </p>
 <h2 id="8195-副主函数（副窗体）"><a href="#8195-副主函数（副窗体）" class="headerlink" title="&#8195;副主函数（副窗体）"></a>&#8195;副主函数（副窗体）</h2><p>&#8195;<strong>如果你没有副窗体，那这就是你的主窗体！</strong><br>&#8195;在窗体上放上你需要的控件，选择合适的事件，编写代码。  </p>
-<h1 id="串口通信"><a href="#串口通信" class="headerlink" title="串口通信"></a>串口通信</h1><h2 id="概述-1"><a href="#概述-1" class="headerlink" title="概述"></a>概述</h2><p>&#8195;物理通信方式（不重要）：<a href="https://baike.baidu.com/item/RS-232" target="_blank" rel="noopener"><strong>RS-232</strong></a>全双工通信。<br>&#8195;通讯协议（Modbus）:RTU模式，自动化领域常用。（下面会简单介绍怎么用）<br>&#8195;<strong>程序通信方式</strong>：收发分开。</p>
-<h2 id="通信报文"><a href="#通信报文" class="headerlink" title="通信报文"></a>通信报文</h2><ul>
+<h1 id="8194-串口通信"><a href="#8194-串口通信" class="headerlink" title="&#8194;串口通信"></a>&#8194;串口通信</h1><h2 id="8194-概述-1"><a href="#8194-概述-1" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h2><p>&#8195;物理通信方式（不重要）：<a href="https://baike.baidu.com/item/RS-232" target="_blank" rel="noopener"><strong>RS-232</strong></a>全双工通信。<br>&#8195;通讯协议（Modbus）:RTU模式，自动化领域常用。（下面会简单介绍怎么用）<br>&#8195;<strong>程序通信方式</strong>：收发分开。</p>
+<h2 id="8194-通信报文"><a href="#8194-通信报文" class="headerlink" title="&#8194;通信报文"></a>&#8194;通信报文</h2><ul>
 <li>写入串口（发）：设备地址+功能代码+数据+<a href="https://baike.baidu.com/item/CRC/1453359" target="_blank" rel="noopener">CRC</a>校验<br>&#8195;设备地址：0x00~0xF7(可连接248个设备)，假设接入一个设备（地址01）。<br>&#8195;功能代码：0x01~0xFF。假设：01（读数据）、02（写数据），这个需要通信协议。<br>&#8195;数据：寄存器首地址+寄存器数量。这就相当于数组首地址（2 byte）+读取长度（2 byte）。比如：00 FF + 00 01（从地址为255的寄存器开始读一个寄存器数据）。<br>&#8195;CRC校验：占两个字节（2 byte）。可以自己百度下相关内容。下面是我百度后自己写的一个。将：01 01 00 FF 00 01 传入CRC，算出校验码：CD FA。<br>所以，写入串口：01 01 <strong>00 FF 00 01</strong> CD FA</li>
 <li>读取数据（收）：设备地址+功能代码+数据+CRC<br>&#8195;这里唯一不同的就是数据：数据字节数+数据。例如：01 + 01 。<br>&#8195;就是返回了一个字节数据，返回的数据为：0x01，就是返回值为：1 。<br>&#8195;所以返回的报文是：01 01 <strong>01 01</strong> 90 48<br>&#8195;<strong>加粗部分为数据</strong></li>
 </ul>
@@ -268,18 +280,18 @@ int MaxThree(int a, int b, int c)
           m = res &gt;&gt; 8;
           result[1] = (byte)m;
           return result;
-      }</code></pre><h2 id="通信实现"><a href="#通信实现" class="headerlink" title="通信实现"></a>通信实现</h2><h3 id="概述-2"><a href="#概述-2" class="headerlink" title="概述"></a>概述</h3><p>&#8195;通信其实一般都不会采用：发送报文–等待接收–接收到–程序继续，这种方式，我也不多说。<br>&#8195;通信的一般方法是：<br><code>public List&lt;string&gt; arrDataToPort = null, arrDataFromPort = null;</code><br>&#8195;发送：创建发送报文线程（DataSend()），不停检查arrDataToPort是否为空，不为空，则lock(arrDataToPort),发出报文，清空arrDataToPort。<br>&#8195;有要发送的报文，就lock(arrDataToPort)，写入报文即可。<br>&#8195;接收：接收自有<strong>接收响应事件</strong>，这里的重点是：将接收到的所有内容放到一个<a href="https://baike.baidu.com/item/StringBuilder" target="_blank" rel="noopener">StringBuilder</a> strData中，然后处理字符串即可。（这个在处理接收数据中再详细讨论）</p>
-<h1 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h1><p>&#8195;？？？</p>
-<h1 id="绘图"><a href="#绘图" class="headerlink" title="绘图"></a>绘图</h1><p>&#8195;：：：</p>
-<h1 id="通用"><a href="#通用" class="headerlink" title="通用"></a>通用</h1><p>&#8195;：：</p>
+      }</code></pre><h2 id="8194-通信实现"><a href="#8194-通信实现" class="headerlink" title="&#8194;通信实现"></a>&#8194;通信实现</h2><h3 id="8194-概述-2"><a href="#8194-概述-2" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h3><p>&#8195;通信其实一般都不会采用：发送报文–等待接收–接收到–程序继续，这种方式，我也不多说。<br>&#8195;通信的一般方法是：<br><code>public List&lt;string&gt; arrDataToPort = null, arrDataFromPort = null;</code><br>&#8195;发送：创建发送报文线程（DataSend()），不停检查arrDataToPort是否为空，不为空，则lock(arrDataToPort),发出报文，清空arrDataToPort。<br>&#8195;有要发送的报文，就lock(arrDataToPort)，写入报文即可。<br>&#8195;接收：接收自有<strong>接收响应事件</strong>，这里的重点是：将接收到的所有内容放到一个<a href="https://baike.baidu.com/item/StringBuilder" target="_blank" rel="noopener">StringBuilder</a> strData中，然后处理字符串即可。（这个在处理接收数据中再详细讨论）</p>
+<h1 id="8194-数据库"><a href="#8194-数据库" class="headerlink" title="&#8194;数据库"></a>&#8194;数据库</h1><p>&#8195;？？？</p>
+<h1 id="8194-绘图"><a href="#8194-绘图" class="headerlink" title="&#8194;绘图"></a>&#8194;绘图</h1><p>&#8195;：：：</p>
+<h1 id="8194-通用"><a href="#8194-通用" class="headerlink" title="&#8194;通用"></a>&#8194;通用</h1><p>&#8195;：：</p>
 ]]></content>
       <categories>
         <category>C#</category>
       </categories>
       <tags>
+        <tag>数据库</tag>
         <tag>C#窗体程序</tag>
         <tag>通讯</tag>
-        <tag>数据库</tag>
         <tag>绘图</tag>
       </tags>
   </entry>
