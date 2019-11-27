@@ -3,12 +3,22 @@
   <entry>
     <title>文字之美</title>
     <url>/2019/11/26/WordsCollection/</url>
-    <content><![CDATA[<p><strong>记录下别人的文采，打磨自己的鲁钝。</strong></p>
+    <content><![CDATA[<blockquote>
+<p align="left">要把所有的夜归还给星河，</p><p align="left">把所有的春光归还给疏疏篱落，</p><p align="left">把所有的慵慵沉迷与不前，归还给过去的我。</p><p align="left">明日之我，胸中有丘壑，立马振山河。</p><p align="right">---德卡先生的信箱</p>  
+</blockquote>
 <a id="more"></a>
 <h1 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h1><blockquote>
 <p>&#8195;开国大典的时候飞机不够。您说飞两遍，现在再也不需要飞两遍了，要多少有多少。这盛世，如您所愿吧，山河犹在，国泰民安。当年送您的十里长安街，如今已是十里繁荣。</p>
 <p align="right">致：周总理</p>  
-<p align="right">---佚名</p>  
+<p align="right">---佚名</p>   
+</blockquote>
+<blockquote>
+<p>&#8195;为天地立心，为生民立命，为往圣继绝学，为万世开太平。</p>
+<p align="right">---张载</p>   
+</blockquote>
+<blockquote>
+<p>&#8195;成功虽无把握，成仁却有决心。</p>
+<p align="right">---黄景升</p>
 </blockquote>
 <h1 id="灵魂"><a href="#灵魂" class="headerlink" title="灵魂"></a>灵魂</h1><blockquote>
 <p>&#8195;我所有的自负都来自我的自卑，所有的英雄气概都来自于我内心的软弱，所有的振振有词都因为心中满是疑惑。我假装无情，其实痛恨自己深情。我以为人生的意义在于四处游荡流亡，其实只是掩饰至今没有找到愿意驻足的地方。</p>
@@ -16,7 +26,15 @@
 </blockquote>
 <blockquote>
 <p>&#8195;一生中总会遇到这样的时候，你的内心已经兵荒马乱天翻地覆了，可是在别人看来你只是比平时沉默了一点，没人会觉得奇怪。这种战争，注定单枪匹马。</p>
-<p align="right">---白岩松《痛并快乐着》</p>   </blockquote>
+<p align="right">---白岩松《痛并快乐着》</p>   
+</blockquote>
+<blockquote>
+<p>&#8195;这些年一直在提醒自己一件事情，千万不要感动自己，大部分人看似努力，不过是愚蠢导致的。什么熬夜看书到天亮，连续几天睡几个小时，多久没放假案了。如果这些东西也值得炫耀，那么富士康流水线上任何一个人都比你努力的多了。人难免天生有自怜情绪，唯有时刻保持清醒，才能看清真正的价值在哪里。  </p>
+<p align="right">---于宙《我们这一代人的困惑》</p> 
+</blockquote>
+<h1 id="爱情"><a href="#爱情" class="headerlink" title="爱情"></a>爱情</h1><blockquote>
+<p>&#8195;我希望有个如你一般的人，如山间清爽的风，如古城温暖的光。从清晨到傍晚，由山野到书房。只要最后是你，就好。</p>
+<p align="right">---《从你的全世界路过》</p> </blockquote>
 ]]></content>
       <categories>
         <category>文学</category>
@@ -30,8 +48,12 @@
     <url>/2019/11/26/CDataLenCode/</url>
     <content><![CDATA[<p><strong>无聊是一件非常可怕的事情！因为它会让我想去学习。</strong></p>
 <a id="more"></a>
-<h1 id="第一章：引论"><a href="#第一章：引论" class="headerlink" title="第一章：引论"></a>第一章：引论</h1><h2 id="此书讨论的内容"><a href="#此书讨论的内容" class="headerlink" title="此书讨论的内容"></a>此书讨论的内容</h2><h2 id="涉及的数学知识"><a href="#涉及的数学知识" class="headerlink" title="涉及的数学知识"></a>涉及的数学知识</h2><h3 id="指数"><a href="#指数" class="headerlink" title="指数"></a>指数</h3><h3 id="对数"><a href="#对数" class="headerlink" title="对数"></a>对数</h3><h3 id="级数"><a href="#级数" class="headerlink" title="级数"></a>级数</h3><h3 id="模运算"><a href="#模运算" class="headerlink" title="模运算"></a>模运算</h3><h3 id="证明方法"><a href="#证明方法" class="headerlink" title="证明方法"></a>证明方法</h3><ul>
+<h1 id="第一章：引论"><a href="#第一章：引论" class="headerlink" title="第一章：引论"></a>第一章：引论</h1><h2 id="此书讨论的内容"><a href="#此书讨论的内容" class="headerlink" title="此书讨论的内容"></a>此书讨论的内容</h2><p><strong><center> 代码的运行时间 </center></strong></p>
+<h2 id="涉及的数学知识"><a href="#涉及的数学知识" class="headerlink" title="涉及的数学知识"></a>涉及的数学知识</h2><h3 id="指数"><a href="#指数" class="headerlink" title="指数"></a>指数</h3><h3 id="对数"><a href="#对数" class="headerlink" title="对数"></a>对数</h3><h3 id="级数"><a href="#级数" class="headerlink" title="级数"></a>级数</h3><h3 id="模运算"><a href="#模运算" class="headerlink" title="模运算"></a>模运算</h3><h3 id="证明方法"><a href="#证明方法" class="headerlink" title="证明方法"></a>证明方法</h3><ul>
 <li><p>反证法</p>
+</li>
+<li><p>例：</p>
+<center>证明：存在无穷多个素数。</center>  
 </li>
 <li><p>数学归纳法</p>
 <h3 id="递归简论"><a href="#递归简论" class="headerlink" title="递归简论"></a>递归简论</h3><h1 id="第二章：算法分析"><a href="#第二章：算法分析" class="headerlink" title="第二章：算法分析"></a>第二章：算法分析</h1><h2 id="数学基础"><a href="#数学基础" class="headerlink" title="数学基础"></a>数学基础</h2><h2 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h2><h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><h2 id="运行时间计算"><a href="#运行时间计算" class="headerlink" title="运行时间计算"></a>运行时间计算</h2><h3 id="一个简单的例子"><a href="#一个简单的例子" class="headerlink" title="一个简单的例子"></a>一个简单的例子</h3><h3 id="一般法则"><a href="#一般法则" class="headerlink" title="一般法则"></a>一般法则</h3><h3 id="最大子序列和问题的解"><a href="#最大子序列和问题的解" class="headerlink" title="最大子序列和问题的解"></a>最大子序列和问题的解</h3></li>
@@ -299,17 +321,6 @@ int MaxThree(int a, int b, int c)
 <p><strong><p align="right">——村上春树</p></strong>  </p>
 </blockquote>
 ]]></content>
-      <categories>
-        <category>文学</category>
-      </categories>
-      <tags>
-        <tag>让人倾心的文字</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>&lt;p align=&quot;left&quot;&gt;要把所有的夜归还给星河，&lt;/p&gt;&lt;p align=&quot;left&quot;&gt;把所有的春光归还给疏疏篱落，&lt;/p&gt;&lt;p align=&quot;left&quot;&gt;把所有的慵慵沉迷与不前，归还给过去的我。&lt;/p&gt;&lt;p align=&quot;left&quot;&gt;明日之我，胸中有丘壑，立马振山河。&lt;p align=&quot;right&quot;&gt;------德卡先生的信箱&lt;/p&gt;</title>
-    <url>/2019/11/13/hello-world/</url>
-    <content><![CDATA[]]></content>
       <categories>
         <category>文学</category>
       </categories>
