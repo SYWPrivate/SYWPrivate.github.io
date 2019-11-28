@@ -10,6 +10,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
   <link rel="alternate" href="/atom.xml" title="SYW" type="application/atom+xml">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -25,9 +27,9 @@
     root: '/',
     scheme: 'Muse',
     version: '7.5.0',
-    exturl: false,
+    exturl: true,
     sidebar: {"position":"left","Muse":240,"display":"post","offset":12,"onmobile":false},
-    copycode: {"enable":true,"show_result":true,"style":null},
+    copycode: {"enable":true,"show_result":true,"style":"mac"},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: false,
@@ -208,6 +210,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
 
 
     <main class="main">
@@ -235,9 +238,9 @@
       <meta itemprop="name" content="SYW">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
+        <h2 class="post-title" itemprop="name headline">
           改变谷歌背景
-        </h1>
+        </h2>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -319,8 +322,9 @@
         
     </div>
       <footer class="post-footer">
+          
           <div class="post-tags">
-              <a href="/tags/%E9%9A%8F%E8%AE%B0/" rel="tag"># 随记</a>
+              <a href="/tags/%E9%9A%8F%E8%AE%B0/" rel="tag"><i class="fa fa-tag"></i> 随记</a>
           </div>
 
         
@@ -493,6 +497,15 @@
 
 
   
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
 
 
 

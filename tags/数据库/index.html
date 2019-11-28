@@ -10,6 +10,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
   <link rel="alternate" href="/atom.xml" title="SYW" type="application/atom+xml">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -25,9 +27,9 @@
     root: '/',
     scheme: 'Muse',
     version: '7.5.0',
-    exturl: false,
+    exturl: true,
     sidebar: {"position":"left","Muse":240,"display":"post","offset":12,"onmobile":false},
-    copycode: {"enable":true,"show_result":true,"style":null},
+    copycode: {"enable":true,"show_result":true,"style":"mac"},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: false,
@@ -198,6 +200,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
 
 
     <main class="main">
@@ -214,14 +217,14 @@
   <div class="post-block">
     <div class="posts-collapse">
       <div class="collection-title">
-        <h1 class="collection-header">数据库
+        <h2 class="collection-header">数据库
           <small>标签</small>
-        </h1>
+        </h2>
       </div>
 
       
     <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
+      <h2 class="collection-header">2019</h2>
     </div>
 
   <article itemscope itemtype="http://schema.org/Article">
@@ -235,11 +238,11 @@
         </time>
       </div>
 
-      <h2 class="post-title">
+      <h3 class="post-title">
           <a class="post-title-link" href="/2019/11/22/oraclestate/" itemprop="url">
             <span itemprop="name">Oracle语句</span>
           </a>
-      </h2>
+      </h3>
 
     </header>
   </article>
@@ -255,11 +258,11 @@
         </time>
       </div>
 
-      <h2 class="post-title">
+      <h3 class="post-title">
           <a class="post-title-link" href="/2019/11/19/Sensorproject/" itemprop="url">
             <span itemprop="name">Windows窗体应用程序</span>
           </a>
-      </h2>
+      </h3>
 
     </header>
   </article>
@@ -416,6 +419,15 @@
 
 
   
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
 
 
 
