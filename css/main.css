@@ -1179,7 +1179,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #3b69ff;
+  background: #8fff22;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2413,8 +2413,8 @@ embed {
   }
 }
 .main-inner {
-  background: #f5f5dc;
-  opacity: 0.8;
+  background: #f0f0f0;
+  opacity: 0.9;
 }
 .menu-item-active a,
 .menu .menu-item a:hover,
@@ -2483,7 +2483,8 @@ embed {
   width: 320px;
 }
 body {
-  background-image: url("https://w.wallhaven.cc/full/4l/wallhaven-4lewzl.jpg");
+  background-image: url("/images/wallhavenback.png");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
