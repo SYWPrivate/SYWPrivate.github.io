@@ -279,11 +279,11 @@
       <category term="C#" scheme="http://yoursite.com/categories/C/"/>
     
     
-      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
       <category term="C#窗体程序" scheme="http://yoursite.com/tags/C-%E7%AA%97%E4%BD%93%E7%A8%8B%E5%BA%8F/"/>
     
       <category term="通讯" scheme="http://yoursite.com/tags/%E9%80%9A%E8%AE%AF/"/>
+    
+      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
       <category term="绘图" scheme="http://yoursite.com/tags/%E7%BB%98%E5%9B%BE/"/>
     
