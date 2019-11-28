@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-28T03:46:58.399Z</updated>
+  <updated>2019-11-28T06:46:02.054Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C语言随记</title>
+    <link href="http://yoursite.com/2019/11/28/BaseCnotes/"/>
+    <id>http://yoursite.com/2019/11/28/BaseCnotes/</id>
+    <published>2019-11-28T06:26:45.000Z</published>
+    <updated>2019-11-28T06:46:02.054Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="8194-概述"><a href="#8194-概述" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h1><p>&#8195;<strong>编程基础，随时记录。</strong> </p><a id="more"></a><h1 id="8194-基础"><a href="#8194-基础" class="headerlink" title="&#8194;基础"></a>&#8194;基础</h1><h2 id="8194-存储单位"><a href="#8194-存储单位" class="headerlink" title="&#8194;存储单位"></a>&#8194;存储单位</h2><ul><li><strong>最小：</strong> 一个二进制位：bit (b)</li><li><strong>单位：</strong> 一个字节：Byte (B) 1B=8b</li><li>千字节：KB = 2^10 B</li><li>兆字节：MB = 2^20 B</li><li>吉字节：GB = 2^30 B</li><li>太字节：TB = 2^40 B</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;8194-概述&quot;&gt;&lt;a href=&quot;#8194-概述&quot; class=&quot;headerlink&quot; title=&quot;&amp;#8194;概述&quot;&gt;&lt;/a&gt;&amp;#8194;概述&lt;/h1&gt;&lt;p&gt;&amp;#8195;&lt;strong&gt;编程基础，随时记录。&lt;/strong&gt; &lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="C" scheme="http://yoursite.com/categories/C/"/>
+    
+    
+      <category term="随记" scheme="http://yoursite.com/tags/%E9%9A%8F%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>改变谷歌背景</title>
@@ -279,11 +302,11 @@
       <category term="C#" scheme="http://yoursite.com/categories/C/"/>
     
     
+      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
       <category term="C#窗体程序" scheme="http://yoursite.com/tags/C-%E7%AA%97%E4%BD%93%E7%A8%8B%E5%BA%8F/"/>
     
       <category term="通讯" scheme="http://yoursite.com/tags/%E9%80%9A%E8%AE%AF/"/>
-    
-      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
       <category term="绘图" scheme="http://yoursite.com/tags/%E7%BB%98%E5%9B%BE/"/>
     
