@@ -1179,7 +1179,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #8fff22;
+  background: #16da9d;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2483,7 +2483,7 @@ embed {
   width: 320px;
 }
 body {
-  background-image: url("/images/wallhavenback.png");
+  background-image: url("/images/WallBack.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
