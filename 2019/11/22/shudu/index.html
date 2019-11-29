@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/myweb.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
-  <link rel="alternate" href="/atom.xml" title="SYW" type="application/atom+xml">
+  <link rel="alternate" href="/atom.xml" title="界外的博客" type="application/atom+xml">
   <meta http-equiv="Cache-Control" content="no-transform">
   <meta http-equiv="Cache-Control" content="no-siteapp">
 
@@ -17,7 +17,8 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-mac-osx.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-loading-bar.min.css">
   <script src="/lib/pace/pace.min.js"></script>
 
 
@@ -32,9 +33,9 @@
     copycode: {"enable":true,"show_result":true,"style":"mac"},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
-    fancybox: false,
-    mediumzoom: false,
-    lazyload: false,
+    fancybox: true,
+    mediumzoom: true,
+    lazyload: true,
     pangu: false,
     algolia: {
       appID: '',
@@ -60,7 +61,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="解数独">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;22&#x2F;shudu&#x2F;index.html">
-<meta property="og:site_name" content="SYW">
+<meta property="og:site_name" content="界外的博客">
 <meta property="og:description" content="&amp;#8195;主要分享一下解数独的源代码，用到了比较重要的回溯算法！">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;22&#x2F;shudu&#x2F;1.png">
@@ -82,7 +83,7 @@
   };
 </script>
 
-  <title>解数独 | SYW</title>
+  <title>解数独 | 界外的博客</title>
   
 
 
@@ -126,7 +127,7 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">SYW</span>
+        <span class="site-title">界外的博客</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -226,12 +227,12 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="SYW">
-      <meta itemprop="description" content="">
+      <meta itemprop="name" content="界外">
+      <meta itemprop="description" content="<center>爱你所爱，行你所行，</center><center>顺从己心，无问西东。</center>">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="SYW">
+      <meta itemprop="name" content="界外的博客">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
@@ -284,7 +285,7 @@
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <!-- <p><span>本文标题:</span><a href="/2019/11/22/shudu/">解数独</a></p>  -->
-  <!-- <p><span>文章作者:</span><a href="/" title="访问 SYW 的个人博客">SYW</a></p>  -->
+  <!-- <p><span>文章作者:</span><a href="/" title="访问 界外 的个人博客">界外</a></p>  -->
   <!-- <p><span>发布时间:</span>2019年11月22日 - 13:11</p> -->
   <!-- <p><span>最后更新:</span>2019年11月28日 - 16:11</p>  -->
   <p><span>原始链接:</span><a href="/2019/11/22/shudu/" title="解数独">http://yoursite.com/2019/11/22/shudu/</a></p>
@@ -307,7 +308,7 @@
 <a id="more"></a>
 <center>程序界面</center> 
 
-<div align="center"><img width="400" height="400" src="/2019/11/22/shudu/1.png"></div>  
+<div align="center"><img width="400" height="400" data-src="/2019/11/22/shudu/1.png"></div>  
 
 <p>源代码：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br></pre></td><td class="code"><pre><span class="line">namespace shudu</span><br><span class="line">&#123;</span><br><span class="line">    public partial class form : Form</span><br><span class="line">    &#123;</span><br><span class="line">        public form()</span><br><span class="line">        &#123;</span><br><span class="line">            InitializeComponent();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        private void Form1_Load(object sender, EventArgs e)</span><br><span class="line">        &#123;</span><br><span class="line">            data.ColumnCount = 9;</span><br><span class="line">            data.RowCount = 9;</span><br><span class="line">            for (int i = 0; i &lt; 9; i++)</span><br><span class="line">            &#123;</span><br><span class="line">                data.Columns[i].Width = 41;</span><br><span class="line">                data.Rows[i].Height = 40;</span><br><span class="line">            &#125;</span><br><span class="line">            for (int i = 0; i &lt; 9; i++)</span><br><span class="line">            &#123;</span><br><span class="line">                for (int j = 0; j &lt; 9; j++)</span><br><span class="line">                &#123;</span><br><span class="line">                    data.Rows[i].Cells[j].Value = &quot;&quot;;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        private void button1_Click(object sender, EventArgs e)</span><br><span class="line">        &#123;</span><br><span class="line"></span><br><span class="line">            for (int i = 0; i &lt; 9; i++)</span><br><span class="line">                for (int j = 0; j &lt; 9; j++)</span><br><span class="line">                &#123;</span><br><span class="line">                    if (data.Rows[i].Cells[j].Value.ToString() == &quot;&quot;)</span><br><span class="line">                        data.Rows[i].Cells[j].Value = &quot;.&quot;;</span><br><span class="line">                &#125;</span><br><span class="line">            solveSudoku();</span><br><span class="line">        &#125;</span><br><span class="line">        bool solved = false;</span><br><span class="line">        private void solveSudoku()</span><br><span class="line">        &#123;</span><br><span class="line">            recursive(0, 0);</span><br><span class="line">        &#125;</span><br><span class="line">        private void recursive(int row, int col)</span><br><span class="line">        &#123;</span><br><span class="line">            if (data.Rows[row].Cells[col].Value.ToString()==&quot;.&quot;)</span><br><span class="line">            &#123;</span><br><span class="line">                int i = 1;</span><br><span class="line">                for (; i &lt; 10; i++)</span><br><span class="line">                    if (TF(i, row, col))</span><br><span class="line">                    &#123;</span><br><span class="line">                        write(i, row, col);</span><br><span class="line">                        writenext(row, col);</span><br><span class="line">                        if (!solved) del( row, col);</span><br><span class="line">                    &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            else writenext( row, col);</span><br><span class="line">        &#125;</span><br><span class="line">        private  bool TF( int num, int row, int col)</span><br><span class="line">        &#123;</span><br><span class="line">            int rowindex = row / 3, colindex = col / 3;</span><br><span class="line">            for (int i = 0; i &lt; 3; i++)</span><br><span class="line">                for (int j = 0; j &lt; 3; j++)</span><br><span class="line">                &#123;</span><br><span class="line">                    if (data.Rows[rowindex * 3 + i].Cells[colindex * 3 + j].Value.ToString() == num.ToString())</span><br><span class="line">                        return false;</span><br><span class="line">                &#125;</span><br><span class="line">            for (int i = 0; i &lt; 9; i++)</span><br><span class="line">            &#123;</span><br><span class="line">                if (data.Rows[row].Cells[i].Value.ToString() == num.ToString() || data.Rows[i].Cells[col].Value.ToString() == num.ToString())</span><br><span class="line">                    return false;</span><br><span class="line">            &#125;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">        private void write( int num, int row, int col)</span><br><span class="line">        &#123;</span><br><span class="line">            data.Rows[row].Cells[col].Value = num.ToString();</span><br><span class="line">        &#125;</span><br><span class="line">        private  void writenext(int row, int col)</span><br><span class="line">        &#123;</span><br><span class="line">            if (row == 8 &amp;&amp; col == 8) solved = true;</span><br><span class="line">            else if (col &lt; 8) recursive(row, col + 1);</span><br><span class="line">            else if (row &lt; 8) recursive(row + 1, 0);</span><br><span class="line">        &#125;</span><br><span class="line">        private void del(int row, int col)</span><br><span class="line">        &#123;</span><br><span class="line">            data.Rows[row].Cells[col].Value = &quot;.&quot;;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        private void button2_Click(object sender, EventArgs e)</span><br><span class="line">        &#123;</span><br><span class="line">            solved = false;</span><br><span class="line">            for (int i = 0; i &lt; 9; i++)</span><br><span class="line">            &#123;</span><br><span class="line">                for (int j = 0; j &lt; 9; j++)</span><br><span class="line">                &#123;</span><br><span class="line">                    data.Rows[i].Cells[j].Value = &quot;&quot;;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -391,10 +392,10 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="SYW"
+    <img class="site-author-image" itemprop="image" alt="界外"
       src="/images/avatar.png">
-  <p class="site-author-name" itemprop="name">SYW</p>
-  <div class="site-description" itemprop="description"></div>
+  <p class="site-author-name" itemprop="name">界外</p>
+  <div class="site-description" itemprop="description"><center>爱你所爱，行你所行，</center><center>顺从己心，无问西东。</center></div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -424,6 +425,14 @@
       <i class="fa fa-rss"></i>RSS
     </a>
   </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL1NZV1ByaXZhdGU=" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;SYWPrivate"><i class="fa fa-fw fa-github"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOnNoYW55YW53ZW4wMTBAMTYzLmNvbQ==" title="E-Mail → mailto:shanyanwen010@163.com"><i class="fa fa-fw fa-envelope"></i></span>
+      </span>
+  </div>
 
 
 
@@ -448,7 +457,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">SYW</span>
+  <span class="author" itemprop="copyrightHolder">界外</span>
 </div>
 
         
@@ -493,6 +502,10 @@
   
   <script color='0,0,10' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
   <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script>
@@ -532,6 +545,16 @@
   
 
   
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout: 3000,
+        priority: true,
+        ignores: [uri => uri.includes('#'),uri => uri == 'http://yoursite.com/2019/11/22/shudu/',]
+      });
+      });
+  </script>
 
 </body>
 </html>
