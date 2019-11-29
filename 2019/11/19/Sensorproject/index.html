@@ -64,7 +64,7 @@
 <meta property="og:site_name" content="界外的博客">
 <meta property="og:description" content="&amp;#8194;概述&amp;#8195;这是一个被写的尽量全面而浅显的完整的工程项目实例。&amp;#8195;语言：C#&amp;#8195;框架：Windows窗体应用程序&amp;#8195;通讯：串口通信（协议：Modbus）&amp;#8195;数据库：Oracle。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-29T06:03:09.362Z">
+<meta property="og:updated_time" content="2019-11-29T06:13:44.900Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/2019/11/19/Sensorproject/">
@@ -251,7 +251,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-29 14:03:09" itemprop="dateModified" datetime="2019-11-29T14:03:09+08:00">2019-11-29</time>
+                <time title="修改时间：2019-11-29 14:13:44" itemprop="dateModified" datetime="2019-11-29T14:13:44+08:00">2019-11-29</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -337,23 +337,12 @@
           result[1] = (byte)m;
           return result;
       }</code></pre><p></p>
-## &#8194;通信实现  
-### &#8194;概述  
-&#8195;通信其实一般都不会采用：发送报文--等待接收--接收到--程序继续，这种方式，我也不多说。  
-&#8195;通信的一般方法是：   
-` public List<string> arrDataToPort = null, arrDataFromPort = null;` 
-&#8195;发送：创建发送报文线程（DataSend()），不停检查arrDataToPort是否为空，不为空，则lock(arrDataToPort),发出报文，清空arrDataToPort。  
-&#8195;有要发送的报文，就lock(arrDataToPort)，写入报文即可。  
-&#8195;接收：接收自有**接收响应事件**，这里的重点是：将接收到的所有内容放到一个[StringBuilder](https://baike.baidu.com/item/StringBuilder) strData中，然后处理字符串即可。（这个在处理接收数据中再详细讨论）
-# &#8194;数据库
-&#8195;？？？
-# &#8194;绘图
-&#8195;：：：
-# &#8194;通用
-&#8195;：：
 
+<h2 id="8194-通信实现"><a href="#8194-通信实现" class="headerlink" title="&#8194;通信实现"></a>&#8194;通信实现</h2><h3 id="8194-概述-2"><a href="#8194-概述-2" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h3><p>&#8195;通信其实一般都不会采用：发送报文–等待接收–接收到–程序继续，这种方式，我也不多说。<br>&#8195;通信的一般方法是：<br><code>public List&lt;string&gt; arrDataToPort = null, arrDataFromPort = null;</code><br>&#8195;发送：创建发送报文线程（DataSend()），不停检查arrDataToPort是否为空，不为空，则lock(arrDataToPort),发出报文，清空arrDataToPort。<br>&#8195;有要发送的报文，就lock(arrDataToPort)，写入报文即可。<br>&#8195;接收：接收自有<strong>接收响应事件</strong>，这里的重点是：将接收到的所有内容放到一个<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS9TdHJpbmdCdWlsZGVy" title="https://baike.baidu.com/item/StringBuilder">StringBuilder<i class="fa fa-external-link"></i></span> strData中，然后处理字符串即可。（这个在处理接收数据中再详细讨论）</p>
+<h1 id="8194-数据库"><a href="#8194-数据库" class="headerlink" title="&#8194;数据库"></a>&#8194;数据库</h1><p>&#8195;？？？</p>
+<h1 id="8194-绘图"><a href="#8194-绘图" class="headerlink" title="&#8194;绘图"></a>&#8194;绘图</h1><p>&#8195;：：：</p>
+<h1 id="8194-通用"><a href="#8194-通用" class="headerlink" title="&#8194;通用"></a>&#8194;通用</h1><p>&#8195;：：</p>
 
-</string>
     </div>
 
     
@@ -430,7 +419,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-概述"><span class="nav-number">1.</span> <span class="nav-text"> 概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-前言"><span class="nav-number">2.</span> <span class="nav-text"> 前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-主函数"><span class="nav-number">3.</span> <span class="nav-text"> 主函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8195-副主函数（副窗体）"><span class="nav-number">3.1.</span> <span class="nav-text"> 副主函数（副窗体）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-串口通信"><span class="nav-number">4.</span> <span class="nav-text"> 串口通信</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-概述-1"><span class="nav-number">4.1.</span> <span class="nav-text"> 概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-通信报文"><span class="nav-number">4.2.</span> <span class="nav-text"> 通信报文</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-概述"><span class="nav-number">1.</span> <span class="nav-text"> 概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-前言"><span class="nav-number">2.</span> <span class="nav-text"> 前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-主函数"><span class="nav-number">3.</span> <span class="nav-text"> 主函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8195-副主函数（副窗体）"><span class="nav-number">3.1.</span> <span class="nav-text"> 副主函数（副窗体）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-串口通信"><span class="nav-number">4.</span> <span class="nav-text"> 串口通信</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-概述-1"><span class="nav-number">4.1.</span> <span class="nav-text"> 概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-通信报文"><span class="nav-number">4.2.</span> <span class="nav-text"> 通信报文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-通信实现"><span class="nav-number">4.3.</span> <span class="nav-text"> 通信实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8194-概述-2"><span class="nav-number">4.3.1.</span> <span class="nav-text"> 概述</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-数据库"><span class="nav-number">5.</span> <span class="nav-text"> 数据库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-绘图"><span class="nav-number">6.</span> <span class="nav-text"> 绘图</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-通用"><span class="nav-number">7.</span> <span class="nav-text"> 通用</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
