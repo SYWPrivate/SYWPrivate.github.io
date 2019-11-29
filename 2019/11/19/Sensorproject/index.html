@@ -30,7 +30,7 @@
     version: '7.5.0',
     exturl: true,
     sidebar: {"position":"left","Muse":240,"display":"post","offset":12,"onmobile":false},
-    copycode: {"enable":true,"show_result":true,"style":"mac"},
+    copycode: {"enable":true,"show_result":true,"style":"default"},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: true,
@@ -64,7 +64,7 @@
 <meta property="og:site_name" content="界外的博客">
 <meta property="og:description" content="&amp;#8194;概述&amp;#8195;这是一个被写的尽量全面而浅显的完整的工程项目实例。&amp;#8195;语言：C#&amp;#8195;框架：Windows窗体应用程序&amp;#8195;通讯：串口通信（协议：Modbus）&amp;#8195;数据库：Oracle。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-27T06:06:21.990Z">
+<meta property="og:updated_time" content="2019-11-29T06:03:09.362Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/2019/11/19/Sensorproject/">
@@ -251,7 +251,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-27 14:06:21" itemprop="dateModified" datetime="2019-11-27T14:06:21+08:00">2019-11-27</time>
+                <time title="修改时间：2019-11-29 14:03:09" itemprop="dateModified" datetime="2019-11-29T14:03:09+08:00">2019-11-29</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -285,7 +285,7 @@
   <!-- <p><span>本文标题:</span><a href="/2019/11/19/Sensorproject/">Windows窗体应用程序</a></p>  -->
   <!-- <p><span>文章作者:</span><a href="/" title="访问 界外 的个人博客">界外</a></p>  -->
   <!-- <p><span>发布时间:</span>2019年11月19日 - 13:11</p> -->
-  <!-- <p><span>最后更新:</span>2019年11月27日 - 14:11</p>  -->
+  <!-- <p><span>最后更新:</span>2019年11月29日 - 14:11</p>  -->
   <p><span>原始链接:</span><a href="/2019/11/19/Sensorproject/" title="Windows窗体应用程序">http://yoursite.com/2019/11/19/Sensorproject/</a></p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)"> BY-NC-ND 4.0 </a> 转载请注明出处。</p>  
 </div>
@@ -313,7 +313,9 @@
 <h1 id="8194-串口通信"><a href="#8194-串口通信" class="headerlink" title="&#8194;串口通信"></a>&#8194;串口通信</h1><h2 id="8194-概述-1"><a href="#8194-概述-1" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h2><p>&#8195;物理通信方式（不重要）：<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS9SUy0yMzI=" title="https://baike.baidu.com/item/RS-232"><strong>RS-232</strong><i class="fa fa-external-link"></i></span>全双工通信。<br>&#8195;通讯协议（Modbus）:RTU模式，自动化领域常用。（下面会简单介绍怎么用）<br>&#8195;<strong>程序通信方式</strong>：收发分开。</p>
 <h2 id="8194-通信报文"><a href="#8194-通信报文" class="headerlink" title="&#8194;通信报文"></a>&#8194;通信报文</h2><ul>
 <li>写入串口（发）：设备地址+功能代码+数据+<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS9DUkMvMTQ1MzM1OQ==" title="https://baike.baidu.com/item/CRC/1453359">CRC<i class="fa fa-external-link"></i></span>校验<br>&#8195;设备地址：0x00~0xF7(可连接248个设备)，假设接入一个设备（地址01）。<br>&#8195;功能代码：0x01~0xFF。假设：01（读数据）、02（写数据），这个需要通信协议。<br>&#8195;数据：寄存器首地址+寄存器数量。这就相当于数组首地址（2 byte）+读取长度（2 byte）。比如：00 FF + 00 01（从地址为255的寄存器开始读一个寄存器数据）。<br>&#8195;CRC校验：占两个字节（2 byte）。可以自己百度下相关内容。下面是我百度后自己写的一个。将：01 01 00 FF 00 01 传入CRC，算出校验码：CD FA。<br>所以，写入串口：01 01 <strong>00 FF 00 01</strong> CD FA</li>
-<li>读取数据（收）：设备地址+功能代码+数据+CRC<br>&#8195;这里唯一不同的就是数据：数据字节数+数据。例如：01 + 01 。<br>&#8195;就是返回了一个字节数据，返回的数据为：0x01，就是返回值为：1 。<br>&#8195;所以返回的报文是：01 01 <strong>01 01</strong> 90 48<br>&#8195;<strong>加粗部分为数据</strong></li>
+<li>读取数据（收）：设备地址+功能代码+数据+CRC<br>&#8195;这里唯一不同的就是数据：数据字节数+数据。例如：01 + 01 。<br>&#8195;就是返回了一个字节数据，返回的数据为：0x01，就是返回值为：1 。<br>&#8195;所以返回的报文是：01 01 <strong>01 01</strong> 90 48<br>&#8195;<strong>加粗部分为数据</strong><p align="left">
+
+</p></li>
 </ul>
 <pre><code>public static byte[] CRC(byte[] source)//CRC校验码计算
       {
@@ -334,11 +336,24 @@
           m = res &gt;&gt; 8;
           result[1] = (byte)m;
           return result;
-      }</code></pre><h2 id="8194-通信实现"><a href="#8194-通信实现" class="headerlink" title="&#8194;通信实现"></a>&#8194;通信实现</h2><h3 id="8194-概述-2"><a href="#8194-概述-2" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h3><p>&#8195;通信其实一般都不会采用：发送报文–等待接收–接收到–程序继续，这种方式，我也不多说。<br>&#8195;通信的一般方法是：<br><code>public List&lt;string&gt; arrDataToPort = null, arrDataFromPort = null;</code><br>&#8195;发送：创建发送报文线程（DataSend()），不停检查arrDataToPort是否为空，不为空，则lock(arrDataToPort),发出报文，清空arrDataToPort。<br>&#8195;有要发送的报文，就lock(arrDataToPort)，写入报文即可。<br>&#8195;接收：接收自有<strong>接收响应事件</strong>，这里的重点是：将接收到的所有内容放到一个<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS9TdHJpbmdCdWlsZGVy" title="https://baike.baidu.com/item/StringBuilder">StringBuilder<i class="fa fa-external-link"></i></span> strData中，然后处理字符串即可。（这个在处理接收数据中再详细讨论）</p>
-<h1 id="8194-数据库"><a href="#8194-数据库" class="headerlink" title="&#8194;数据库"></a>&#8194;数据库</h1><p>&#8195;？？？</p>
-<h1 id="8194-绘图"><a href="#8194-绘图" class="headerlink" title="&#8194;绘图"></a>&#8194;绘图</h1><p>&#8195;：：：</p>
-<h1 id="8194-通用"><a href="#8194-通用" class="headerlink" title="&#8194;通用"></a>&#8194;通用</h1><p>&#8195;：：</p>
+      }</code></pre><p></p>
+## &#8194;通信实现  
+### &#8194;概述  
+&#8195;通信其实一般都不会采用：发送报文--等待接收--接收到--程序继续，这种方式，我也不多说。  
+&#8195;通信的一般方法是：   
+` public List<string> arrDataToPort = null, arrDataFromPort = null;` 
+&#8195;发送：创建发送报文线程（DataSend()），不停检查arrDataToPort是否为空，不为空，则lock(arrDataToPort),发出报文，清空arrDataToPort。  
+&#8195;有要发送的报文，就lock(arrDataToPort)，写入报文即可。  
+&#8195;接收：接收自有**接收响应事件**，这里的重点是：将接收到的所有内容放到一个[StringBuilder](https://baike.baidu.com/item/StringBuilder) strData中，然后处理字符串即可。（这个在处理接收数据中再详细讨论）
+# &#8194;数据库
+&#8195;？？？
+# &#8194;绘图
+&#8195;：：：
+# &#8194;通用
+&#8195;：：
 
+
+</string>
     </div>
 
     
@@ -415,7 +430,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-概述"><span class="nav-number">1.</span> <span class="nav-text"> 概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-前言"><span class="nav-number">2.</span> <span class="nav-text"> 前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-主函数"><span class="nav-number">3.</span> <span class="nav-text"> 主函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8195-副主函数（副窗体）"><span class="nav-number">3.1.</span> <span class="nav-text"> 副主函数（副窗体）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-串口通信"><span class="nav-number">4.</span> <span class="nav-text"> 串口通信</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-概述-1"><span class="nav-number">4.1.</span> <span class="nav-text"> 概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-通信报文"><span class="nav-number">4.2.</span> <span class="nav-text"> 通信报文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-通信实现"><span class="nav-number">4.3.</span> <span class="nav-text"> 通信实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8194-概述-2"><span class="nav-number">4.3.1.</span> <span class="nav-text"> 概述</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-数据库"><span class="nav-number">5.</span> <span class="nav-text"> 数据库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-绘图"><span class="nav-number">6.</span> <span class="nav-text"> 绘图</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-通用"><span class="nav-number">7.</span> <span class="nav-text"> 通用</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-概述"><span class="nav-number">1.</span> <span class="nav-text"> 概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-前言"><span class="nav-number">2.</span> <span class="nav-text"> 前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-主函数"><span class="nav-number">3.</span> <span class="nav-text"> 主函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8195-副主函数（副窗体）"><span class="nav-number">3.1.</span> <span class="nav-text"> 副主函数（副窗体）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-串口通信"><span class="nav-number">4.</span> <span class="nav-text"> 串口通信</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-概述-1"><span class="nav-number">4.1.</span> <span class="nav-text"> 概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-通信报文"><span class="nav-number">4.2.</span> <span class="nav-text"> 通信报文</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
