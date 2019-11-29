@@ -18,7 +18,7 @@
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-loading-bar.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
   <script src="/lib/pace/pace.min.js"></script>
 
 
@@ -30,8 +30,8 @@
     version: '7.5.0',
     exturl: true,
     sidebar: {"position":"left","Muse":240,"display":"post","offset":12,"onmobile":false},
-    copycode: {"enable":true,"show_result":true,"style":"default"},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: true,
     mediumzoom: true,
@@ -64,7 +64,7 @@
 <meta property="og:site_name" content="界外的博客">
 <meta property="og:description" content="&amp;#8195;多是书中摘要，少是个人见解。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-29T05:59:07.233Z">
+<meta property="og:updated_time" content="2019-11-29T09:57:13.233Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/2019/11/26/CDataLenCode/">
@@ -201,10 +201,6 @@
     </header>
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
   <div class="reading-progress-bar"></div>
 
 
@@ -251,7 +247,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-29 13:59:07" itemprop="dateModified" datetime="2019-11-29T13:59:07+08:00">2019-11-29</time>
+                <time title="修改时间：2019-11-29 17:57:13" itemprop="dateModified" datetime="2019-11-29T17:57:13+08:00">2019-11-29</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -285,7 +281,7 @@
   <!-- <p><span>本文标题:</span><a href="/2019/11/26/CDataLenCode/">《数据结构与算法分析——C语言描述》--学习笔记</a></p>  -->
   <!-- <p><span>文章作者:</span><a href="/" title="访问 界外 的个人博客">界外</a></p>  -->
   <!-- <p><span>发布时间:</span>2019年11月26日 - 10:11</p> -->
-  <!-- <p><span>最后更新:</span>2019年11月29日 - 13:11</p>  -->
+  <!-- <p><span>最后更新:</span>2019年11月29日 - 17:11</p>  -->
   <p><span>原始链接:</span><a href="/2019/11/26/CDataLenCode/" title="《数据结构与算法分析——C语言描述》--学习笔记">http://yoursite.com/2019/11/26/CDataLenCode/</a></p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)"> BY-NC-ND 4.0 </a> 转载请注明出处。</p>  
 </div>
@@ -304,30 +300,76 @@
       
         <p>&#8195;<strong>多是书中摘要，少是个人见解。</strong></p>
 <a id="more"></a>
-<h1 id="8194-第一章：引论"><a href="#8194-第一章：引论" class="headerlink" title="&#8194;第一章：引论"></a>&#8194;第一章：引论</h1><h2 id="8194-此书讨论的内容"><a href="#8194-此书讨论的内容" class="headerlink" title="&#8194;此书讨论的内容"></a>&#8194;此书讨论的内容</h2><p>&#8195;<strong>代码的运行时间</strong></p>
+<h1 id="8194-第一章：引论"><a href="#8194-第一章：引论" class="headerlink" title="&#8194;第一章：引论"></a>&#8194;第一章：引论</h1><h2 id="8194-此书讨论的内容"><a href="#8194-此书讨论的内容" class="headerlink" title="&#8194;此书讨论的内容"></a>&#8194;此书讨论的内容</h2><p>&#8195;<strong>代码的运行时间</strong>  </p>
 <h2 id="8194-涉及的数学知识"><a href="#8194-涉及的数学知识" class="headerlink" title="&#8194;涉及的数学知识"></a>&#8194;涉及的数学知识</h2><h3 id="8194-指数"><a href="#8194-指数" class="headerlink" title="&#8194;指数"></a>&#8194;指数</h3><h3 id="8194-对数"><a href="#8194-对数" class="headerlink" title="&#8194;对数"></a>&#8194;对数</h3><h3 id="8194-级数"><a href="#8194-级数" class="headerlink" title="&#8194;级数"></a>&#8194;级数</h3><h3 id="8194-模运算"><a href="#8194-模运算" class="headerlink" title="&#8194;模运算"></a>&#8194;模运算</h3><h3 id="8194-证明方法"><a href="#8194-证明方法" class="headerlink" title="&#8194;证明方法"></a>&#8194;证明方法</h3><ul>
 <li><p>反证法</p>
 </li>
 <li><p>例：<br>证明：存在无穷多个素数。</p>
 </li>
 <li><p>数学归纳法</p>
-<h3 id="8194-递归简论"><a href="#8194-递归简论" class="headerlink" title="&#8194;递归简论"></a>&#8194;递归简论</h3><h1 id="8194-第二章：算法分析"><a href="#8194-第二章：算法分析" class="headerlink" title="&#8194;第二章：算法分析"></a>&#8194;第二章：算法分析</h1><h2 id="8194-数学基础"><a href="#8194-数学基础" class="headerlink" title="&#8194;数学基础"></a>&#8194;数学基础</h2><h2 id="8194-模型"><a href="#8194-模型" class="headerlink" title="&#8194;模型"></a>&#8194;模型</h2><h2 id="8194-问题"><a href="#8194-问题" class="headerlink" title="&#8194;问题"></a>&#8194;问题</h2><h2 id="8194-运行时间计算"><a href="#8194-运行时间计算" class="headerlink" title="&#8194;运行时间计算"></a>&#8194;运行时间计算</h2><h3 id="8194-一个简单的例子"><a href="#8194-一个简单的例子" class="headerlink" title="&#8194;一个简单的例子"></a>&#8194;一个简单的例子</h3><h3 id="8194-一般法则"><a href="#8194-一般法则" class="headerlink" title="&#8194;一般法则"></a>&#8194;一般法则</h3><h3 id="8194-最大子序列和问题的解"><a href="#8194-最大子序列和问题的解" class="headerlink" title="&#8194;最大子序列和问题的解"></a>&#8194;最大子序列和问题的解</h3></li>
+<h3 id="8194-递归简论"><a href="#8194-递归简论" class="headerlink" title="&#8194;递归简论"></a>&#8194;递归简论</h3></li>
 </ul>
-<p>&#8194;<strong>这里我只给出两种解：</strong>  </p>
+<h1 id="8194-第二章：算法分析"><a href="#8194-第二章：算法分析" class="headerlink" title="&#8194;第二章：算法分析"></a>&#8194;第二章：算法分析</h1><h2 id="8194-数学基础"><a href="#8194-数学基础" class="headerlink" title="&#8194;数学基础"></a>&#8194;数学基础</h2><h2 id="8194-模型"><a href="#8194-模型" class="headerlink" title="&#8194;模型"></a>&#8194;模型</h2><h2 id="8194-问题"><a href="#8194-问题" class="headerlink" title="&#8194;问题"></a>&#8194;问题</h2><h2 id="8194-运行时间计算"><a href="#8194-运行时间计算" class="headerlink" title="&#8194;运行时间计算"></a>&#8194;运行时间计算</h2><h3 id="8194-一个简单的例子"><a href="#8194-一个简单的例子" class="headerlink" title="&#8194;一个简单的例子"></a>&#8194;一个简单的例子</h3><h3 id="8194-一般法则"><a href="#8194-一般法则" class="headerlink" title="&#8194;一般法则"></a>&#8194;一般法则</h3><h3 id="8194-最大子序列和问题的解"><a href="#8194-最大子序列和问题的解" class="headerlink" title="&#8194;最大子序列和问题的解"></a>&#8194;最大子序列和问题的解</h3><p>&#8194;<strong>这里我只给出两种解：</strong>  </p>
 <ul>
 <li>次优</li>
 <li>时间复杂度O(N log N )</li>
-<li>递归+分治<p align="left">   
-
-</p></li>
+<li>递归+分治 </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">void main()</span><br><span class="line">&#123;</span><br><span class="line">	int MaxSubSum(int A[], int Left, int Right);</span><br><span class="line">	int A[8] = &#123; 4,-3,5,-2,-1,2,6,-2 &#125;;</span><br><span class="line">	int a = MaxSubSum(A, 0, 7);</span><br><span class="line">	printf(&quot;%d\n&quot;, a);</span><br><span class="line">&#125;</span><br><span class="line">int MaxSubSum(int A[], int Left, int Right)</span><br><span class="line">&#123;</span><br><span class="line">	int MaxThree(int a, int b, int c);</span><br><span class="line">	int MaxLeftSum, MaxRightSum;</span><br><span class="line">	int MaxLeftBorderSum, MaxRightBorderSum;</span><br><span class="line">	int LeftBorderSum, RightBorderSum;</span><br><span class="line">	int Center, i;</span><br><span class="line">	if (Left == Right)</span><br><span class="line">	&#123;</span><br><span class="line">		if (A[Left] &gt; 0)</span><br><span class="line">			return A[Left];</span><br><span class="line">		else</span><br><span class="line">			return 0;</span><br><span class="line">	&#125;</span><br><span class="line">	Center = (Left + Right) / 2;</span><br><span class="line">	MaxLeftSum = MaxSubSum(A, Left, Center);</span><br><span class="line">	MaxRightSum = MaxSubSum(A, Center + 1, Right);</span><br><span class="line">	MaxLeftBorderSum = 0;</span><br><span class="line">	LeftBorderSum = 0;</span><br><span class="line">	for (i = Center; i &gt;= Left; i--)</span><br><span class="line">	&#123;</span><br><span class="line">		LeftBorderSum += A[i];</span><br><span class="line">		if (LeftBorderSum &gt; MaxLeftBorderSum)</span><br><span class="line">			MaxLeftBorderSum = LeftBorderSum;</span><br><span class="line">	&#125;</span><br><span class="line">	MaxRightBorderSum = 0;</span><br><span class="line">	RightBorderSum = 0;</span><br><span class="line">	for (i = Center + 1; i &lt;= Right; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		RightBorderSum += A[i];</span><br><span class="line">		if (RightBorderSum &gt; MaxRightBorderSum)</span><br><span class="line">			MaxRightBorderSum = RightBorderSum;</span><br><span class="line">	&#125;</span><br><span class="line">	return MaxThree(MaxLeftSum, MaxRightSum, MaxLeftBorderSum + MaxRightBorderSum);</span><br><span class="line">&#125;</span><br><span class="line">int MaxThree(int a, int b, int c)</span><br><span class="line">&#123;</span><br><span class="line">	if (a &gt; b&amp;&amp;a &gt; c)</span><br><span class="line">		return a;</span><br><span class="line">	else if (b &gt; c)</span><br><span class="line">		return b;</span><br><span class="line">	else return c;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p></p>  
-
+<pre><code class="C"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span>
+<span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>
+<span class="function"></span>{
+    <span class="function"><span class="keyword">int</span> <span class="title">MaxSubSum</span><span class="params">(<span class="keyword">int</span> A[], <span class="keyword">int</span> Left, <span class="keyword">int</span> Right)</span></span>;
+    <span class="keyword">int</span> A[<span class="number">8</span>] = { <span class="number">4</span>,<span class="number">-3</span>,<span class="number">5</span>,<span class="number">-2</span>,<span class="number">-1</span>,<span class="number">2</span>,<span class="number">6</span>,<span class="number">-2</span> };
+    <span class="keyword">int</span> a = MaxSubSum(A, <span class="number">0</span>, <span class="number">7</span>);
+    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, a);
+}
+<span class="function"><span class="keyword">int</span> <span class="title">MaxSubSum</span><span class="params">(<span class="keyword">int</span> A[], <span class="keyword">int</span> Left, <span class="keyword">int</span> Right)</span></span>
+<span class="function"></span>{
+    <span class="function"><span class="keyword">int</span> <span class="title">MaxThree</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b, <span class="keyword">int</span> c)</span></span>;
+    <span class="keyword">int</span> MaxLeftSum, MaxRightSum;
+    <span class="keyword">int</span> MaxLeftBorderSum, MaxRightBorderSum;
+    <span class="keyword">int</span> LeftBorderSum, RightBorderSum;
+    <span class="keyword">int</span> Center, i;
+    <span class="keyword">if</span> (Left == Right)
+    {
+        <span class="keyword">if</span> (A[Left] &gt; <span class="number">0</span>)
+            <span class="keyword">return</span> A[Left];
+        <span class="keyword">else</span>
+            <span class="keyword">return</span> <span class="number">0</span>;
+    }
+    Center = (Left + Right) / <span class="number">2</span>;
+    MaxLeftSum = MaxSubSum(A, Left, Center);
+    MaxRightSum = MaxSubSum(A, Center + <span class="number">1</span>, Right);
+    MaxLeftBorderSum = <span class="number">0</span>;
+    LeftBorderSum = <span class="number">0</span>;
+    <span class="keyword">for</span> (i = Center; i &gt;= Left; i--)
+    {
+        LeftBorderSum += A[i];
+        <span class="keyword">if</span> (LeftBorderSum &gt; MaxLeftBorderSum)
+            MaxLeftBorderSum = LeftBorderSum;
+    }
+    MaxRightBorderSum = <span class="number">0</span>;
+    RightBorderSum = <span class="number">0</span>;
+    <span class="keyword">for</span> (i = Center + <span class="number">1</span>; i &lt;= Right; i++)
+    {
+        RightBorderSum += A[i];
+        <span class="keyword">if</span> (RightBorderSum &gt; MaxRightBorderSum)
+            MaxRightBorderSum = RightBorderSum;
+    }
+    <span class="keyword">return</span> MaxThree(MaxLeftSum, MaxRightSum, MaxLeftBorderSum + MaxRightBorderSum);
+}
+<span class="function"><span class="keyword">int</span> <span class="title">MaxThree</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b, <span class="keyword">int</span> c)</span></span>
+<span class="function"></span>{
+    <span class="keyword">if</span> (a &gt; b&amp;&amp;a &gt; c)
+        <span class="keyword">return</span> a;
+    <span class="keyword">else</span> <span class="keyword">if</span> (b &gt; c)
+        <span class="keyword">return</span> b;
+    <span class="keyword">else</span> <span class="keyword">return</span> c;
+}  </code></pre>
 <ul>
-<li><strong>最优</strong><h1 id="8194-第三章：表、栈和队列"><a href="#8194-第三章：表、栈和队列" class="headerlink" title="&#8194;第三章：表、栈和队列"></a>&#8194;第三章：表、栈和队列</h1><h2 id="8194-抽象数据类型（ADT）"><a href="#8194-抽象数据类型（ADT）" class="headerlink" title="&#8194;抽象数据类型（ADT）"></a>&#8194;抽象数据类型（ADT）</h2><h2 id="8194-表ADT"><a href="#8194-表ADT" class="headerlink" title="&#8194;表ADT"></a>&#8194;表ADT</h2><h3 id="8194-表的简单数组实现"><a href="#8194-表的简单数组实现" class="headerlink" title="&#8194;表的简单数组实现"></a>&#8194;表的简单数组实现</h3><h3 id="8194-链表"><a href="#8194-链表" class="headerlink" title="&#8194;链表"></a>&#8194;链表</h3><h3 id="8194-程序设计细节"><a href="#8194-程序设计细节" class="headerlink" title="&#8194;程序设计细节"></a>&#8194;程序设计细节</h3><h3 id="8194-常见错误"><a href="#8194-常见错误" class="headerlink" title="&#8194;常见错误"></a>&#8194;常见错误</h3><h3 id="8194-双链表"><a href="#8194-双链表" class="headerlink" title="&#8194;双链表"></a>&#8194;双链表</h3><h3 id="8194-循环链表"><a href="#8194-循环链表" class="headerlink" title="&#8194;循环链表"></a>&#8194;循环链表</h3><h3 id="8194-例子"><a href="#8194-例子" class="headerlink" title="&#8194;例子"></a>&#8194;例子</h3><h3 id="8194-链表的游标实现"><a href="#8194-链表的游标实现" class="headerlink" title="&#8194;链表的游标实现"></a>&#8194;链表的游标实现</h3><h2 id="8194-栈ADT"><a href="#8194-栈ADT" class="headerlink" title="&#8194;栈ADT"></a>&#8194;栈ADT</h2></li>
+<li><strong>最优</strong>  </li>
 </ul>
-
+<h1 id="8194-第三章：表、栈和队列"><a href="#8194-第三章：表、栈和队列" class="headerlink" title="&#8194;第三章：表、栈和队列"></a>&#8194;第三章：表、栈和队列</h1><h2 id="8194-抽象数据类型（ADT）"><a href="#8194-抽象数据类型（ADT）" class="headerlink" title="&#8194;抽象数据类型（ADT）"></a>&#8194;抽象数据类型（ADT）</h2><h2 id="8194-表ADT"><a href="#8194-表ADT" class="headerlink" title="&#8194;表ADT"></a>&#8194;表ADT</h2><h3 id="8194-表的简单数组实现"><a href="#8194-表的简单数组实现" class="headerlink" title="&#8194;表的简单数组实现"></a>&#8194;表的简单数组实现</h3><h3 id="8194-链表"><a href="#8194-链表" class="headerlink" title="&#8194;链表"></a>&#8194;链表</h3><h3 id="8194-程序设计细节"><a href="#8194-程序设计细节" class="headerlink" title="&#8194;程序设计细节"></a>&#8194;程序设计细节</h3><h3 id="8194-常见错误"><a href="#8194-常见错误" class="headerlink" title="&#8194;常见错误"></a>&#8194;常见错误</h3><h3 id="8194-双链表"><a href="#8194-双链表" class="headerlink" title="&#8194;双链表"></a>&#8194;双链表</h3><h3 id="8194-循环链表"><a href="#8194-循环链表" class="headerlink" title="&#8194;循环链表"></a>&#8194;循环链表</h3><h3 id="8194-例子"><a href="#8194-例子" class="headerlink" title="&#8194;例子"></a>&#8194;例子</h3><h3 id="8194-链表的游标实现"><a href="#8194-链表的游标实现" class="headerlink" title="&#8194;链表的游标实现"></a>&#8194;链表的游标实现</h3><h2 id="8194-栈ADT"><a href="#8194-栈ADT" class="headerlink" title="&#8194;栈ADT"></a>&#8194;栈ADT</h2>
     </div>
 
     
@@ -452,6 +494,10 @@
 
 
       </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
 
     </div>
   </aside>

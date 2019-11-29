@@ -18,7 +18,7 @@
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-loading-bar.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
   <script src="/lib/pace/pace.min.js"></script>
 
 
@@ -30,8 +30,8 @@
     version: '7.5.0',
     exturl: true,
     sidebar: {"position":"left","Muse":240,"display":"post","offset":12,"onmobile":false},
-    copycode: {"enable":true,"show_result":true,"style":"default"},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
+    back2top: {"enable":true,"sidebar":true,"scrollpercent":true},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
     fancybox: true,
     mediumzoom: true,
@@ -65,7 +65,7 @@
 <meta property="og:description" content="&amp;#8195;主要分享一下解数独的源代码，用到了比较重要的回溯算法！">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;22&#x2F;shudu&#x2F;1.png">
-<meta property="og:updated_time" content="2019-11-28T08:46:43.121Z">
+<meta property="og:updated_time" content="2019-11-29T10:02:39.209Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;22&#x2F;shudu&#x2F;1.png">
 
@@ -203,10 +203,6 @@
     </header>
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
   <div class="reading-progress-bar"></div>
 
 
@@ -253,7 +249,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-28 16:46:43" itemprop="dateModified" datetime="2019-11-28T16:46:43+08:00">2019-11-28</time>
+                <time title="修改时间：2019-11-29 18:02:39" itemprop="dateModified" datetime="2019-11-29T18:02:39+08:00">2019-11-29</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -287,7 +283,7 @@
   <!-- <p><span>本文标题:</span><a href="/2019/11/22/shudu/">解数独</a></p>  -->
   <!-- <p><span>文章作者:</span><a href="/" title="访问 界外 的个人博客">界外</a></p>  -->
   <!-- <p><span>发布时间:</span>2019年11月22日 - 13:11</p> -->
-  <!-- <p><span>最后更新:</span>2019年11月28日 - 16:11</p>  -->
+  <!-- <p><span>最后更新:</span>2019年11月29日 - 18:11</p>  -->
   <p><span>原始链接:</span><a href="/2019/11/22/shudu/" title="解数独">http://yoursite.com/2019/11/22/shudu/</a></p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)"> BY-NC-ND 4.0 </a> 转载请注明出处。</p>  
 </div>
@@ -311,7 +307,108 @@
 <div align="center"><img width="400" height="400" data-src="/2019/11/22/shudu/1.png"></div>  
 
 <p>源代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br></pre></td><td class="code"><pre><span class="line">namespace shudu</span><br><span class="line">&#123;</span><br><span class="line">    public partial class form : Form</span><br><span class="line">    &#123;</span><br><span class="line">        public form()</span><br><span class="line">        &#123;</span><br><span class="line">            InitializeComponent();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        private void Form1_Load(object sender, EventArgs e)</span><br><span class="line">        &#123;</span><br><span class="line">            data.ColumnCount = 9;</span><br><span class="line">            data.RowCount = 9;</span><br><span class="line">            for (int i = 0; i &lt; 9; i++)</span><br><span class="line">            &#123;</span><br><span class="line">                data.Columns[i].Width = 41;</span><br><span class="line">                data.Rows[i].Height = 40;</span><br><span class="line">            &#125;</span><br><span class="line">            for (int i = 0; i &lt; 9; i++)</span><br><span class="line">            &#123;</span><br><span class="line">                for (int j = 0; j &lt; 9; j++)</span><br><span class="line">                &#123;</span><br><span class="line">                    data.Rows[i].Cells[j].Value = &quot;&quot;;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        private void button1_Click(object sender, EventArgs e)</span><br><span class="line">        &#123;</span><br><span class="line"></span><br><span class="line">            for (int i = 0; i &lt; 9; i++)</span><br><span class="line">                for (int j = 0; j &lt; 9; j++)</span><br><span class="line">                &#123;</span><br><span class="line">                    if (data.Rows[i].Cells[j].Value.ToString() == &quot;&quot;)</span><br><span class="line">                        data.Rows[i].Cells[j].Value = &quot;.&quot;;</span><br><span class="line">                &#125;</span><br><span class="line">            solveSudoku();</span><br><span class="line">        &#125;</span><br><span class="line">        bool solved = false;</span><br><span class="line">        private void solveSudoku()</span><br><span class="line">        &#123;</span><br><span class="line">            recursive(0, 0);</span><br><span class="line">        &#125;</span><br><span class="line">        private void recursive(int row, int col)</span><br><span class="line">        &#123;</span><br><span class="line">            if (data.Rows[row].Cells[col].Value.ToString()==&quot;.&quot;)</span><br><span class="line">            &#123;</span><br><span class="line">                int i = 1;</span><br><span class="line">                for (; i &lt; 10; i++)</span><br><span class="line">                    if (TF(i, row, col))</span><br><span class="line">                    &#123;</span><br><span class="line">                        write(i, row, col);</span><br><span class="line">                        writenext(row, col);</span><br><span class="line">                        if (!solved) del( row, col);</span><br><span class="line">                    &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            else writenext( row, col);</span><br><span class="line">        &#125;</span><br><span class="line">        private  bool TF( int num, int row, int col)</span><br><span class="line">        &#123;</span><br><span class="line">            int rowindex = row / 3, colindex = col / 3;</span><br><span class="line">            for (int i = 0; i &lt; 3; i++)</span><br><span class="line">                for (int j = 0; j &lt; 3; j++)</span><br><span class="line">                &#123;</span><br><span class="line">                    if (data.Rows[rowindex * 3 + i].Cells[colindex * 3 + j].Value.ToString() == num.ToString())</span><br><span class="line">                        return false;</span><br><span class="line">                &#125;</span><br><span class="line">            for (int i = 0; i &lt; 9; i++)</span><br><span class="line">            &#123;</span><br><span class="line">                if (data.Rows[row].Cells[i].Value.ToString() == num.ToString() || data.Rows[i].Cells[col].Value.ToString() == num.ToString())</span><br><span class="line">                    return false;</span><br><span class="line">            &#125;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">        private void write( int num, int row, int col)</span><br><span class="line">        &#123;</span><br><span class="line">            data.Rows[row].Cells[col].Value = num.ToString();</span><br><span class="line">        &#125;</span><br><span class="line">        private  void writenext(int row, int col)</span><br><span class="line">        &#123;</span><br><span class="line">            if (row == 8 &amp;&amp; col == 8) solved = true;</span><br><span class="line">            else if (col &lt; 8) recursive(row, col + 1);</span><br><span class="line">            else if (row &lt; 8) recursive(row + 1, 0);</span><br><span class="line">        &#125;</span><br><span class="line">        private void del(int row, int col)</span><br><span class="line">        &#123;</span><br><span class="line">            data.Rows[row].Cells[col].Value = &quot;.&quot;;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        private void button2_Click(object sender, EventArgs e)</span><br><span class="line">        &#123;</span><br><span class="line">            solved = false;</span><br><span class="line">            for (int i = 0; i &lt; 9; i++)</span><br><span class="line">            &#123;</span><br><span class="line">                for (int j = 0; j &lt; 9; j++)</span><br><span class="line">                &#123;</span><br><span class="line">                    data.Rows[i].Cells[j].Value = &quot;&quot;;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code class="C#"><span class="keyword">namespace</span> <span class="title">shudu</span>
+{
+    <span class="keyword">public</span> <span class="keyword">partial</span> <span class="keyword">class</span> <span class="title">form</span> : <span class="title">Form</span>
+    {
+        <span class="function"><span class="keyword">public</span> <span class="title">form</span>(<span class="params"></span>)</span>
+<span class="function"></span>        {
+            InitializeComponent();
+        }
+
+        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Form1_Load</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span>
+<span class="function"></span>        {
+            data.ColumnCount = <span class="number">9</span>;
+            data.RowCount = <span class="number">9</span>;
+            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">9</span>; i++)
+            {
+                data.Columns[i].Width = <span class="number">41</span>;
+                data.Rows[i].Height = <span class="number">40</span>;
+            }
+            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">9</span>; i++)
+            {
+                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">9</span>; j++)
+                {
+                    data.Rows[i].Cells[j].Value = <span class="string">""</span>;
+                }
+            }
+        }
+
+        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">button1_Click</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span>
+<span class="function"></span>        {
+
+            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">9</span>; i++)
+                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">9</span>; j++)
+                {
+                    <span class="keyword">if</span> (data.Rows[i].Cells[j].Value.ToString() == <span class="string">""</span>)
+                        data.Rows[i].Cells[j].Value = <span class="string">"."</span>;
+                }
+            solveSudoku();
+        }
+        <span class="keyword">bool</span> solved = <span class="literal">false</span>;
+        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">solveSudoku</span>(<span class="params"></span>)</span>
+<span class="function"></span>        {
+            recursive(<span class="number">0</span>, <span class="number">0</span>);
+        }
+        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">recursive</span>(<span class="params"><span class="keyword">int</span> row, <span class="keyword">int</span> col</span>)</span>
+<span class="function"></span>        {
+            <span class="keyword">if</span> (data.Rows[row].Cells[col].Value.ToString()==<span class="string">"."</span>)
+            {
+                <span class="keyword">int</span> i = <span class="number">1</span>;
+                <span class="keyword">for</span> (; i &lt; <span class="number">10</span>; i++)
+                    <span class="keyword">if</span> (TF(i, row, col))
+                    {
+                        write(i, row, col);
+                        writenext(row, col);
+                        <span class="keyword">if</span> (!solved) del( row, col);
+                    }
+            }
+            <span class="keyword">else</span> writenext( row, col);
+        }
+        <span class="function"><span class="keyword">private</span>  <span class="keyword">bool</span> <span class="title">TF</span>(<span class="params"> <span class="keyword">int</span> num, <span class="keyword">int</span> row, <span class="keyword">int</span> col</span>)</span>
+<span class="function"></span>        {
+            <span class="keyword">int</span> rowindex = row / <span class="number">3</span>, colindex = col / <span class="number">3</span>;
+            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++)
+                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">3</span>; j++)
+                {
+                    <span class="keyword">if</span> (data.Rows[rowindex * <span class="number">3</span> + i].Cells[colindex * <span class="number">3</span> + j].Value.ToString() == num.ToString())
+                        <span class="keyword">return</span> <span class="literal">false</span>;
+                }
+            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">9</span>; i++)
+            {
+                <span class="keyword">if</span> (data.Rows[row].Cells[i].Value.ToString() == num.ToString() || data.Rows[i].Cells[col].Value.ToString() == num.ToString())
+                    <span class="keyword">return</span> <span class="literal">false</span>;
+            }
+            <span class="keyword">return</span> <span class="literal">true</span>;
+        }
+        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">write</span>(<span class="params"> <span class="keyword">int</span> num, <span class="keyword">int</span> row, <span class="keyword">int</span> col</span>)</span>
+<span class="function"></span>        {
+            data.Rows[row].Cells[col].Value = num.ToString();
+        }
+        <span class="function"><span class="keyword">private</span>  <span class="keyword">void</span> <span class="title">writenext</span>(<span class="params"><span class="keyword">int</span> row, <span class="keyword">int</span> col</span>)</span>
+<span class="function"></span>        {
+            <span class="keyword">if</span> (row == <span class="number">8</span> &amp;&amp; col == <span class="number">8</span>) solved = <span class="literal">true</span>;
+            <span class="keyword">else</span> <span class="keyword">if</span> (col &lt; <span class="number">8</span>) recursive(row, col + <span class="number">1</span>);
+            <span class="keyword">else</span> <span class="keyword">if</span> (row &lt; <span class="number">8</span>) recursive(row + <span class="number">1</span>, <span class="number">0</span>);
+        }
+        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">del</span>(<span class="params"><span class="keyword">int</span> row, <span class="keyword">int</span> col</span>)</span>
+<span class="function"></span>        {
+            data.Rows[row].Cells[col].Value = <span class="string">"."</span>;
+        }
+
+        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">button2_Click</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span>
+<span class="function"></span>        {
+            solved = <span class="literal">false</span>;
+            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">9</span>; i++)
+            {
+                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">9</span>; j++)
+                {
+                    data.Rows[i].Cells[j].Value = <span class="string">""</span>;
+                }
+            }
+        }
+    }
+}    </code></pre>
 <p>&#8195;程序也放上来，大家可以下下来玩玩。<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL1NZV1ByaXZhdGUvU1lXUHJpdmF0ZS5naXRodWIuaW8vcmF3L21hc3Rlci8yMDE5LzExLzIyL3NodWR1L3NodWR1LmV4ZQ==" title="https://github.com/SYWPrivate/SYWPrivate.github.io/raw/master/2019/11/22/shudu/shudu.exe">点击下载<i class="fa fa-external-link"></i></span><br><strong>&#8195;每次求解后，若要求新数独，请刷新充填。</strong><br>&#8195;若要只改变部分格内的值（改变或删除），就继续求解，需要在源代码内加入<code>data_CellValueChanged()</code>函数。我就不多说啦！</p>
 
     </div>
@@ -437,6 +534,10 @@
 
 
       </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
 
     </div>
   </aside>
