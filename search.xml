@@ -311,8 +311,8 @@ MouseUp()
     <url>/2019/11/22/oraclestate/</url>
     <content><![CDATA[<h1 id="8194-基础语句"><a href="#8194-基础语句" class="headerlink" title="&#8194;基础语句"></a>&#8194;基础语句</h1><h2 id="8194-概述"><a href="#8194-概述" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h2><ul>
 <li>Oracle语句与SQL语句还是有很多不一样的地方。</li>
-<li>都是些基础的，毕竟我也是业余的。<h2 id="8194-查询"><a href="#8194-查询" class="headerlink" title="&#8194;查询"></a>&#8194;查询</h2><h3 id="8194-时间"><a href="#8194-时间" class="headerlink" title="&#8194;时间"></a>&#8194;时间</h3><code>select * from 表名 where sysdate-1 &lt;=Time  //Time为表中，时间列，列名（此句：查找一天内数据）</code><br><code>select * from 表名 where sysdate-1/24 &lt;=Time  //Time为表中，时间列，列名（此句：查找1H内数据）</code> </li>
-</ul>]]></content>
+<li>都是些基础的，毕竟我也是业余的。  </li>
+</ul><h2 id="8194-查询"><a href="#8194-查询" class="headerlink" title="&#8194;查询"></a>&#8194;查询</h2><h3 id="8194-时间"><a href="#8194-时间" class="headerlink" title="&#8194;时间"></a>&#8194;时间</h3><p><code>select * from 表名 where sysdate-1 &lt;=Time  //Time为表中，时间列，列名（此句：查找一天内数据）</code><br><code>select * from 表名 where sysdate-1/24 &lt;=Time  //Time为表中，时间列，列名（此句：查找1H内数据）</code> </p>]]></content>
       <categories>
         <category>Oracle</category>
       </categories>

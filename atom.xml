@@ -91,7 +91,7 @@
     <link href="http://yoursite.com/2019/11/26/WordsCollection/"/>
     <id>http://yoursite.com/2019/11/26/WordsCollection/</id>
     <published>2019-11-26T10:16:00.000Z</published>
-    <updated>2019-11-29T10:03:04.570Z</updated>
+    <updated>2019-12-02T07:08:14.386Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p align="left">要把所有的夜归还给星河，</p><p align="left">把所有的春光归还给疏疏篱落，</p><p align="left">把所有的慵慵沉迷与不前，归还给过去的我。</p><p align="left">明日之我，胸中有丘壑，立马振山河。</p><p align="right">---德卡先生的信箱</p>  </blockquote><a id="more"></a><h1 id="8194-历史"><a href="#8194-历史" class="headerlink" title="&#8194;历史"></a>&#8194;历史</h1><blockquote><p>&#8195;开国大典的时候飞机不够。您说飞两遍，现在再也不需要飞两遍了，要多少有多少。这盛世，如您所愿吧，山河犹在，国泰民安。当年送您的十里长安街，如今已是十里繁荣。</p><p align="right">致：周总理</p>  <p align="right">---佚名</p>   </blockquote><blockquote><p>&#8195;为天地立心，为生民立命，为往圣继绝学，为万世开太平。</p><p align="right">---张载</p>   </blockquote><blockquote><p>&#8195;成功虽无把握，成仁却有决心。</p><p align="right">---黄景升</p>  </blockquote><h1 id="8194-灵魂"><a href="#8194-灵魂" class="headerlink" title="&#8194;灵魂"></a>&#8194;灵魂</h1><blockquote><p>&#8195;我所有的自负都来自我的自卑，所有的英雄气概都来自于我内心的软弱，所有的振振有词都因为心中满是疑惑。我假装无情，其实痛恨自己深情。我以为人生的意义在于四处游荡流亡，其实只是掩饰至今没有找到愿意驻足的地方。</p><p align="right">---马良《坦白书》</p>    </blockquote><blockquote><p>&#8195;一生中总会遇到这样的时候，你的内心已经兵荒马乱天翻地覆了，可是在别人看来你只是比平时沉默了一点，没人会觉得奇怪。这种战争，注定单枪匹马。</p><p align="right">---白岩松《痛并快乐着》</p>   </blockquote><blockquote><p>&#8195;这些年一直在提醒自己一件事情，千万不要感动自己，大部分人看似努力，不过是愚蠢导致的。什么熬夜看书到天亮，连续几天睡几个小时，多久没放假案了。如果这些东西也值得炫耀，那么富士康流水线上任何一个人都比你努力的多了。人难免天生有自怜情绪，唯有时刻保持清醒，才能看清真正的价值在哪里。  </p><p align="right">---于宙《我们这一代人的困惑》</p>   </blockquote><h1 id="8194-爱情"><a href="#8194-爱情" class="headerlink" title="&#8194;爱情"></a>&#8194;爱情</h1><blockquote><p>&#8195;我希望有个如你一般的人，如山间清爽的风，如古城温暖的光。从清晨到傍晚，由山野到书房。只要最后是你，就好。</p><p align="right">---《从你的全世界路过》</p> </blockquote>]]></content>
     
@@ -163,9 +163,9 @@
     <link href="http://yoursite.com/2019/11/22/oraclestate/"/>
     <id>http://yoursite.com/2019/11/22/oraclestate/</id>
     <published>2019-11-22T06:38:52.000Z</published>
-    <updated>2019-11-27T07:16:33.311Z</updated>
+    <updated>2019-12-02T07:08:38.636Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="8194-基础语句"><a href="#8194-基础语句" class="headerlink" title="&#8194;基础语句"></a>&#8194;基础语句</h1><h2 id="8194-概述"><a href="#8194-概述" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h2><ul><li>Oracle语句与SQL语句还是有很多不一样的地方。</li><li>都是些基础的，毕竟我也是业余的。<h2 id="8194-查询"><a href="#8194-查询" class="headerlink" title="&#8194;查询"></a>&#8194;查询</h2><h3 id="8194-时间"><a href="#8194-时间" class="headerlink" title="&#8194;时间"></a>&#8194;时间</h3><code>select * from 表名 where sysdate-1 &lt;=Time  //Time为表中，时间列，列名（此句：查找一天内数据）</code><br><code>select * from 表名 where sysdate-1/24 &lt;=Time  //Time为表中，时间列，列名（此句：查找1H内数据）</code> </li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="8194-基础语句"><a href="#8194-基础语句" class="headerlink" title="&#8194;基础语句"></a>&#8194;基础语句</h1><h2 id="8194-概述"><a href="#8194-概述" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h2><ul><li>Oracle语句与SQL语句还是有很多不一样的地方。</li><li>都是些基础的，毕竟我也是业余的。  </li></ul><h2 id="8194-查询"><a href="#8194-查询" class="headerlink" title="&#8194;查询"></a>&#8194;查询</h2><h3 id="8194-时间"><a href="#8194-时间" class="headerlink" title="&#8194;时间"></a>&#8194;时间</h3><p><code>select * from 表名 where sysdate-1 &lt;=Time  //Time为表中，时间列，列名（此句：查找一天内数据）</code><br><code>select * from 表名 where sysdate-1/24 &lt;=Time  //Time为表中，时间列，列名（此句：查找1H内数据）</code> </p>]]></content>
     
     <summary type="html">
     
