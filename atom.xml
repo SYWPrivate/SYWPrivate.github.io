@@ -68,9 +68,9 @@
     <link href="http://yoursite.com/2019/11/27/HexoNotes/"/>
     <id>http://yoursite.com/2019/11/27/HexoNotes/</id>
     <published>2019-11-27T05:23:33.000Z</published>
-    <updated>2019-11-29T10:08:22.312Z</updated>
+    <updated>2019-12-02T06:40:49.158Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="8194-字色"><a href="#8194-字色" class="headerlink" title="&#8194;字色"></a>&#8194;字色</h1><p>&#8195;在next\source\css_variables\base.styl文件中<br>&#8195;<strong>$grey-dim  = #666;</strong> 这个颜色是写文章普通用字的颜色，就是写的最多的字的颜色，改成自己需要的即可。  </p><a id="more"></a><ul><li>例：$grey-dim  = #000;（黑色）  </li></ul><h1 id="8194-文章背景"><a href="#8194-文章背景" class="headerlink" title="&#8194;文章背景"></a>&#8194;文章背景</h1><p>&#8195;在next\source\css_schemes\Muse\_menu.styl文件中（注：_schemes\Muse的Muse是主题配置文件中所选用的主题，请进入你选用的主题文件夹），加入：  </p><pre><code class="CSS"><span class="selector-class">.main-inner</span> {        background: #f5f5dc;//文章背景颜色        opacity: 0.8;//文章背景透明度}</code></pre><h1 id="8194-网页背景图片"><a href="#8194-网页背景图片" class="headerlink" title="&#8194;网页背景图片"></a>&#8194;网页背景图片</h1><p>&#8195;在博客源目录\source_data中创建styles.styl文件，写入代码：  </p><pre><code class="CSS"><span class="selector-tag">body</span> {    <span class="attribute">background-image</span>:<span class="built_in">url</span>(/images/back.png);    <span class="attribute">background-repeat</span>: no-repeat;   <span class="attribute">background-attachment</span>:fixed;   <span class="attribute">background-position</span>:<span class="number">50%</span> <span class="number">50%</span>;   }</code></pre><ul><li>本地文件夹：博客源目录\public\images</li><li>外部链接直接写入<code>url(...);</code>括号内。</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="8194-字色"><a href="#8194-字色" class="headerlink" title="&#8194;字色"></a>&#8194;字色</h1><p>&#8195;在next\source\css_variables\base.styl文件中<br>&#8195;<strong>$grey-dim  = #666;</strong> 这个颜色是写文章普通用字的颜色，就是写的最多的字的颜色，改成自己需要的即可。  </p><a id="more"></a><ul><li>例：$grey-dim  = #000;（黑色）  </li></ul><h1 id="8194-文章背景"><a href="#8194-文章背景" class="headerlink" title="&#8194;文章背景"></a>&#8194;文章背景</h1><p>&#8195;在next\source\css_schemes\Muse\_menu.styl文件中（注：_schemes\Muse的Muse是主题配置文件中所选用的主题，请进入你选用的主题文件夹），加入：  </p><pre><code class="CSS"><span class="selector-class">.main-inner</span> {        background: #f5f5dc;//文章背景颜色        opacity: 0.8;//文章背景透明度}</code></pre><h1 id="8194-网页背景图片"><a href="#8194-网页背景图片" class="headerlink" title="&#8194;网页背景图片"></a>&#8194;网页背景图片</h1><p>&#8195;在博客源目录\source_data中创建styles.styl文件，写入代码：  </p><pre><code class="CSS"><span class="selector-tag">body</span> {    <span class="attribute">background-image</span>:<span class="built_in">url</span>(/images/back.png);    <span class="attribute">background-repeat</span>: no-repeat;   <span class="attribute">background-attachment</span>:fixed;   <span class="attribute">background-position</span>:<span class="number">50%</span> <span class="number">50%</span>;   }</code></pre><ul><li>本地文件夹：博客源目录\public\images</li><li>外部链接直接写入<code>url(...);</code>括号内。  </li></ul><h1 id="8194-文章宽度"><a href="#8194-文章宽度" class="headerlink" title="&#8194;文章宽度"></a>&#8194;文章宽度</h1><p>&#8195;在next\source\css_variables\base.styl文件内：  </p><pre><code class="CSS">$content-desktop                = 700px;$content-desktop-large          = 800px;$content-desktop-largest        = 900px;  </code></pre><p>&#8195;这三行控制文章在不同屏幕下的显示宽度。</p><h1 id="8194-Muse风格侧边栏宽度"><a href="#8194-Muse风格侧边栏宽度" class="headerlink" title="&#8194;Muse风格侧边栏宽度"></a>&#8194;Muse风格侧边栏宽度</h1><p>&#8195;在next\source\css_variables\Muse.styl文件内：<br><code>$sidebar-width= hexo-config(&#39;sidebar.width&#39;) is a &#39;unit&#39; ? hexo-config(&#39;sidebar.width&#39;) : 320;</code><br>&#8195;改后面的数字即可。</p>]]></content>
     
     <summary type="html">
     
@@ -302,11 +302,11 @@
       <category term="C#" scheme="http://yoursite.com/categories/C/"/>
     
     
-      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
       <category term="C#窗体程序" scheme="http://yoursite.com/tags/C-%E7%AA%97%E4%BD%93%E7%A8%8B%E5%BA%8F/"/>
     
       <category term="通讯" scheme="http://yoursite.com/tags/%E9%80%9A%E8%AE%AF/"/>
+    
+      <category term="数据库" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
       <category term="绘图" scheme="http://yoursite.com/tags/%E7%BB%98%E5%9B%BE/"/>
     

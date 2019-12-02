@@ -930,11 +930,11 @@ pre .javascript .function {
 }
 .main-inner {
   margin: 0 auto;
-  width: 700px;
+  width: 900px;
 }
 @media (min-width: 1200px) {
   .main-inner {
-    width: 800px;
+    width: 900px;
   }
 }
 @media (min-width: 1600px) {
@@ -948,11 +948,11 @@ pre .javascript .function {
 .header-inner {
   margin: 0 auto;
   position: relative;
-  width: 700px;
+  width: 900px;
 }
 @media (min-width: 1200px) {
   .header-inner {
-    width: 800px;
+    width: 900px;
   }
 }
 @media (min-width: 1600px) {
@@ -1096,30 +1096,6 @@ pre .javascript .function {
 .use-motion .menu-item {
   opacity: 0;
 }
-.book-mark-link {
-  border-bottom: none;
-  display: inline-block;
-  position: fixed;
-  right: 30px;
-  top: -10px;
-  transition: 0.3s;
-}
-@media (max-width: 991px) {
-  .book-mark-link {
-    display: none;
-  }
-}
-.book-mark-link::before {
-  color: #222;
-  content: '\f02e';
-  font-family: 'FontAwesome';
-  font-size: 32px;
-  line-height: 1;
-}
-.book-mark-link:hover,
-.book-mark-link-fixed {
-  top: -2px;
-}
 .sidebar {
   background: #222;
   bottom: 0;
@@ -1201,7 +1177,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #4712ff;
+  background: #82400a;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1437,11 +1413,11 @@ pre .javascript .function {
   box-sizing: border-box;
   margin: 0 auto;
   text-align: center;
-  width: 700px;
+  width: 900px;
 }
 @media (min-width: 1200px) {
   .footer-inner {
-    width: 800px;
+    width: 900px;
   }
 }
 @media (min-width: 1600px) {
@@ -2567,14 +2543,14 @@ embed {
   display: inline-block;
 }
 .sidebar {
-  left: -320px;
+  left: -300px;
 }
 .sidebar.sidebar-active {
   left: 0;
 }
 .sidebar {
   transition: all 0.4s;
-  width: 320px;
+  width: 300px;
   background: url("https://w.wallhaven.cc/full/0j/wallhaven-0j61mq.jpg");
   background-size: cover;
   background-position: center;

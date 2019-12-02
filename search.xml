@@ -60,8 +60,14 @@
    }</code></pre>
 <ul>
 <li>本地文件夹：博客源目录\public\images</li>
-<li>外部链接直接写入<code>url(...);</code>括号内。</li>
+<li>外部链接直接写入<code>url(...);</code>括号内。  </li>
 </ul>
+<h1 id="8194-文章宽度"><a href="#8194-文章宽度" class="headerlink" title="&#8194;文章宽度"></a>&#8194;文章宽度</h1><p>&#8195;在next\source\css_variables\base.styl文件内：  </p>
+<pre><code class="CSS">$content-desktop                = 700px;
+$content-desktop-large          = 800px;
+$content-desktop-largest        = 900px;  </code></pre>
+<p>&#8195;这三行控制文章在不同屏幕下的显示宽度。</p>
+<h1 id="8194-Muse风格侧边栏宽度"><a href="#8194-Muse风格侧边栏宽度" class="headerlink" title="&#8194;Muse风格侧边栏宽度"></a>&#8194;Muse风格侧边栏宽度</h1><p>&#8195;在next\source\css_variables\Muse.styl文件内：<br><code>$sidebar-width= hexo-config(&#39;sidebar.width&#39;) is a &#39;unit&#39; ? hexo-config(&#39;sidebar.width&#39;) : 320;</code><br>&#8195;改后面的数字即可。</p>
 ]]></content>
       <categories>
         <category>其他</category>
@@ -521,9 +527,9 @@ MouseUp()
         <category>C#</category>
       </categories>
       <tags>
-        <tag>数据库</tag>
         <tag>C#窗体程序</tag>
         <tag>通讯</tag>
+        <tag>数据库</tag>
         <tag>绘图</tag>
       </tags>
   </entry>
