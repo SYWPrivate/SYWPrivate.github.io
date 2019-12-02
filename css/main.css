@@ -1096,6 +1096,30 @@ pre .javascript .function {
 .use-motion .menu-item {
   opacity: 0;
 }
+.book-mark-link {
+  border-bottom: none;
+  display: inline-block;
+  position: fixed;
+  right: 30px;
+  top: -10px;
+  transition: 0.3s;
+}
+@media (max-width: 991px) {
+  .book-mark-link {
+    display: none;
+  }
+}
+.book-mark-link::before {
+  color: #222;
+  content: '\f02e';
+  font-family: 'FontAwesome';
+  font-size: 32px;
+  line-height: 1;
+}
+.book-mark-link:hover,
+.book-mark-link-fixed {
+  top: -2px;
+}
 .sidebar {
   background: #222;
   bottom: 0;
@@ -1177,7 +1201,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #52c2fc;
+  background: #4712ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1567,30 +1591,34 @@ pre .javascript .function {
 }
 .back-to-top {
   background: #222;
+  bottom: -100px;
+  box-sizing: border-box;
+  color: #f5f5dc;
+  cursor: pointer;
   font-size: 12px;
-  margin: 8px -10px -20px;
-  opacity: 0;
+  left: 30px;
+  opacity: 1;
+  padding: 0 6px;
+  position: fixed;
   text-align: center;
+  transition-property: bottom;
+  z-index: 1300;
   transition-delay: 0s;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
+  width: initial;
+}
+.back-to-top:hover {
+  color: #87daff;
 }
 .back-to-top.back-to-top-on {
-  cursor: pointer;
-  opacity: 1;
+  bottom: 19px;
 }
-.back-to-top.back-to-top-on:hover {
-  opacity: 0.8;
-}
-.reading-progress-bar {
-  background: #37c6c0;
-  display: block;
-  height: 3px;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 0;
-  z-index: 1500;
+@media (max-width: 991px) {
+  .back-to-top {
+    left: 20px;
+    opacity: 0.8;
+  }
 }
 .post-body {
   overflow-wrap: break-word;
@@ -2547,6 +2575,15 @@ embed {
 .sidebar {
   transition: all 0.4s;
   width: 320px;
+  background: url("https://w.wallhaven.cc/full/0j/wallhaven-0j61mq.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sidebar p,
+.sidebar span,
+.sidebar a {
+  color: #333;
 }
 body {
   background-image: url("https://w.wallhaven.cc/full/73/wallhaven-7397yo.jpg");
