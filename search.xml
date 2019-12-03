@@ -124,22 +124,44 @@ $content-desktop-largest        = 900px;  </code></pre>
     <url>/2019/11/26/CDataLenCode/</url>
     <content><![CDATA[<p>&#8195;<strong>多是书中摘要，少是个人见解。</strong></p>
 <a id="more"></a>
-<h1 id="8194-第一章：引论"><a href="#8194-第一章：引论" class="headerlink" title="&#8194;第一章：引论"></a>&#8194;第一章：引论</h1><h2 id="8194-此书讨论的内容"><a href="#8194-此书讨论的内容" class="headerlink" title="&#8194;此书讨论的内容"></a>&#8194;此书讨论的内容</h2><p>&#8195;<strong>代码的运行时间</strong>  </p>
-<h2 id="8194-涉及的数学知识"><a href="#8194-涉及的数学知识" class="headerlink" title="&#8194;涉及的数学知识"></a>&#8194;涉及的数学知识</h2><h3 id="8194-指数"><a href="#8194-指数" class="headerlink" title="&#8194;指数"></a>&#8194;指数</h3><h3 id="8194-对数"><a href="#8194-对数" class="headerlink" title="&#8194;对数"></a>&#8194;对数</h3><h3 id="8194-级数"><a href="#8194-级数" class="headerlink" title="&#8194;级数"></a>&#8194;级数</h3><h3 id="8194-模运算"><a href="#8194-模运算" class="headerlink" title="&#8194;模运算"></a>&#8194;模运算</h3><h3 id="8194-证明方法"><a href="#8194-证明方法" class="headerlink" title="&#8194;证明方法"></a>&#8194;证明方法</h3><ul>
-<li><p>反证法</p>
-</li>
-<li><p>例：<br>证明：存在无穷多个素数。</p>
-</li>
-<li><p>数学归纳法</p>
-<h3 id="8194-递归简论"><a href="#8194-递归简论" class="headerlink" title="&#8194;递归简论"></a>&#8194;递归简论</h3></li>
+<h1 id="8194-第一章：引论"><a href="#8194-第一章：引论" class="headerlink" title="&#8194;第一章：引论"></a>&#8194;第一章：引论</h1><h2 id="8194-此书讨论的内容"><a href="#8194-此书讨论的内容" class="headerlink" title="&#8194;此书讨论的内容"></a>&#8194;此书讨论的内容</h2><p>&#8195;<strong>对于大量的输入，如何估计代码的运行时间</strong>  </p>
+<h2 id="8194-涉及的数学知识"><a href="#8194-涉及的数学知识" class="headerlink" title="&#8194;涉及的数学知识"></a>&#8194;涉及的数学知识</h2><h3 id="8194-指数"><a href="#8194-指数" class="headerlink" title="&#8194;指数"></a>&#8194;指数</h3><div align="center"><img width="400" height="250" data-src="/2019/11/26/CDataLenCode/1-2-1.png"></div>
+
+<h3 id="8194-对数"><a href="#8194-对数" class="headerlink" title="&#8194;对数"></a>&#8194;对数</h3><p>&#8195;在计算机科学中，除非特别说明，所有的对数都是以2为底。    </p>
+<div align="center"><img width="555" height="290" data-src="/2019/11/26/CDataLenCode/1-2-2.png"></div>
+
+<h3 id="8194-级数"><a href="#8194-级数" class="headerlink" title="&#8194;级数"></a>&#8194;级数</h3><div align="center"><img width="250" height="162" data-src="/2019/11/26/CDataLenCode/1-2-3.png"></div>  
+
+<h3 id="8194-模运算"><a href="#8194-模运算" class="headerlink" title="&#8194;模运算"></a>&#8194;模运算</h3><ul>
+<li>感兴趣的可以百度了解下，容易出错，需要谨慎使用，我就不写了。</li>
 </ul>
-<h1 id="8194-第二章：算法分析"><a href="#8194-第二章：算法分析" class="headerlink" title="&#8194;第二章：算法分析"></a>&#8194;第二章：算法分析</h1><h2 id="8194-数学基础"><a href="#8194-数学基础" class="headerlink" title="&#8194;数学基础"></a>&#8194;数学基础</h2><h2 id="8194-模型"><a href="#8194-模型" class="headerlink" title="&#8194;模型"></a>&#8194;模型</h2><h2 id="8194-问题"><a href="#8194-问题" class="headerlink" title="&#8194;问题"></a>&#8194;问题</h2><h2 id="8194-运行时间计算"><a href="#8194-运行时间计算" class="headerlink" title="&#8194;运行时间计算"></a>&#8194;运行时间计算</h2><h3 id="8194-一个简单的例子"><a href="#8194-一个简单的例子" class="headerlink" title="&#8194;一个简单的例子"></a>&#8194;一个简单的例子</h3><h3 id="8194-一般法则"><a href="#8194-一般法则" class="headerlink" title="&#8194;一般法则"></a>&#8194;一般法则</h3><h3 id="8194-最大子序列和问题的解"><a href="#8194-最大子序列和问题的解" class="headerlink" title="&#8194;最大子序列和问题的解"></a>&#8194;最大子序列和问题的解</h3><p>&#8194;<strong>这里我只给出两种解：</strong>  </p>
+<h3 id="8194-证明方法"><a href="#8194-证明方法" class="headerlink" title="&#8194;证明方法"></a>&#8194;证明方法</h3><ul>
+<li><p>数学归纳法<br>&#8195;略…… </p>
+</li>
+<li><p>反证法<br>&#8195;例：<br>&#8195;证明：存在无穷多个素数。<br>&#8195;解（<strong>欧几里得</strong>）： 假设存在最大素数P，令<strong>N=2*3*5*7*…*P + 1</strong>，明显N&gt;P,因为P为最大素数，所以N为合数。则N能被2,3,5…P中的一个素数整除，明显，N除以其中任一素数均余1。<br>&#8195;1. N为素数，N&gt;P,与假设矛盾。<br>&#8195;2. N为合数，N必定能被一素数Q整除，且Q不在2,3,5…P中，即: Q &gt; P,与假设矛盾。<br>&#8195;综上:  得证。  </p>
+</li>
+</ul>
+<h3 id="8194-递归简论"><a href="#8194-递归简论" class="headerlink" title="&#8194;递归简论"></a>&#8194;递归简论</h3><p>&#8195;问：递归是否是循环逻辑？<br>&#8195;解：不是，用5得到5才是循环，递归是用5得到4。    </p>
+<ul>
+<li>注：对于数值计算不要使用递归，切记。  </li>
+</ul>
+<p>&#8195;递归的四条基本法则：  </p>
+<ol>
+<li>基准情况： 必须总有某些基准情况，它无需递归就能解出。  </li>
+<li>不断推进：对于需要递归求解的情形，每一次递归调用都必须要是求解状况朝接近基准情形的方向推进。  </li>
+<li>设计法则：假设所有的递归调用都能运行。  </li>
+<li>合成效益法则: 在求解一个问题的同一实例时，切勿在不同的递归调用中做重复性工作。      </li>
+</ol>
+<h1 id="8194-第二章：算法分析"><a href="#8194-第二章：算法分析" class="headerlink" title="&#8194;第二章：算法分析"></a>&#8194;第二章：算法分析</h1><ul>
+<li><strong>正确性、时间、空间</strong>     </li>
+</ul>
+<h2 id="8194-数学基础"><a href="#8194-数学基础" class="headerlink" title="&#8194;数学基础"></a>&#8194;数学基础</h2><h2 id="8194-模型"><a href="#8194-模型" class="headerlink" title="&#8194;模型"></a>&#8194;模型</h2><h2 id="8194-问题"><a href="#8194-问题" class="headerlink" title="&#8194;问题"></a>&#8194;问题</h2><h2 id="8194-运行时间计算"><a href="#8194-运行时间计算" class="headerlink" title="&#8194;运行时间计算"></a>&#8194;运行时间计算</h2><h3 id="8194-一个简单的例子"><a href="#8194-一个简单的例子" class="headerlink" title="&#8194;一个简单的例子"></a>&#8194;一个简单的例子</h3><h3 id="8194-一般法则"><a href="#8194-一般法则" class="headerlink" title="&#8194;一般法则"></a>&#8194;一般法则</h3><h3 id="8194-最大子序列和问题的解"><a href="#8194-最大子序列和问题的解" class="headerlink" title="&#8194;最大子序列和问题的解"></a>&#8194;最大子序列和问题的解</h3><p>&#8194;<strong>这里我只给出两种解：</strong>  </p>
 <ul>
 <li>次优</li>
 <li>时间复杂度O(N log N )</li>
-<li>递归+分治 </li>
+<li>递归+分治   </li>
 </ul>
-<pre><code class="C"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span>
+<pre><code class="C"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;                                </span></span>
 <span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>
 <span class="function"></span>{
     <span class="function"><span class="keyword">int</span> <span class="title">MaxSubSum</span><span class="params">(<span class="keyword">int</span> A[], <span class="keyword">int</span> Left, <span class="keyword">int</span> Right)</span></span>;
@@ -527,9 +549,9 @@ MouseUp()
         <category>C#</category>
       </categories>
       <tags>
+        <tag>数据库</tag>
         <tag>C#窗体程序</tag>
         <tag>通讯</tag>
-        <tag>数据库</tag>
         <tag>绘图</tag>
       </tags>
   </entry>
