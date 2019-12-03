@@ -94,9 +94,25 @@ $content-desktop-largest        = 900px;  </code></pre>
 </blockquote>
 <blockquote>
 <p>&#8195;成功虽无把握，成仁却有决心。</p>
-<p align="right">---黄景升</p>  
+<p align="right">---黄景升</p>    
 </blockquote>
-<h1 id="8194-灵魂"><a href="#8194-灵魂" class="headerlink" title="&#8194;灵魂"></a>&#8194;灵魂</h1><blockquote>
+<h1 id="8194-哲理"><a href="#8194-哲理" class="headerlink" title="&#8194;哲理"></a>&#8194;哲理</h1><blockquote>
+<p>&#8195;从来如此，便对么？</p>
+<p align="right">---鲁迅《狂人日记》</p>      
+</blockquote>
+<blockquote>
+<p>&#8195;“怎样算欺凌？”<br>&#8195;“十人欺负一人算欺凌，一百个人欺负一人也是。”<br>&#8195;“那么一万个人呢？”<br>&#8195;“是正义啊。”</p>
+<p align="right">---《世界命题》</p>   
+</blockquote>
+<blockquote>
+<p>&#8195;与怪物战斗的人，应当小心自己不要成为怪物。当你远远凝视深渊的时候，深渊也在凝视着你。</p>
+<p align="right">---尼采《善恶的彼岸》</p>   
+</blockquote>
+<h1 id="8194-人性"><a href="#8194-人性" class="headerlink" title="&#8194;人性"></a>&#8194;人性</h1><blockquote>
+<p>&#8195;人的脆弱和坚强都超乎自己的想象。有时，我可能脆弱得一句话就泪流满面，有时，也发现自己咬着牙走了很长的路。  </p>
+<p align="right">---莫泊桑《一生》</p>   
+</blockquote>
+<blockquote>
 <p>&#8195;我所有的自负都来自我的自卑，所有的英雄气概都来自于我内心的软弱，所有的振振有词都因为心中满是疑惑。我假装无情，其实痛恨自己深情。我以为人生的意义在于四处游荡流亡，其实只是掩饰至今没有找到愿意驻足的地方。</p>
 <p align="right">---马良《坦白书》</p>    
 </blockquote>
@@ -122,7 +138,7 @@ $content-desktop-largest        = 900px;  </code></pre>
   <entry>
     <title>《数据结构与算法分析——C语言描述》--学习笔记</title>
     <url>/2019/11/26/CDataLenCode/</url>
-    <content><![CDATA[<p>&#8195;<strong>多是书中摘要，少是个人见解。</strong></p>
+    <content><![CDATA[<p>&#8195;<strong>多是书中摘要，少是个人见解。</strong>  </p>
 <a id="more"></a>
 <h1 id="8194-第一章：引论"><a href="#8194-第一章：引论" class="headerlink" title="&#8194;第一章：引论"></a>&#8194;第一章：引论</h1><h2 id="8194-此书讨论的内容"><a href="#8194-此书讨论的内容" class="headerlink" title="&#8194;此书讨论的内容"></a>&#8194;此书讨论的内容</h2><p>&#8195;<strong>对于大量的输入，如何估计代码的运行时间</strong>  </p>
 <h2 id="8194-涉及的数学知识"><a href="#8194-涉及的数学知识" class="headerlink" title="&#8194;涉及的数学知识"></a>&#8194;涉及的数学知识</h2><h3 id="8194-指数"><a href="#8194-指数" class="headerlink" title="&#8194;指数"></a>&#8194;指数</h3><div align="center"><img width="400" height="250" data-src="/2019/11/26/CDataLenCode/1-2-1.png"></div>
@@ -141,9 +157,9 @@ $content-desktop-largest        = 900px;  </code></pre>
 <li><p>反证法<br>&#8195;例：<br>&#8195;证明：存在无穷多个素数。<br>&#8195;解（<strong>欧几里得</strong>）： 假设存在最大素数P，令<strong>N=2*3*5*7*…*P + 1</strong>，明显N&gt;P,因为P为最大素数，所以N为合数。则N能被2,3,5…P中的一个素数整除，明显，N除以其中任一素数均余1。<br>&#8195;1. N为素数，N&gt;P,与假设矛盾。<br>&#8195;2. N为合数，N必定能被一素数Q整除，且Q不在2,3,5…P中，即: Q &gt; P,与假设矛盾。<br>&#8195;综上:  得证。  </p>
 </li>
 </ul>
-<h3 id="8194-递归简论"><a href="#8194-递归简论" class="headerlink" title="&#8194;递归简论"></a>&#8194;递归简论</h3><p>&#8195;问：递归是否是循环逻辑？<br>&#8195;解：不是，用5得到5才是循环，递归是用5得到4。    </p>
+<h3 id="8194-递归简论"><a href="#8194-递归简论" class="headerlink" title="&#8194;递归简论"></a>&#8194;递归简论</h3><p>&#8195;问：递归是否是循环逻辑？<br>&#8195;解：不是，用5得到5才是循环，递归是用5得到4（大概意思，自己理解）  </p>
 <ul>
-<li>注：对于数值计算不要使用递归，切记。  </li>
+<li>注：对于数值计算不要使用递归，切记。    </li>
 </ul>
 <p>&#8195;递归的四条基本法则：  </p>
 <ol>
@@ -155,7 +171,30 @@ $content-desktop-largest        = 900px;  </code></pre>
 <h1 id="8194-第二章：算法分析"><a href="#8194-第二章：算法分析" class="headerlink" title="&#8194;第二章：算法分析"></a>&#8194;第二章：算法分析</h1><ul>
 <li><strong>正确性、时间、空间</strong>     </li>
 </ul>
-<h2 id="8194-数学基础"><a href="#8194-数学基础" class="headerlink" title="&#8194;数学基础"></a>&#8194;数学基础</h2><h2 id="8194-模型"><a href="#8194-模型" class="headerlink" title="&#8194;模型"></a>&#8194;模型</h2><h2 id="8194-问题"><a href="#8194-问题" class="headerlink" title="&#8194;问题"></a>&#8194;问题</h2><h2 id="8194-运行时间计算"><a href="#8194-运行时间计算" class="headerlink" title="&#8194;运行时间计算"></a>&#8194;运行时间计算</h2><h3 id="8194-一个简单的例子"><a href="#8194-一个简单的例子" class="headerlink" title="&#8194;一个简单的例子"></a>&#8194;一个简单的例子</h3><h3 id="8194-一般法则"><a href="#8194-一般法则" class="headerlink" title="&#8194;一般法则"></a>&#8194;一般法则</h3><h3 id="8194-最大子序列和问题的解"><a href="#8194-最大子序列和问题的解" class="headerlink" title="&#8194;最大子序列和问题的解"></a>&#8194;最大子序列和问题的解</h3><p>&#8194;<strong>这里我只给出两种解：</strong>  </p>
+<h2 id="8194-数学基础"><a href="#8194-数学基础" class="headerlink" title="&#8194;数学基础"></a>&#8194;数学基础</h2><ul>
+<li>四个定义：  <div align="center"><img width="700" height="154" data-src="/2019/11/26/CDataLenCode/2-1.png"></div>   
+
+</li>
+</ul>
+<p>&#8195;这边比较的是相对增长率。当将相对增长率应用到算法分析的时候，我们将会明白为什么它是重要的度量。  </p>
+<p>&#8195;这边解释下这四个定义，因为很重要：  </p>
+<ol>
+<li>T(N)的增长率小于等于f(N)。<br>&#8195;这条最常用，平时常看别人描述时间复杂度O(n^2)（大写的O），就是这个含义。<strong>代码的时间复杂度小于等于n^2。</strong>  </li>
+<li>T(N)的增长率大于等于g(N)。  </li>
+<li>T(N)的增长率等于h(N)。  </li>
+<li>T(N)的增长率小于p(N)。  </li>
+</ol>
+<ul>
+<li><p>三个法则  </p>
+<div align="center"><img width="559" height="207" data-src="/2019/11/26/CDataLenCode/2-1-1.png"></div>   
+</li>
+<li><p>注：算相对增长率的时候会经常用到<strong>洛必达法则</strong>，请自行百度学习。</p>
+</li>
+</ul>
+<h2 id="8194-模型"><a href="#8194-模型" class="headerlink" title="&#8194;模型"></a>&#8194;模型</h2><ul>
+<li>这个模型就是一个理想模型，一台理想状态下的电脑，读取数据不耗时等等，方便计算代码的理想运行时间。</li>
+</ul>
+<h2 id="8194-问题"><a href="#8194-问题" class="headerlink" title="&#8194;问题"></a>&#8194;问题</h2><h2 id="8194-运行时间计算"><a href="#8194-运行时间计算" class="headerlink" title="&#8194;运行时间计算"></a>&#8194;运行时间计算</h2><h3 id="8194-一个简单的例子"><a href="#8194-一个简单的例子" class="headerlink" title="&#8194;一个简单的例子"></a>&#8194;一个简单的例子</h3><h3 id="8194-一般法则"><a href="#8194-一般法则" class="headerlink" title="&#8194;一般法则"></a>&#8194;一般法则</h3><h3 id="8194-最大子序列和问题的解"><a href="#8194-最大子序列和问题的解" class="headerlink" title="&#8194;最大子序列和问题的解"></a>&#8194;最大子序列和问题的解</h3><p>&#8194;<strong>这里我只给出两种解：</strong>  </p>
 <ul>
 <li>次优</li>
 <li>时间复杂度O(N log N )</li>
