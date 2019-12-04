@@ -42,7 +42,9 @@
   <entry>
     <title>Hexo Next6.0</title>
     <url>/2019/11/27/HexoNotes/</url>
-    <content><![CDATA[<h1 id="8194-字色"><a href="#8194-字色" class="headerlink" title="&#8194;字色"></a>&#8194;字色</h1><p>&#8195;在next\source\css_variables\base.styl文件中<br>&#8195;<strong>$grey-dim  = #666;</strong> 这个颜色是写文章普通用字的颜色，就是写的最多的字的颜色，改成自己需要的即可。  </p><a id="more"></a>
+    <content><![CDATA[<p>&#8195;本文只针对我遇到的情况，next\source\css\目录下没有custom文件，如何修改各种样式，仅供参考。  </p>
+<a id="more"></a>    
+<h1 id="8194-字色"><a href="#8194-字色" class="headerlink" title="&#8194;字色"></a>&#8194;字色</h1><p>&#8195;在next\source\css_variables\base.styl文件中<br>&#8195;<strong>$grey-dim  = #666;</strong> 这个颜色是写文章普通用字的颜色，就是写的最多的字的颜色，改成自己需要的即可。  </p>
 <ul>
 <li>例：$grey-dim  = #000;（黑色）  </li>
 </ul>
@@ -60,7 +62,20 @@
    }</code></pre>
 <ul>
 <li>本地文件夹：博客源目录\public\images</li>
-<li>外部链接直接写入<code>url(...);</code>括号内。  </li>
+<li>外部链接直接写入<code>url(...);</code>括号内。    </li>
+</ul>
+<h1 id="8194-侧边栏背景图片"><a href="#8194-侧边栏背景图片" class="headerlink" title="&#8194;侧边栏背景图片"></a>&#8194;侧边栏背景图片</h1><p>&#8195;在next\source\css_schemes\Muse（最后这个目录为自己所选的风格）文件夹中，_sidebar.styl文件中  </p>
+<pre><code class="CSS"><span class="selector-class">.sidebar</span> {
+  <span class="attribute">transition</span>: all .<span class="number">4s</span>;
+  width: $sidebar-desktop;   #前两行本来就有，下面是加入的图片背景
+  <span class="selector-tag">background</span>: <span class="selector-tag">url</span>(……);
+  <span class="selector-tag">background-size</span>: <span class="selector-tag">cover</span>;
+  <span class="selector-tag">background-position</span><span class="selector-pseudo">:center</span>;
+  <span class="selector-tag">background-repeat</span><span class="selector-pseudo">:no-repeat</span>;
+  <span class="selector-tag">p</span>,<span class="selector-tag">span</span>,<span class="selector-tag">a</span> {<span class="attribute">color</span>: <span class="number">#222</span>;}   #侧边栏部分字体颜色
+}  </code></pre>
+<ul>
+<li>外部链接直接写入<code>url(...);</code>括号内。   </li>
 </ul>
 <h1 id="8194-文章宽度"><a href="#8194-文章宽度" class="headerlink" title="&#8194;文章宽度"></a>&#8194;文章宽度</h1><p>&#8195;在next\source\css_variables\base.styl文件内：  </p>
 <pre><code class="CSS">$content-desktop                = 700px;
@@ -194,7 +209,10 @@ $content-desktop-largest        = 900px;  </code></pre>
 <h2 id="8194-模型"><a href="#8194-模型" class="headerlink" title="&#8194;模型"></a>&#8194;模型</h2><ul>
 <li>这个模型就是一个理想模型，一台理想状态下的电脑，读取数据不耗时等等，方便计算代码的理想运行时间。</li>
 </ul>
-<h2 id="8194-问题"><a href="#8194-问题" class="headerlink" title="&#8194;问题"></a>&#8194;问题</h2><h2 id="8194-运行时间计算"><a href="#8194-运行时间计算" class="headerlink" title="&#8194;运行时间计算"></a>&#8194;运行时间计算</h2><h3 id="8194-一个简单的例子"><a href="#8194-一个简单的例子" class="headerlink" title="&#8194;一个简单的例子"></a>&#8194;一个简单的例子</h3><h3 id="8194-一般法则"><a href="#8194-一般法则" class="headerlink" title="&#8194;一般法则"></a>&#8194;一般法则</h3><h3 id="8194-最大子序列和问题的解"><a href="#8194-最大子序列和问题的解" class="headerlink" title="&#8194;最大子序列和问题的解"></a>&#8194;最大子序列和问题的解</h3><p>&#8194;<strong>这里我只给出两种解：</strong>  </p>
+<h2 id="8194-要分析的问题"><a href="#8194-要分析的问题" class="headerlink" title="&#8194;要分析的问题"></a>&#8194;要分析的问题</h2><p>&#8195;代码的运行时间：T(N)平均、T(N)最坏。一半计算最坏情况下代码的运行时长，因为……<br>&#8195;例：最大子序列和问题<br>&#8195;描述：给定一个整数数组A[n]，找到一个具有最大和的连续子数组（子数组最少包含一个元素）。（为方便起见，如果所有整数均为负数，则最大子序列何为0）</p>
+<h2 id="8194-运行时间计算"><a href="#8194-运行时间计算" class="headerlink" title="&#8194;运行时间计算"></a>&#8194;运行时间计算</h2><p>&#8195;这里计算的是大O，最坏情况下的时间：代码可能提前结束，但绝不会拖后。</p>
+<h3 id="8194-一个简单的例子"><a href="#8194-一个简单的例子" class="headerlink" title="&#8194;一个简单的例子"></a>&#8194;一个简单的例子</h3><p>&#8195;这个例子是：计算 $\sum_{i=1}^Ni^3$<br>&#8195;它的运行总时长为：aN+b（a,b为常数），所以他的时间复杂度为O(N)。<br>&#8195;这个例子只为引出下面的一般法则。 </p>
+<h3 id="8194-一般法则"><a href="#8194-一般法则" class="headerlink" title="&#8194;一般法则"></a>&#8194;一般法则</h3><h3 id="8194-最大子序列和问题的解"><a href="#8194-最大子序列和问题的解" class="headerlink" title="&#8194;最大子序列和问题的解"></a>&#8194;最大子序列和问题的解</h3><p>&#8194;<strong>这里我只给出两种解：</strong>  </p>
 <ul>
 <li>次优</li>
 <li>时间复杂度O(N log N )</li>
@@ -546,7 +564,7 @@ MouseUp()
   <entry>
     <title>Windows窗体应用程序</title>
     <url>/2019/11/19/Sensorproject/</url>
-    <content><![CDATA[<h1 id="8194-概述"><a href="#8194-概述" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h1><p>&#8195;这是一个被写的尽量<strong>全面而浅显</strong>的<strong>完整的工程项目实例</strong>。<br>&#8195;<strong>语言：C#<br>&#8195;框架：Windows窗体应用程序<br>&#8195;通讯：串口通信（协议：Modbus）<br>&#8195;数据库：Oracle。</strong>    </p>
+    <content><![CDATA[<h1 id="8194-概述"><a href="#8194-概述" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h1><p>&#8195;这是一个被写的尽量<strong>全面而浅显</strong>的<strong>完整的工程项目实例</strong>。<br>&#8195;<strong>语言：C#<br>&#8195;框架：Windows窗体应用程序<br>&#8195;通讯：串口通信（协议：Modbus）<br>&#8195;数据库：Oracle。<br>&#8195;绘图：Graphics类</strong>  </p>
 <a id="more"></a>
 <p>&#8195;这个项目实现了与一个或多个自动化设备通信，自动的读取、修改设备的当前数据、状态，并将需要保存的数据放入Oracle数据库，可以按要求调出查看。  </p>
 <h1 id="8194-前言"><a href="#8194-前言" class="headerlink" title="&#8194;前言"></a>&#8194;前言</h1><p>&#8195;写一个完整的项目，不仅需要<strong>浅显易懂的变量名</strong>，而且需要<strong>非常清晰的错误文档</strong>。这两点非常非常重要！！！在写程序之前，有必要先讨论一下这两点。 </p>
@@ -580,17 +598,24 @@ MouseUp()
           <span class="keyword">return</span> result;
       }</code></pre>
 <h2 id="8194-通信实现"><a href="#8194-通信实现" class="headerlink" title="&#8194;通信实现"></a>&#8194;通信实现</h2><h3 id="8194-概述-2"><a href="#8194-概述-2" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h3><p>&#8195;通信其实一般都不会采用：发送报文–等待接收–接收到–程序继续，这种方式，我也不多说。<br>&#8195;通信的一般方法是：<br><code>public List&lt;string&gt; arrDataToPort = null, arrDataFromPort = null;</code><br>&#8195;发送：创建发送报文线程（DataSend()），不停检查arrDataToPort是否为空，不为空，则lock(arrDataToPort),发出报文，清空arrDataToPort。<br>&#8195;有要发送的报文，就lock(arrDataToPort)，写入报文即可。<br>&#8195;接收：接收自有<strong>接收响应事件</strong>，这里的重点是：将接收到的所有内容放到一个<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS9TdHJpbmdCdWlsZGVy" title="https://baike.baidu.com/item/StringBuilder">StringBuilder<i class="fa fa-external-link"></i></span> strData中，然后处理字符串即可。（这个在处理接收数据中再详细讨论）  </p>
-<h1 id="8194-数据库"><a href="#8194-数据库" class="headerlink" title="&#8194;数据库"></a>&#8194;数据库</h1><p>&#8195;？？？  </p>
-<h1 id="8194-绘图"><a href="#8194-绘图" class="headerlink" title="&#8194;绘图"></a>&#8194;绘图</h1><p>&#8195;：：：  </p>
-<h1 id="8194-通用"><a href="#8194-通用" class="headerlink" title="&#8194;通用"></a>&#8194;通用</h1><p>&#8195;：：</p>
+<h1 id="8194-数据库"><a href="#8194-数据库" class="headerlink" title="&#8194;数据库"></a>&#8194;数据库</h1><p>&#8194;数据库及版本：<strong>Oracle 11g</strong>  </p>
+<h2 id="8194-安装"><a href="#8194-安装" class="headerlink" title="&#8194;安装"></a>&#8194;安装</h2><h2 id="8194-建表"><a href="#8194-建表" class="headerlink" title="&#8194;建表"></a>&#8194;建表</h2><p>&#8195;Oracle数据库可以存放二维表，    </p>
+<h3 id="8194-语句"><a href="#8194-语句" class="headerlink" title="&#8194;语句"></a>&#8194;语句</h3><h3 id="8194-结构"><a href="#8194-结构" class="headerlink" title="&#8194;结构"></a>&#8194;结构</h3><h2 id="8194-与C-连接"><a href="#8194-与C-连接" class="headerlink" title="&#8194;与C#连接"></a>&#8194;与C#连接</h2><h1 id="8194-绘图"><a href="#8194-绘图" class="headerlink" title="&#8194;绘图"></a>&#8194;绘图</h1><h2 id="8194-概述-3"><a href="#8194-概述-3" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h2><p>&#8195;绘图部分实现的功能：  </p>
+<ul>
+<li>动态展现4H内的实时数据，直观感受为：曲线不停右移，旧数据从右端消失，新数据加到左端。  </li>
+<li>查看历史，缩放选取。（如下所示）       </li>
+</ul>
+<div align="center"><img width="1190" height="526" data-src="/2019/11/19/Sensorproject/3-1.gif"></div>
+
+<h2 id="8194-实时曲线"><a href="#8194-实时曲线" class="headerlink" title="&#8194;实时曲线"></a>&#8194;实时曲线</h2><h2 id="8194-查看历史"><a href="#8194-查看历史" class="headerlink" title="&#8194;查看历史"></a>&#8194;查看历史</h2><h1 id="8194-通用"><a href="#8194-通用" class="headerlink" title="&#8194;通用"></a>&#8194;通用</h1><p>&#8195;：：</p>
 ]]></content>
       <categories>
         <category>C#</category>
       </categories>
       <tags>
-        <tag>数据库</tag>
         <tag>C#窗体程序</tag>
         <tag>通讯</tag>
+        <tag>数据库</tag>
         <tag>绘图</tag>
       </tags>
   </entry>

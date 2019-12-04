@@ -1177,7 +1177,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffff1c;
+  background: #36ffff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2559,7 +2559,7 @@ embed {
 .sidebar p,
 .sidebar span,
 .sidebar a {
-  color: #333;
+  color: #222;
 }
 body {
   background-image: url("https://w.wallhaven.cc/full/73/wallhaven-7397yo.jpg");
