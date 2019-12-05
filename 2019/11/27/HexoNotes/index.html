@@ -315,48 +315,45 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>&#8195;本文只针对我遇到的情况，next\source\css\目录下没有custom文件，如何修改各种样式，仅供参考。<br><a id="more"></a>    </p>
+        <p>&#8195;本文只针对我遇到的情况，next\source\css\目录下没有custom文件，如何修改各种样式，仅供参考。  </p>
+<a id="more"></a>    
 <h1 id="8194-字色"><a href="#8194-字色" class="headerlink" title="&#8194;字色"></a>&#8194;字色</h1><p>&#8195;在next\source\css_variables\base.styl文件中<br>&#8195;<strong>$grey-dim  = #666;</strong> 这个颜色是写文章普通用字的颜色，就是写的最多的字的颜色，改成自己需要的即可。  </p>
 <ul>
 <li>例：$grey-dim  = #000;（黑色）  </li>
 </ul>
 <h1 id="8194-文章背景"><a href="#8194-文章背景" class="headerlink" title="&#8194;文章背景"></a>&#8194;文章背景</h1><p>&#8195;在next\source\css_schemes\Muse\_menu.styl文件中（注：_schemes\Muse的Muse是主题配置文件中所选用的主题，请进入你选用的主题文件夹），加入：  </p>
-<pre><code class="lang-CSS">.main-inner {
+<pre><code class="CSS"><span class="selector-class">.main-inner</span> {
         background: #f5f5dc;//文章背景颜色
         opacity: 0.8;//文章背景透明度
-}
-</code></pre>
+}</code></pre>
 <h1 id="8194-网页背景图片"><a href="#8194-网页背景图片" class="headerlink" title="&#8194;网页背景图片"></a>&#8194;网页背景图片</h1><p>&#8195;在博客源目录\source_data中创建styles.styl文件，写入代码：  </p>
-<pre><code class="lang-CSS">body { 
-   background-image:url(/images/back.png); 
-   background-repeat: no-repeat;
-   background-attachment:fixed;
-   background-position:50% 50%;
-   }
-</code></pre>
+<pre><code class="CSS"><span class="selector-tag">body</span> { 
+   <span class="attribute">background-image</span>:<span class="built_in">url</span>(/images/back.png); 
+   <span class="attribute">background-repeat</span>: no-repeat;
+   <span class="attribute">background-attachment</span>:fixed;
+   <span class="attribute">background-position</span>:<span class="number">50%</span> <span class="number">50%</span>;
+   }</code></pre>
 <ul>
 <li>本地文件夹：博客源目录\public\images</li>
 <li>外部链接直接写入<code>url(...);</code>括号内。    </li>
 </ul>
 <h1 id="8194-侧边栏背景图片"><a href="#8194-侧边栏背景图片" class="headerlink" title="&#8194;侧边栏背景图片"></a>&#8194;侧边栏背景图片</h1><p>&#8195;在next\source\css_schemes\Muse（最后这个目录为自己所选的风格）文件夹中，_sidebar.styl文件中  </p>
-<pre><code class="lang-CSS">.sidebar {
-  transition: all .4s;
+<pre><code class="CSS"><span class="selector-class">.sidebar</span> {
+  <span class="attribute">transition</span>: all .<span class="number">4s</span>;
   width: $sidebar-desktop;   #前两行本来就有，下面是加入的图片背景
-  background: url(……);
-  background-size: cover;
-  background-position:center;
-  background-repeat:no-repeat;
-  p,span,a {color: #222;}   #侧边栏部分字体颜色
-}
-</code></pre>
+  <span class="selector-tag">background</span>: <span class="selector-tag">url</span>(……);
+  <span class="selector-tag">background-size</span>: <span class="selector-tag">cover</span>;
+  <span class="selector-tag">background-position</span><span class="selector-pseudo">:center</span>;
+  <span class="selector-tag">background-repeat</span><span class="selector-pseudo">:no-repeat</span>;
+  <span class="selector-tag">p</span>,<span class="selector-tag">span</span>,<span class="selector-tag">a</span> {<span class="attribute">color</span>: <span class="number">#222</span>;}   #侧边栏部分字体颜色
+}  </code></pre>
 <ul>
 <li>外部链接直接写入<code>url(...);</code>括号内。   </li>
 </ul>
 <h1 id="8194-文章宽度"><a href="#8194-文章宽度" class="headerlink" title="&#8194;文章宽度"></a>&#8194;文章宽度</h1><p>&#8195;在next\source\css_variables\base.styl文件内：  </p>
-<pre><code class="lang-CSS">$content-desktop                = 700px;
+<pre><code class="CSS">$content-desktop                = 700px;
 $content-desktop-large          = 800px;
-$content-desktop-largest        = 900px;
-</code></pre>
+$content-desktop-largest        = 900px;  </code></pre>
 <p>&#8195;这三行控制文章在不同屏幕下的显示宽度。</p>
 <h1 id="8194-Muse风格侧边栏宽度"><a href="#8194-Muse风格侧边栏宽度" class="headerlink" title="&#8194;Muse风格侧边栏宽度"></a>&#8194;Muse风格侧边栏宽度</h1><p>&#8195;在next\source\css_variables\Muse.styl文件内：<br><code>$sidebar-width= hexo-config(&#39;sidebar.width&#39;) is a &#39;unit&#39; ? hexo-config(&#39;sidebar.width&#39;) : 320;</code><br>&#8195;改后面的数字即可。</p>
 
