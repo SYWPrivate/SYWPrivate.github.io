@@ -1177,7 +1177,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #beff05;
+  background: #f0baff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2487,7 +2487,7 @@ embed {
   }
 }
 .main-inner {
-  background: #f0f0f0;
+  background: #f5f5f5;
   opacity: 0.9;
 }
 .menu-item-active a,
