@@ -154,12 +154,12 @@ $content-desktop-largest        = 900px;
     <url>/2019/11/26/CDataLenCode/</url>
     <content><![CDATA[<p>&#8195;<strong>多是书中摘要，少是个人见解。</strong><br><a id="more"></a></p>
 <h1 id="8194-第一章：引论"><a href="#8194-第一章：引论" class="headerlink" title="&#8194;第一章：引论"></a>&#8194;第一章：引论</h1><h2 id="8194-此书讨论的内容"><a href="#8194-此书讨论的内容" class="headerlink" title="&#8194;此书讨论的内容"></a>&#8194;此书讨论的内容</h2><p>&#8195;<strong>对于大量的输入，如何估计代码的运行时间</strong>  </p>
-<h2 id="8194-涉及的数学知识"><a href="#8194-涉及的数学知识" class="headerlink" title="&#8194;涉及的数学知识"></a>&#8194;涉及的数学知识</h2><h3 id="8194-指数"><a href="#8194-指数" class="headerlink" title="&#8194;指数"></a>&#8194;指数</h3><div align="center"><img width="400" height="250" data-src="CDataLenCode/1-2-1.png/"></div>
+<h2 id="8194-涉及的数学知识"><a href="#8194-涉及的数学知识" class="headerlink" title="&#8194;涉及的数学知识"></a>&#8194;涉及的数学知识</h2><h3 id="8194-指数"><a href="#8194-指数" class="headerlink" title="&#8194;指数"></a>&#8194;指数</h3><div align="center"><img width="400" height="250" data-src="1-2-1.png"></div>
 
 <h3 id="8194-对数"><a href="#8194-对数" class="headerlink" title="&#8194;对数"></a>&#8194;对数</h3><p>&#8195;在计算机科学中，除非特别说明，所有的对数都是以2为底。    </p>
-<div align="center"><img width="555" height="290" data-src="CDataLenCode/1-2-2.png/"></div>
+<div align="center"><img width="555" height="290" data-src="1-2-2.png"></div>
 
-<h3 id="8194-级数"><a href="#8194-级数" class="headerlink" title="&#8194;级数"></a>&#8194;级数</h3><div align="center"><img width="250" height="162" data-src="CDataLenCode/1-2-3.png/"></div>  
+<h3 id="8194-级数"><a href="#8194-级数" class="headerlink" title="&#8194;级数"></a>&#8194;级数</h3><div align="center"><img width="250" height="162" data-src="1-2-3.png"></div>  
 
 <h3 id="8194-模运算"><a href="#8194-模运算" class="headerlink" title="&#8194;模运算"></a>&#8194;模运算</h3><ul>
 <li>感兴趣的可以百度了解下，容易出错，需要谨慎使用，我就不写了。</li>
@@ -185,7 +185,7 @@ $content-desktop-largest        = 900px;
 <li><strong>正确性、时间、空间</strong>     </li>
 </ul>
 <h2 id="8194-数学基础"><a href="#8194-数学基础" class="headerlink" title="&#8194;数学基础"></a>&#8194;数学基础</h2><ul>
-<li>四个定义：  <div align="center"><img width="700" height="154" data-src="CDataLenCode/2-1.png/"></div>   
+<li>四个定义：  <div align="center"><img width="700" height="154" data-src="2-1.png"></div>   
 
 </li>
 </ul>
@@ -199,7 +199,7 @@ $content-desktop-largest        = 900px;
 </ol>
 <ul>
 <li><p>三个法则  </p>
-<div align="center"><img width="559" height="207" data-src="CDataLenCode/2-1-1.png/"></div>   
+<div align="center"><img width="559" height="207" data-src="2-1-1.png"></div>   
 </li>
 <li><p>注：算相对增长率的时候会经常用到<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlQjQlOUIlRTUlQkYlODUlRTglQkUlQkUlRTYlQjMlOTUlRTUlODglOTk=" title="https://baike.baidu.com/item/%E6%B4%9B%E5%BF%85%E8%BE%BE%E6%B3%95%E5%88%99"><strong>洛必达法则</strong><i class="fa fa-external-link"></i></span>。</p>
 </li>
@@ -412,7 +412,7 @@ MouseUp()
     <content><![CDATA[<p>&#8195;主要分享一下解数独的源代码，用到了比较重要的回溯算法！<br><a id="more"></a></p>
 <center>程序界面</center> 
 
-<div align="center"><img width="400" height="400" data-src="shudu/1.png/"></div>  
+<div align="center"><img width="400" height="400" data-src="1.png"></div>  
 
 <p>源代码：</p>
 <pre><code class="lang-C#">namespace shudu
@@ -611,7 +611,7 @@ MouseUp()
 <li>动态展现4H内的实时数据，直观感受为：曲线不停右移，旧数据从右端消失，新数据加到左端。  </li>
 <li>查看历史，缩放选取。（如下所示）       </li>
 </ul>
-<div align="center"><img width="1190" height="526" data-src="Sensorproject/3-1.gif"></div>
+<div align="center"><img width="1190" height="526" data-src="3-1.gif"></div>
 
 <h2 id="8194-实时曲线"><a href="#8194-实时曲线" class="headerlink" title="&#8194;实时曲线"></a>&#8194;实时曲线</h2><h2 id="8194-查看历史"><a href="#8194-查看历史" class="headerlink" title="&#8194;查看历史"></a>&#8194;查看历史</h2><h1 id="8194-通用"><a href="#8194-通用" class="headerlink" title="&#8194;通用"></a>&#8194;通用</h1><p>&#8195;：：</p>
 ]]></content>
@@ -619,9 +619,9 @@ MouseUp()
         <category>C#</category>
       </categories>
       <tags>
-        <tag>数据库</tag>
         <tag>C#窗体程序</tag>
         <tag>通讯</tag>
+        <tag>数据库</tag>
         <tag>绘图</tag>
       </tags>
   </entry>
