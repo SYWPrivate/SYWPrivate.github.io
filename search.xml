@@ -26,10 +26,10 @@
     <url>/2019/11/28/GoogleBackground/</url>
     <content><![CDATA[<h1 id="8194-网页顶部"><a href="#8194-网页顶部" class="headerlink" title="&#8194;网页顶部"></a>&#8194;网页顶部</h1><ul>
 <li>打开设置-&gt;外观-&gt;主题背景，选择喜欢的背景即可。<a id="more"></a>
-<img alt data-src="/2019/11/28/GoogleBackground/1.png"><br><img alt data-src="/2019/11/28/GoogleBackground/2.png">   </li>
+<img alt data-src="GoogleBackground/1.png"><br><img alt data-src="GoogleBackground/2.png">   </li>
 </ul>
 <h1 id="8194-网页主体"><a href="#8194-网页主体" class="headerlink" title="&#8194;网页主体"></a>&#8194;网页主体</h1><ul>
-<li>（同上）打开谷歌商店，选择扩展程序，直接搜索程序名称即可（下面有推荐）。<br><img alt data-src="/2019/11/28/GoogleBackground/3.png"><br>&#8194;这里有很多程序可选。<br><img alt data-src="/2019/11/28/GoogleBackground/4.png"><br><img alt data-src="/2019/11/28/GoogleBackground/5.png"> </li>
+<li>（同上）打开谷歌商店，选择扩展程序，直接搜索程序名称即可（下面有推荐）。<br><img alt data-src="GoogleBackground/3.png"><br>&#8194;这里有很多程序可选。<br><img alt data-src="GoogleBackground/4.png"><br><img alt data-src="GoogleBackground/5.png"> </li>
 </ul>
 ]]></content>
       <categories>
@@ -42,45 +42,48 @@
   <entry>
     <title>Hexo Next6.0</title>
     <url>/2019/11/27/HexoNotes/</url>
-    <content><![CDATA[<p>&#8195;本文只针对我遇到的情况，next\source\css\目录下没有custom文件，如何修改各种样式，仅供参考。  </p>
-<a id="more"></a>    
+    <content><![CDATA[<p>&#8195;本文只针对我遇到的情况，next\source\css\目录下没有custom文件，如何修改各种样式，仅供参考。<br><a id="more"></a>    </p>
 <h1 id="8194-字色"><a href="#8194-字色" class="headerlink" title="&#8194;字色"></a>&#8194;字色</h1><p>&#8195;在next\source\css_variables\base.styl文件中<br>&#8195;<strong>$grey-dim  = #666;</strong> 这个颜色是写文章普通用字的颜色，就是写的最多的字的颜色，改成自己需要的即可。  </p>
 <ul>
 <li>例：$grey-dim  = #000;（黑色）  </li>
 </ul>
 <h1 id="8194-文章背景"><a href="#8194-文章背景" class="headerlink" title="&#8194;文章背景"></a>&#8194;文章背景</h1><p>&#8195;在next\source\css_schemes\Muse\_menu.styl文件中（注：_schemes\Muse的Muse是主题配置文件中所选用的主题，请进入你选用的主题文件夹），加入：  </p>
-<pre><code class="CSS"><span class="selector-class">.main-inner</span> {
+<pre><code class="lang-CSS">.main-inner {
         background: #f5f5dc;//文章背景颜色
         opacity: 0.8;//文章背景透明度
-}</code></pre>
+}
+</code></pre>
 <h1 id="8194-网页背景图片"><a href="#8194-网页背景图片" class="headerlink" title="&#8194;网页背景图片"></a>&#8194;网页背景图片</h1><p>&#8195;在博客源目录\source_data中创建styles.styl文件，写入代码：  </p>
-<pre><code class="CSS"><span class="selector-tag">body</span> { 
-   <span class="attribute">background-image</span>:<span class="built_in">url</span>(/images/back.png); 
-   <span class="attribute">background-repeat</span>: no-repeat;
-   <span class="attribute">background-attachment</span>:fixed;
-   <span class="attribute">background-position</span>:<span class="number">50%</span> <span class="number">50%</span>;
-   }</code></pre>
+<pre><code class="lang-CSS">body { 
+   background-image:url(/images/back.png); 
+   background-repeat: no-repeat;
+   background-attachment:fixed;
+   background-position:50% 50%;
+   }
+</code></pre>
 <ul>
 <li>本地文件夹：博客源目录\public\images</li>
 <li>外部链接直接写入<code>url(...);</code>括号内。    </li>
 </ul>
 <h1 id="8194-侧边栏背景图片"><a href="#8194-侧边栏背景图片" class="headerlink" title="&#8194;侧边栏背景图片"></a>&#8194;侧边栏背景图片</h1><p>&#8195;在next\source\css_schemes\Muse（最后这个目录为自己所选的风格）文件夹中，_sidebar.styl文件中  </p>
-<pre><code class="CSS"><span class="selector-class">.sidebar</span> {
-  <span class="attribute">transition</span>: all .<span class="number">4s</span>;
+<pre><code class="lang-CSS">.sidebar {
+  transition: all .4s;
   width: $sidebar-desktop;   #前两行本来就有，下面是加入的图片背景
-  <span class="selector-tag">background</span>: <span class="selector-tag">url</span>(……);
-  <span class="selector-tag">background-size</span>: <span class="selector-tag">cover</span>;
-  <span class="selector-tag">background-position</span><span class="selector-pseudo">:center</span>;
-  <span class="selector-tag">background-repeat</span><span class="selector-pseudo">:no-repeat</span>;
-  <span class="selector-tag">p</span>,<span class="selector-tag">span</span>,<span class="selector-tag">a</span> {<span class="attribute">color</span>: <span class="number">#222</span>;}   #侧边栏部分字体颜色
-}  </code></pre>
+  background: url(……);
+  background-size: cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  p,span,a {color: #222;}   #侧边栏部分字体颜色
+}
+</code></pre>
 <ul>
 <li>外部链接直接写入<code>url(...);</code>括号内。   </li>
 </ul>
 <h1 id="8194-文章宽度"><a href="#8194-文章宽度" class="headerlink" title="&#8194;文章宽度"></a>&#8194;文章宽度</h1><p>&#8195;在next\source\css_variables\base.styl文件内：  </p>
-<pre><code class="CSS">$content-desktop                = 700px;
+<pre><code class="lang-CSS">$content-desktop                = 700px;
 $content-desktop-large          = 800px;
-$content-desktop-largest        = 900px;  </code></pre>
+$content-desktop-largest        = 900px;
+</code></pre>
 <p>&#8195;这三行控制文章在不同屏幕下的显示宽度。</p>
 <h1 id="8194-Muse风格侧边栏宽度"><a href="#8194-Muse风格侧边栏宽度" class="headerlink" title="&#8194;Muse风格侧边栏宽度"></a>&#8194;Muse风格侧边栏宽度</h1><p>&#8195;在next\source\css_variables\Muse.styl文件内：<br><code>$sidebar-width= hexo-config(&#39;sidebar.width&#39;) is a &#39;unit&#39; ? hexo-config(&#39;sidebar.width&#39;) : 320;</code><br>&#8195;改后面的数字即可。</p>
 ]]></content>
@@ -96,48 +99,44 @@ $content-desktop-largest        = 900px;  </code></pre>
     <url>/2019/11/26/WordsCollection/</url>
     <content><![CDATA[<blockquote>
 <p align="left">要把所有的夜归还给星河，</p><p align="left">把所有的春光归还给疏疏篱落，</p><p align="left">把所有的慵慵沉迷与不前，归还给过去的我。</p><p align="left">明日之我，胸中有丘壑，立马振山河。</p><p align="right">---德卡先生的信箱</p>  
-</blockquote>
 <a id="more"></a>
-<h1 id="8194-历史"><a href="#8194-历史" class="headerlink" title="&#8194;历史"></a>&#8194;历史</h1><blockquote>
-<p>&#8195;开国大典的时候飞机不够。您说飞两遍，现在再也不需要飞两遍了，要多少有多少。这盛世，如您所愿吧，山河犹在，国泰民安。当年送您的十里长安街，如今已是十里繁荣。</p>
+# &#8194;历史  
+
+&#8195;开国大典的时候飞机不够。您说飞两遍，现在再也不需要飞两遍了，要多少有多少。这盛世，如您所愿吧，山河犹在，国泰民安。当年送您的十里长安街，如今已是十里繁荣。
 <p align="right">致：周总理</p>  
 <p align="right">---佚名</p>   
-</blockquote>
-<blockquote>
+
 <p>&#8195;为天地立心，为生民立命，为往圣继绝学，为万世开太平。</p>
 <p align="right">---张载</p>   
-</blockquote>
-<blockquote>
+
 <p>&#8195;成功虽无把握，成仁却有决心。</p>
 <p align="right">---黄景升</p>    
+
 </blockquote>
 <h1 id="8194-哲理"><a href="#8194-哲理" class="headerlink" title="&#8194;哲理"></a>&#8194;哲理</h1><blockquote>
 <p>&#8195;从来如此，便对么？</p>
 <p align="right">---鲁迅《狂人日记》</p>      
-</blockquote>
-<blockquote>
+
 <p>&#8195;“怎样算欺凌？”<br>&#8195;“十人欺负一人算欺凌，一百个人欺负一人也是。”<br>&#8195;“那么一万个人呢？”<br>&#8195;“是正义啊。”</p>
 <p align="right">---《世界命题》</p>   
-</blockquote>
-<blockquote>
+
 <p>&#8195;与怪物战斗的人，应当小心自己不要成为怪物。当你远远凝视深渊的时候，深渊也在凝视着你。</p>
 <p align="right">---尼采《善恶的彼岸》</p>   
+
 </blockquote>
 <h1 id="8194-人性"><a href="#8194-人性" class="headerlink" title="&#8194;人性"></a>&#8194;人性</h1><blockquote>
 <p>&#8195;人的脆弱和坚强都超乎自己的想象。有时，我可能脆弱得一句话就泪流满面，有时，也发现自己咬着牙走了很长的路。  </p>
 <p align="right">---莫泊桑《一生》</p>   
-</blockquote>
-<blockquote>
+
 <p>&#8195;我所有的自负都来自我的自卑，所有的英雄气概都来自于我内心的软弱，所有的振振有词都因为心中满是疑惑。我假装无情，其实痛恨自己深情。我以为人生的意义在于四处游荡流亡，其实只是掩饰至今没有找到愿意驻足的地方。</p>
 <p align="right">---马良《坦白书》</p>    
-</blockquote>
-<blockquote>
+
 <p>&#8195;一生中总会遇到这样的时候，你的内心已经兵荒马乱天翻地覆了，可是在别人看来你只是比平时沉默了一点，没人会觉得奇怪。这种战争，注定单枪匹马。</p>
 <p align="right">---白岩松《痛并快乐着》</p>   
-</blockquote>
-<blockquote>
+
 <p>&#8195;这些年一直在提醒自己一件事情，千万不要感动自己，大部分人看似努力，不过是愚蠢导致的。什么熬夜看书到天亮，连续几天睡几个小时，多久没放假案了。如果这些东西也值得炫耀，那么富士康流水线上任何一个人都比你努力的多了。人难免天生有自怜情绪，唯有时刻保持清醒，才能看清真正的价值在哪里。  </p>
 <p align="right">---于宙《我们这一代人的困惑》</p>   
+
 </blockquote>
 <h1 id="8194-爱情"><a href="#8194-爱情" class="headerlink" title="&#8194;爱情"></a>&#8194;爱情</h1><blockquote>
 <p>&#8195;我希望有个如你一般的人，如山间清爽的风，如古城温暖的光。从清晨到傍晚，由山野到书房。只要最后是你，就好。</p>
@@ -153,15 +152,14 @@ $content-desktop-largest        = 900px;  </code></pre>
   <entry>
     <title>《数据结构与算法分析——C语言描述》--学习笔记</title>
     <url>/2019/11/26/CDataLenCode/</url>
-    <content><![CDATA[<p>&#8195;<strong>多是书中摘要，少是个人见解。</strong>  </p>
-<a id="more"></a>
+    <content><![CDATA[<p>&#8195;<strong>多是书中摘要，少是个人见解。</strong><br><a id="more"></a></p>
 <h1 id="8194-第一章：引论"><a href="#8194-第一章：引论" class="headerlink" title="&#8194;第一章：引论"></a>&#8194;第一章：引论</h1><h2 id="8194-此书讨论的内容"><a href="#8194-此书讨论的内容" class="headerlink" title="&#8194;此书讨论的内容"></a>&#8194;此书讨论的内容</h2><p>&#8195;<strong>对于大量的输入，如何估计代码的运行时间</strong>  </p>
-<h2 id="8194-涉及的数学知识"><a href="#8194-涉及的数学知识" class="headerlink" title="&#8194;涉及的数学知识"></a>&#8194;涉及的数学知识</h2><h3 id="8194-指数"><a href="#8194-指数" class="headerlink" title="&#8194;指数"></a>&#8194;指数</h3><div align="center"><img width="400" height="250" data-src="/2019/11/26/CDataLenCode/1-2-1.png"></div>
+<h2 id="8194-涉及的数学知识"><a href="#8194-涉及的数学知识" class="headerlink" title="&#8194;涉及的数学知识"></a>&#8194;涉及的数学知识</h2><h3 id="8194-指数"><a href="#8194-指数" class="headerlink" title="&#8194;指数"></a>&#8194;指数</h3><div align="center"><img width="400" height="250" data-src="CDataLenCode/1-2-1.png/"></div>
 
 <h3 id="8194-对数"><a href="#8194-对数" class="headerlink" title="&#8194;对数"></a>&#8194;对数</h3><p>&#8195;在计算机科学中，除非特别说明，所有的对数都是以2为底。    </p>
-<div align="center"><img width="555" height="290" data-src="/2019/11/26/CDataLenCode/1-2-2.png"></div>
+<div align="center"><img width="555" height="290" data-src="CDataLenCode/1-2-2.png/"></div>
 
-<h3 id="8194-级数"><a href="#8194-级数" class="headerlink" title="&#8194;级数"></a>&#8194;级数</h3><div align="center"><img width="250" height="162" data-src="/2019/11/26/CDataLenCode/1-2-3.png"></div>  
+<h3 id="8194-级数"><a href="#8194-级数" class="headerlink" title="&#8194;级数"></a>&#8194;级数</h3><div align="center"><img width="250" height="162" data-src="CDataLenCode/1-2-3.png/"></div>  
 
 <h3 id="8194-模运算"><a href="#8194-模运算" class="headerlink" title="&#8194;模运算"></a>&#8194;模运算</h3><ul>
 <li>感兴趣的可以百度了解下，容易出错，需要谨慎使用，我就不写了。</li>
@@ -187,7 +185,7 @@ $content-desktop-largest        = 900px;  </code></pre>
 <li><strong>正确性、时间、空间</strong>     </li>
 </ul>
 <h2 id="8194-数学基础"><a href="#8194-数学基础" class="headerlink" title="&#8194;数学基础"></a>&#8194;数学基础</h2><ul>
-<li>四个定义：  <div align="center"><img width="700" height="154" data-src="/2019/11/26/CDataLenCode/2-1.png"></div>   
+<li>四个定义：  <div align="center"><img width="700" height="154" data-src="CDataLenCode/2-1.png/"></div>   
 
 </li>
 </ul>
@@ -201,9 +199,9 @@ $content-desktop-largest        = 900px;  </code></pre>
 </ol>
 <ul>
 <li><p>三个法则  </p>
-<div align="center"><img width="559" height="207" data-src="/2019/11/26/CDataLenCode/2-1-1.png"></div>   
+<div align="center"><img width="559" height="207" data-src="CDataLenCode/2-1-1.png/"></div>   
 </li>
-<li><p>注：算相对增长率的时候会经常用到<strong>洛必达法则</strong>，请自行百度学习。</p>
+<li><p>注：算相对增长率的时候会经常用到<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS8lRTYlQjQlOUIlRTUlQkYlODUlRTglQkUlQkUlRTYlQjMlOTUlRTUlODglOTk=" title="https://baike.baidu.com/item/%E6%B4%9B%E5%BF%85%E8%BE%BE%E6%B3%95%E5%88%99"><strong>洛必达法则</strong><i class="fa fa-external-link"></i></span>。</p>
 </li>
 </ul>
 <h2 id="8194-模型"><a href="#8194-模型" class="headerlink" title="&#8194;模型"></a>&#8194;模型</h2><ul>
@@ -218,57 +216,58 @@ $content-desktop-largest        = 900px;  </code></pre>
 <li>时间复杂度O(N log N )</li>
 <li>递归+分治   </li>
 </ul>
-<pre><code class="C"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;                                </span></span>
-<span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>
-<span class="function"></span>{
-    <span class="function"><span class="keyword">int</span> <span class="title">MaxSubSum</span><span class="params">(<span class="keyword">int</span> A[], <span class="keyword">int</span> Left, <span class="keyword">int</span> Right)</span></span>;
-    <span class="keyword">int</span> A[<span class="number">8</span>] = { <span class="number">4</span>,<span class="number">-3</span>,<span class="number">5</span>,<span class="number">-2</span>,<span class="number">-1</span>,<span class="number">2</span>,<span class="number">6</span>,<span class="number">-2</span> };
-    <span class="keyword">int</span> a = MaxSubSum(A, <span class="number">0</span>, <span class="number">7</span>);
-    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, a);
+<pre><code class="lang-C">#include&lt;stdio.h&gt;                                
+void main()
+{
+    int MaxSubSum(int A[], int Left, int Right);
+    int A[8] = { 4,-3,5,-2,-1,2,6,-2 };
+    int a = MaxSubSum(A, 0, 7);
+    printf(&quot;%d\n&quot;, a);
 }
-<span class="function"><span class="keyword">int</span> <span class="title">MaxSubSum</span><span class="params">(<span class="keyword">int</span> A[], <span class="keyword">int</span> Left, <span class="keyword">int</span> Right)</span></span>
-<span class="function"></span>{
-    <span class="function"><span class="keyword">int</span> <span class="title">MaxThree</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b, <span class="keyword">int</span> c)</span></span>;
-    <span class="keyword">int</span> MaxLeftSum, MaxRightSum;
-    <span class="keyword">int</span> MaxLeftBorderSum, MaxRightBorderSum;
-    <span class="keyword">int</span> LeftBorderSum, RightBorderSum;
-    <span class="keyword">int</span> Center, i;
-    <span class="keyword">if</span> (Left == Right)
+int MaxSubSum(int A[], int Left, int Right)
+{
+    int MaxThree(int a, int b, int c);
+    int MaxLeftSum, MaxRightSum;
+    int MaxLeftBorderSum, MaxRightBorderSum;
+    int LeftBorderSum, RightBorderSum;
+    int Center, i;
+    if (Left == Right)
     {
-        <span class="keyword">if</span> (A[Left] &gt; <span class="number">0</span>)
-            <span class="keyword">return</span> A[Left];
-        <span class="keyword">else</span>
-            <span class="keyword">return</span> <span class="number">0</span>;
+        if (A[Left] &gt; 0)
+            return A[Left];
+        else
+            return 0;
     }
-    Center = (Left + Right) / <span class="number">2</span>;
+    Center = (Left + Right) / 2;
     MaxLeftSum = MaxSubSum(A, Left, Center);
-    MaxRightSum = MaxSubSum(A, Center + <span class="number">1</span>, Right);
-    MaxLeftBorderSum = <span class="number">0</span>;
-    LeftBorderSum = <span class="number">0</span>;
-    <span class="keyword">for</span> (i = Center; i &gt;= Left; i--)
+    MaxRightSum = MaxSubSum(A, Center + 1, Right);
+    MaxLeftBorderSum = 0;
+    LeftBorderSum = 0;
+    for (i = Center; i &gt;= Left; i--)
     {
         LeftBorderSum += A[i];
-        <span class="keyword">if</span> (LeftBorderSum &gt; MaxLeftBorderSum)
+        if (LeftBorderSum &gt; MaxLeftBorderSum)
             MaxLeftBorderSum = LeftBorderSum;
     }
-    MaxRightBorderSum = <span class="number">0</span>;
-    RightBorderSum = <span class="number">0</span>;
-    <span class="keyword">for</span> (i = Center + <span class="number">1</span>; i &lt;= Right; i++)
+    MaxRightBorderSum = 0;
+    RightBorderSum = 0;
+    for (i = Center + 1; i &lt;= Right; i++)
     {
         RightBorderSum += A[i];
-        <span class="keyword">if</span> (RightBorderSum &gt; MaxRightBorderSum)
+        if (RightBorderSum &gt; MaxRightBorderSum)
             MaxRightBorderSum = RightBorderSum;
     }
-    <span class="keyword">return</span> MaxThree(MaxLeftSum, MaxRightSum, MaxLeftBorderSum + MaxRightBorderSum);
+    return MaxThree(MaxLeftSum, MaxRightSum, MaxLeftBorderSum + MaxRightBorderSum);
 }
-<span class="function"><span class="keyword">int</span> <span class="title">MaxThree</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b, <span class="keyword">int</span> c)</span></span>
-<span class="function"></span>{
-    <span class="keyword">if</span> (a &gt; b&amp;&amp;a &gt; c)
-        <span class="keyword">return</span> a;
-    <span class="keyword">else</span> <span class="keyword">if</span> (b &gt; c)
-        <span class="keyword">return</span> b;
-    <span class="keyword">else</span> <span class="keyword">return</span> c;
-}  </code></pre>
+int MaxThree(int a, int b, int c)
+{
+    if (a &gt; b&amp;&amp;a &gt; c)
+        return a;
+    else if (b &gt; c)
+        return b;
+    else return c;
+}
+</code></pre>
 <ul>
 <li><strong>最优</strong>  </li>
 </ul>
@@ -302,80 +301,88 @@ $content-desktop-largest        = 900px;  </code></pre>
 <li>我们需要的是<strong>固定长度和格式</strong>的时间或字符串。<br><code>&quot;2019-12-12 01:12:12//Length=19&quot;</code>  </li>
 <li>所以<code>DateTime TimeNow= DateTime.Now.ToString(&quot;yyyy/MM/dd HH:mm:ss&quot;);//是必须的</code>   </li>
 </ul>
-<h3 id="8194-时间转换"><a href="#8194-时间转换" class="headerlink" title="&#8194;时间转换"></a>&#8194;时间转换</h3><pre><code class="C#">DateTime TimeNow = DateTime.Parse(<span class="string">"2019/12/12 01:00:01"</span>);
-label1.Text = TimeNow.ToString();<span class="comment">//  2019/12/12 1:00:01</span></code></pre>
+<h3 id="8194-时间转换"><a href="#8194-时间转换" class="headerlink" title="&#8194;时间转换"></a>&#8194;时间转换</h3><pre><code class="lang-C#">DateTime TimeNow = DateTime.Parse(&quot;2019/12/12 01:00:01&quot;);
+label1.Text = TimeNow.ToString();//  2019/12/12 1:00:01
+</code></pre>
 <h3 id="8194-时间计算"><a href="#8194-时间计算" class="headerlink" title="&#8194;时间计算"></a>&#8194;时间计算</h3><ul>
 <li>时间差计算    </li>
 </ul>
-<pre><code class="C#">DateTime TimeNow, TimePast;  <span class="comment">// 意思意思，没赋值</span>
+<pre><code class="lang-C#">DateTime TimeNow, TimePast;  // 意思意思，没赋值
 TimeSpan TimeDiffer = TimeNow.Subtract(TimePast);
-<span class="comment">//以下都是  double</span>
+//以下都是  double
 TimeDiffer.TotalDays;
 TimeDiffer.TotalHours;
 TimeDiffer.TotalMinutes;
-TimeDiffer.TotalSeconds;</code></pre>
+TimeDiffer.TotalSeconds;
+</code></pre>
 <ul>
 <li>时间加减计算   </li>
 </ul>
-<pre><code class="C#">DateTime TimeNow, TimePast;
-TimeNow=TimePast.AddHours(<span class="number">-4</span>);
-TimeNow=TimePast.AddMinutes(<span class="number">-100</span>);</code></pre>
-<h2 id="8194-绘图-1"><a href="#8194-绘图-1" class="headerlink" title="&#8194;绘图"></a>&#8194;绘图</h2><h3 id="8194-Graphics"><a href="#8194-Graphics" class="headerlink" title="&#8194;Graphics"></a>&#8194;Graphics</h3><pre><code class="C#">Bitmap Background = <span class="keyword">new</span> Bitmap(<span class="number">1200</span>,<span class="number">680</span>);<span class="comment">//画板</span>
-Graphics Grap = Graphics.FromImage(Background);<span class="comment">//加载画板</span>
-Grap.DrawLine(<span class="keyword">int</span>,<span class="keyword">int</span>,<span class="keyword">int</span>,<span class="keyword">int</span>);
-Grap.DrawLine(Pen pen,<span class="keyword">float</span> x1,<span class="keyword">float</span> y1,<span class="keyword">float</span> x2,<span class="keyword">float</span> y2);</code></pre>
+<pre><code class="lang-C#">DateTime TimeNow, TimePast;
+TimeNow=TimePast.AddHours(-4);
+TimeNow=TimePast.AddMinutes(-100);
+</code></pre>
+<h2 id="8194-绘图-1"><a href="#8194-绘图-1" class="headerlink" title="&#8194;绘图"></a>&#8194;绘图</h2><h3 id="8194-Graphics"><a href="#8194-Graphics" class="headerlink" title="&#8194;Graphics"></a>&#8194;Graphics</h3><pre><code class="lang-C#">Bitmap Background = new Bitmap(1200,680);//画板
+Graphics Grap = Graphics.FromImage(Background);//加载画板
+Grap.DrawLine(int,int,int,int);
+Grap.DrawLine(Pen pen,float x1,float y1,float x2,float y2);
+</code></pre>
 <h2 id="8194-线程"><a href="#8194-线程" class="headerlink" title="&#8194;线程"></a>&#8194;线程</h2><ul>
 <li>创建并打开线程   </li>
 </ul>
-<pre><code class="C#">Thread Study = <span class="keyword">new</span> Thread(<span class="keyword">new</span> ThreadStart(StudyFunction));
+<pre><code class="lang-C#">Thread Study = new Thread(new ThreadStart(StudyFunction));
 Study.Start();
-<span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">StudyFunction</span>(<span class="params"></span>)</span>
-<span class="function"></span>{
- <span class="keyword">while</span>(<span class="literal">true</span>){
+private void StudyFunction()
+{
+ while(true){
      ......
-     Thread.Sleep(<span class="number">1000</span>*<span class="number">30</span>)<span class="comment">//线程睡30S</span>
+     Thread.Sleep(1000*30)//线程睡30S
  }
-}</code></pre>
+}
+</code></pre>
 <ul>
 <li>操作线程    </li>
 </ul>
-<pre><code class="C#">Study.Suspend()<span class="comment">//挂起，暂时不做了</span>
-Study.Resume()<span class="comment">//恢复，继续刚才没做完的</span>
-Study.Abort()<span class="comment">//停止，杀死该进程</span>
+<pre><code class="lang-C#">Study.Suspend()//挂起，暂时不做了
+Study.Resume()//恢复，继续刚才没做完的
+Study.Abort()//停止，杀死该进程
 
-Study.Join()<span class="comment">//等待Study完成主线程继续</span>
-Study.Join(<span class="number">1000</span>*<span class="number">30</span>)<span class="comment">//主线程等待30S</span></code></pre>
+Study.Join()//等待Study完成主线程继续
+Study.Join(1000*30)//主线程等待30S
+</code></pre>
 <h2 id="8194-事件"><a href="#8194-事件" class="headerlink" title="&#8194;事件"></a>&#8194;事件</h2><ul>
 <li><code>MouseClick = MouseDown + MouseUp</code>（一般执行完Down/Up会自动继续执行Click）</li>
 <li><strong>注：</strong><br>&#8195;<strong>由主线程进入一个需要持续一段时间的程序，例如：</strong>      </li>
 </ul>
-<pre><code class="C#"><span class="keyword">bool</span> Flag;
-MouseDown() <span class="comment">//这段程序写个意思，意思意思。</span>
+<pre><code class="lang-C#">bool Flag;
+MouseDown() //这段程序写个意思，意思意思。
 {
-    Flag=<span class="literal">true</span>;
-  <span class="keyword">while</span>(Flag)
+    Flag=true;
+  while(Flag)
   {
      .......
-     <span class="comment">//比如：缩小图片，按下鼠标就一直慢慢缩小</span>
-     <span class="comment">//明显这个函数在一直做</span>
+     //比如：缩小图片，按下鼠标就一直慢慢缩小
+     //明显这个函数在一直做
   }
 }
 MouseUp()
 {
-  Flag=<span class="literal">false</span>;<span class="comment">//当鼠标松开，主程序依旧在MouseDown中，并不会执行Flag=false</span>
-}</code></pre>
+  Flag=false;//当鼠标松开，主程序依旧在MouseDown中，并不会执行Flag=false
+}
+</code></pre>
 <p>&#8195;想法很好，可惜没用！我就是从这领悟的：<strong>主函数不可能进入<code>while(true){...}//打断条件在while外</code>，因为无法跳出，除非有子线程将while条件变为false,但是何必呢！</strong>（其实就是进死循环了。。。但我不想承认！）</p>
 <ul>
 <li>解：  </li>
 </ul>
-<pre><code class="C#">MouseDown() <span class="comment">//这段程序写个意思，意思意思。</span>
+<pre><code class="lang-C#">MouseDown() //这段程序写个意思，意思意思。
 {
   打开线程A
 }
 MouseUp()
 {
   杀死线程A
-}</code></pre>
+}
+</code></pre>
 <p>&#8195;<strong>没事就开个线程玩玩，不然CPU多闲的慌！！！</strong></p>
 ]]></content>
       <categories>
@@ -402,115 +409,115 @@ MouseUp()
   <entry>
     <title>解数独</title>
     <url>/2019/11/22/shudu/</url>
-    <content><![CDATA[<p>&#8195;主要分享一下解数独的源代码，用到了比较重要的回溯算法！</p>
-<a id="more"></a>
+    <content><![CDATA[<p>&#8195;主要分享一下解数独的源代码，用到了比较重要的回溯算法！<br><a id="more"></a></p>
 <center>程序界面</center> 
 
-<div align="center"><img width="400" height="400" data-src="/2019/11/22/shudu/1.png"></div>  
+<div align="center"><img width="400" height="400" data-src="shudu/1.png/"></div>  
 
 <p>源代码：</p>
-<pre><code class="C#"><span class="keyword">namespace</span> <span class="title">shudu</span>
+<pre><code class="lang-C#">namespace shudu
 {
-    <span class="keyword">public</span> <span class="keyword">partial</span> <span class="keyword">class</span> <span class="title">form</span> : <span class="title">Form</span>
+    public partial class form : Form
     {
-        <span class="function"><span class="keyword">public</span> <span class="title">form</span>(<span class="params"></span>)</span>
-<span class="function"></span>        {
+        public form()
+        {
             InitializeComponent();
         }
 
-        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Form1_Load</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span>
-<span class="function"></span>        {
-            data.ColumnCount = <span class="number">9</span>;
-            data.RowCount = <span class="number">9</span>;
-            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">9</span>; i++)
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            data.ColumnCount = 9;
+            data.RowCount = 9;
+            for (int i = 0; i &lt; 9; i++)
             {
-                data.Columns[i].Width = <span class="number">41</span>;
-                data.Rows[i].Height = <span class="number">40</span>;
+                data.Columns[i].Width = 41;
+                data.Rows[i].Height = 40;
             }
-            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">9</span>; i++)
+            for (int i = 0; i &lt; 9; i++)
             {
-                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">9</span>; j++)
+                for (int j = 0; j &lt; 9; j++)
                 {
-                    data.Rows[i].Cells[j].Value = <span class="string">""</span>;
+                    data.Rows[i].Cells[j].Value = &quot;&quot;;
                 }
             }
         }
 
-        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">button1_Click</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span>
-<span class="function"></span>        {
+        private void button1_Click(object sender, EventArgs e)
+        {
 
-            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">9</span>; i++)
-                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">9</span>; j++)
+            for (int i = 0; i &lt; 9; i++)
+                for (int j = 0; j &lt; 9; j++)
                 {
-                    <span class="keyword">if</span> (data.Rows[i].Cells[j].Value.ToString() == <span class="string">""</span>)
-                        data.Rows[i].Cells[j].Value = <span class="string">"."</span>;
+                    if (data.Rows[i].Cells[j].Value.ToString() == &quot;&quot;)
+                        data.Rows[i].Cells[j].Value = &quot;.&quot;;
                 }
             solveSudoku();
         }
-        <span class="keyword">bool</span> solved = <span class="literal">false</span>;
-        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">solveSudoku</span>(<span class="params"></span>)</span>
-<span class="function"></span>        {
-            recursive(<span class="number">0</span>, <span class="number">0</span>);
+        bool solved = false;
+        private void solveSudoku()
+        {
+            recursive(0, 0);
         }
-        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">recursive</span>(<span class="params"><span class="keyword">int</span> row, <span class="keyword">int</span> col</span>)</span>
-<span class="function"></span>        {
-            <span class="keyword">if</span> (data.Rows[row].Cells[col].Value.ToString()==<span class="string">"."</span>)
+        private void recursive(int row, int col)
+        {
+            if (data.Rows[row].Cells[col].Value.ToString()==&quot;.&quot;)
             {
-                <span class="keyword">int</span> i = <span class="number">1</span>;
-                <span class="keyword">for</span> (; i &lt; <span class="number">10</span>; i++)
-                    <span class="keyword">if</span> (TF(i, row, col))
+                int i = 1;
+                for (; i &lt; 10; i++)
+                    if (TF(i, row, col))
                     {
                         write(i, row, col);
                         writenext(row, col);
-                        <span class="keyword">if</span> (!solved) del( row, col);
+                        if (!solved) del( row, col);
                     }
             }
-            <span class="keyword">else</span> writenext( row, col);
+            else writenext( row, col);
         }
-        <span class="function"><span class="keyword">private</span>  <span class="keyword">bool</span> <span class="title">TF</span>(<span class="params"> <span class="keyword">int</span> num, <span class="keyword">int</span> row, <span class="keyword">int</span> col</span>)</span>
-<span class="function"></span>        {
-            <span class="keyword">int</span> rowindex = row / <span class="number">3</span>, colindex = col / <span class="number">3</span>;
-            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++)
-                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">3</span>; j++)
+        private  bool TF( int num, int row, int col)
+        {
+            int rowindex = row / 3, colindex = col / 3;
+            for (int i = 0; i &lt; 3; i++)
+                for (int j = 0; j &lt; 3; j++)
                 {
-                    <span class="keyword">if</span> (data.Rows[rowindex * <span class="number">3</span> + i].Cells[colindex * <span class="number">3</span> + j].Value.ToString() == num.ToString())
-                        <span class="keyword">return</span> <span class="literal">false</span>;
+                    if (data.Rows[rowindex * 3 + i].Cells[colindex * 3 + j].Value.ToString() == num.ToString())
+                        return false;
                 }
-            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">9</span>; i++)
+            for (int i = 0; i &lt; 9; i++)
             {
-                <span class="keyword">if</span> (data.Rows[row].Cells[i].Value.ToString() == num.ToString() || data.Rows[i].Cells[col].Value.ToString() == num.ToString())
-                    <span class="keyword">return</span> <span class="literal">false</span>;
+                if (data.Rows[row].Cells[i].Value.ToString() == num.ToString() || data.Rows[i].Cells[col].Value.ToString() == num.ToString())
+                    return false;
             }
-            <span class="keyword">return</span> <span class="literal">true</span>;
+            return true;
         }
-        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">write</span>(<span class="params"> <span class="keyword">int</span> num, <span class="keyword">int</span> row, <span class="keyword">int</span> col</span>)</span>
-<span class="function"></span>        {
+        private void write( int num, int row, int col)
+        {
             data.Rows[row].Cells[col].Value = num.ToString();
         }
-        <span class="function"><span class="keyword">private</span>  <span class="keyword">void</span> <span class="title">writenext</span>(<span class="params"><span class="keyword">int</span> row, <span class="keyword">int</span> col</span>)</span>
-<span class="function"></span>        {
-            <span class="keyword">if</span> (row == <span class="number">8</span> &amp;&amp; col == <span class="number">8</span>) solved = <span class="literal">true</span>;
-            <span class="keyword">else</span> <span class="keyword">if</span> (col &lt; <span class="number">8</span>) recursive(row, col + <span class="number">1</span>);
-            <span class="keyword">else</span> <span class="keyword">if</span> (row &lt; <span class="number">8</span>) recursive(row + <span class="number">1</span>, <span class="number">0</span>);
+        private  void writenext(int row, int col)
+        {
+            if (row == 8 &amp;&amp; col == 8) solved = true;
+            else if (col &lt; 8) recursive(row, col + 1);
+            else if (row &lt; 8) recursive(row + 1, 0);
         }
-        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">del</span>(<span class="params"><span class="keyword">int</span> row, <span class="keyword">int</span> col</span>)</span>
-<span class="function"></span>        {
-            data.Rows[row].Cells[col].Value = <span class="string">"."</span>;
+        private void del(int row, int col)
+        {
+            data.Rows[row].Cells[col].Value = &quot;.&quot;;
         }
 
-        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">button2_Click</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span>
-<span class="function"></span>        {
-            solved = <span class="literal">false</span>;
-            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">9</span>; i++)
+        private void button2_Click(object sender, EventArgs e)
+        {
+            solved = false;
+            for (int i = 0; i &lt; 9; i++)
             {
-                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">9</span>; j++)
+                for (int j = 0; j &lt; 9; j++)
                 {
-                    data.Rows[i].Cells[j].Value = <span class="string">""</span>;
+                    data.Rows[i].Cells[j].Value = &quot;&quot;;
                 }
             }
         }
     }
-}    </code></pre>
+}
+</code></pre>
 <p>&#8195;程序也放上来，大家可以下下来玩玩。<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL1NZV1ByaXZhdGUvU1lXUHJpdmF0ZS5naXRodWIuaW8vcmF3L21hc3Rlci8yMDE5LzExLzIyL3NodWR1L3NodWR1LmV4ZQ==" title="https://github.com/SYWPrivate/SYWPrivate.github.io/raw/master/2019/11/22/shudu/shudu.exe">点击下载<i class="fa fa-external-link"></i></span><br><strong>&#8195;每次求解后，若要求新数独，请刷新充填。</strong><br>&#8195;若要只改变部分格内的值（改变或删除），就继续求解，需要在源代码内加入<code>data_CellValueChanged()</code>函数。我就不多说啦！</p>
 ]]></content>
       <categories>
@@ -564,12 +571,10 @@ MouseUp()
   <entry>
     <title>Windows窗体应用程序</title>
     <url>/2019/11/19/Sensorproject/</url>
-    <content><![CDATA[<h1 id="8194-概述"><a href="#8194-概述" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h1><p>&#8195;这是一个被写的尽量<strong>全面而浅显</strong>的<strong>完整的工程项目实例</strong>。<br>&#8195;<strong>语言：C#<br>&#8195;框架：Windows窗体应用程序<br>&#8195;通讯：串口通信（协议：Modbus）<br>&#8195;数据库：Oracle。<br>&#8195;绘图：Graphics类</strong>  </p>
-<a id="more"></a>
-<p>&#8195;这个项目实现了与一个或多个自动化设备通信，自动的读取、修改设备的当前数据、状态，并将需要保存的数据放入Oracle数据库，可以按要求调出查看。  </p>
+    <content><![CDATA[<h1 id="8194-概述"><a href="#8194-概述" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h1><p>&#8195;这是一个被写的尽量<strong>全面而浅显</strong>的<strong>完整的工程项目实例</strong>。<br>&#8195;<strong>语言：C#<br>&#8195;框架：Windows窗体应用程序<br>&#8195;通讯：串口通信（协议：Modbus）<br>&#8195;数据库：Oracle。<br>&#8195;绘图：Graphics类</strong><br><a id="more"></a><br>&#8195;这个项目实现了与一个或多个自动化设备通信，自动的读取、修改设备的当前数据、状态，并将需要保存的数据放入Oracle数据库，可以按要求调出查看。  </p>
 <h1 id="8194-前言"><a href="#8194-前言" class="headerlink" title="&#8194;前言"></a>&#8194;前言</h1><p>&#8195;写一个完整的项目，不仅需要<strong>浅显易懂的变量名</strong>，而且需要<strong>非常清晰的错误文档</strong>。这两点非常非常重要！！！在写程序之前，有必要先讨论一下这两点。 </p>
 <p>&#8195;1. 变量名<br>&#8195;举例：GetHexStrFrombytes(byte[] byteSource) {…}<br>&#8195;这个函数的作用是：将传入的字节数组转换成<strong>十六进制字符串</strong>（如：”0106A3C2FF002FE2”）。<br>&#8195;那么显而易见的：GetBytesFromHexStr(string strSource) {…}<br>&#8195;这个函数的作用就是：将传入的十六进制字符串转换为字节数组。<br>&#8195;每写一个函数，都需要在旁边<strong>注释清楚</strong>这个函数的功能。  </p>
-<p>&#8195;2. <strong>错误文档</strong>：<br>&#8195;原因：一个工程项目的线程不少，功能模块更多，正常调试很多问题根本发现不了。<br>&#8195;比如通讯过程中串口断开，是因为哪个线程，哪个功能，还是串口松了，还是设备问题。你很难调试的明白。<br>&#8195;方法：<br>&#8195;1. <strong>给各个线程及功能添加特有Tags，catch异常时，将Tags传入写异常函数(将异常字符串写入List&lt;string&gt; StrlistException)。</strong><br>&#8195;2. <strong>各个线程需要调用同一函数写异常，否则程序易爆炸。</strong><br>&#8195;3. <strong>不同线程可用数字标记，这样调试时（写异常函数）可指定线程写异常，方便追踪。</strong><br>&#8195;4. <strong>关于异常：请加上足够多的修饰（例如：当时的输入、时间、相关的全局变量值等等）。</strong><br>&#8195;上述这些内容对于一个完整工程真的很重要！！！切记。   </p>
+<p>&#8195;2. <strong>错误文档</strong>：<br>&#8195;原因：一个工程项目的线程不少，功能模块更多，正常调试很多问题根本发现不了。<br>&#8195;比如通讯过程中串口断开，是因为哪个线程，哪个功能，还是串口松了，还是设备问题。你很难调试的明白。<br>&#8195;方法：<br>&#8195;1. <strong>给各个线程及功能添加特有Tags，catch异常时，将Tags传入写异常函数(将异常字符串写入List\<string\> StrlistException)。</string\></strong><br>&#8195;2. <strong>各个线程需要调用同一函数写异常，否则程序易爆炸。</strong><br>&#8195;3. <strong>不同线程可用数字标记，这样调试时（写异常函数）可指定线程写异常，方便追踪。</strong><br>&#8195;4. <strong>关于异常：请加上足够多的修饰（例如：当时的输入、时间、相关的全局变量值等等）。</strong><br>&#8195;上述这些内容对于一个完整工程真的很重要！！！切记。   </p>
 <h1 id="8194-主函数"><a href="#8194-主函数" class="headerlink" title="&#8194;主函数"></a>&#8194;主函数</h1><p>&#8195;概述：基本是废话。<br>&#8195;主函数内容相对简单，页面布局也是个人喜好。<br>&#8195;功能：切换页面（如果只用一个界面都不用切；如果要切，百度一下，很简单）。   </p>
 <h2 id="8195-副主函数（副窗体）"><a href="#8195-副主函数（副窗体）" class="headerlink" title="&#8195;副主函数（副窗体）"></a>&#8195;副主函数（副窗体）</h2><p>&#8195;<strong>如果你没有副窗体，那这就是你的主窗体！</strong><br>&#8195;在窗体上放上你需要的控件，选择合适的事件，编写代码。    </p>
 <h1 id="8194-串口通信"><a href="#8194-串口通信" class="headerlink" title="&#8194;串口通信"></a>&#8194;串口通信</h1><h2 id="8194-概述-1"><a href="#8194-概述-1" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h2><p>&#8195;物理通信方式（不重要）：<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS9SUy0yMzI=" title="https://baike.baidu.com/item/RS-232"><strong>RS-232</strong><i class="fa fa-external-link"></i></span>全双工通信。<br>&#8195;通讯协议（Modbus）:RTU模式，自动化领域常用。（下面会简单介绍怎么用）<br>&#8195;<strong>程序通信方式</strong>：收发分开。  </p>
@@ -577,27 +582,28 @@ MouseUp()
 <li>写入串口（发）：设备地址+功能代码+数据+<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS9DUkMvMTQ1MzM1OQ==" title="https://baike.baidu.com/item/CRC/1453359">CRC<i class="fa fa-external-link"></i></span>校验<br>&#8195;设备地址：0x00~0xF7(可连接248个设备)，假设接入一个设备（地址01）。<br>&#8195;功能代码：0x01~0xFF。假设：01（读数据）、02（写数据），这个需要通信协议。<br>&#8195;数据：寄存器首地址+寄存器数量。这就相当于数组首地址（2 byte）+读取长度（2 byte）。比如：00 FF + 00 01（从地址为255的寄存器开始读一个寄存器数据）。<br>&#8195;CRC校验：占两个字节（2 byte）。可以自己百度下相关内容。下面是我百度后自己写的一个。将：01 01 00 FF 00 01 传入CRC，算出校验码：CD FA。<br>所以，写入串口：01 01 <strong>00 FF 00 01</strong> CD FA</li>
 <li>读取数据（收）：设备地址+功能代码+数据+CRC<br>&#8195;这里唯一不同的就是数据：数据字节数+数据。例如：01 + 01 。<br>&#8195;就是返回了一个字节数据，返回的数据为：0x01，就是返回值为：1 。<br>&#8195;所以返回的报文是：01 01 <strong>01 01</strong> 90 48<br>&#8195;<strong>加粗部分为数据</strong></li>
 </ul>
-<pre><code class="C#"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">byte</span>[] <span class="title">CRC</span>(<span class="params"><span class="keyword">byte</span>[] source</span>)<span class="comment">//CRC校验码计算</span></span>
-<span class="function"></span>      {
-          UInt16 res = <span class="number">0xffff</span>;
-          <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; source.Length; i++)
-          {
-              res ^= source[i];
-              <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">8</span>; j++)
-              {
-                  <span class="keyword">int</span> a = res &amp; <span class="number">1</span>;
-                  res &gt;&gt;= <span class="number">1</span>;
-                  <span class="keyword">if</span> (a == <span class="number">1</span>) res ^= <span class="number">0xA001</span>;
-              }
-          }
-          <span class="keyword">byte</span>[] result = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">2</span>];
-          <span class="keyword">int</span> m = res &amp; <span class="number">0xff</span>;
-          result[<span class="number">0</span>] = (<span class="keyword">byte</span>)m;
-          m = res &gt;&gt; <span class="number">8</span>;
-          result[<span class="number">1</span>] = (<span class="keyword">byte</span>)m;
-          <span class="keyword">return</span> result;
-      }</code></pre>
-<h2 id="8194-通信实现"><a href="#8194-通信实现" class="headerlink" title="&#8194;通信实现"></a>&#8194;通信实现</h2><h3 id="8194-概述-2"><a href="#8194-概述-2" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h3><p>&#8195;通信其实一般都不会采用：发送报文–等待接收–接收到–程序继续，这种方式，我也不多说。<br>&#8195;通信的一般方法是：<br><code>public List&lt;string&gt; arrDataToPort = null, arrDataFromPort = null;</code><br>&#8195;发送：创建发送报文线程（DataSend()），不停检查arrDataToPort是否为空，不为空，则lock(arrDataToPort),发出报文，清空arrDataToPort。<br>&#8195;有要发送的报文，就lock(arrDataToPort)，写入报文即可。<br>&#8195;接收：接收自有<strong>接收响应事件</strong>，这里的重点是：将接收到的所有内容放到一个<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS9TdHJpbmdCdWlsZGVy" title="https://baike.baidu.com/item/StringBuilder">StringBuilder<i class="fa fa-external-link"></i></span> strData中，然后处理字符串即可。（这个在处理接收数据中再详细讨论）  </p>
+<pre><code class="lang-C#">  public static byte[] CRC(byte[] source)//CRC校验码计算
+        {
+            UInt16 res = 0xffff;
+            for (int i = 0; i &lt; source.Length; i++)
+            {
+                res ^= source[i];
+                for (int j = 0; j &lt; 8; j++)
+                {
+                    int a = res &amp; 1;
+                    res &gt;&gt;= 1;
+                    if (a == 1) res ^= 0xA001;
+                }
+            }
+            byte[] result = new byte[2];
+            int m = res &amp; 0xff;
+            result[0] = (byte)m;
+            m = res &gt;&gt; 8;
+            result[1] = (byte)m;
+            return result;
+        }
+</code></pre>
+<h2 id="8194-通信实现"><a href="#8194-通信实现" class="headerlink" title="&#8194;通信实现"></a>&#8194;通信实现</h2><h3 id="8194-概述-2"><a href="#8194-概述-2" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h3><p>&#8195;通信其实一般都不会采用：发送报文—等待接收—接收到—程序继续，这种方式，我也不多说。<br>&#8195;通信的一般方法是：<br><code>public List&lt;string&gt; arrDataToPort = null, arrDataFromPort = null;</code><br>&#8195;发送：创建发送报文线程（DataSend()），不停检查arrDataToPort是否为空，不为空，则lock(arrDataToPort),发出报文，清空arrDataToPort。<br>&#8195;有要发送的报文，就lock(arrDataToPort)，写入报文即可。<br>&#8195;接收：接收自有<strong>接收响应事件</strong>，这里的重点是：将接收到的所有内容放到一个<span class="exturl" data-url="aHR0cHM6Ly9iYWlrZS5iYWlkdS5jb20vaXRlbS9TdHJpbmdCdWlsZGVy" title="https://baike.baidu.com/item/StringBuilder">StringBuilder<i class="fa fa-external-link"></i></span> strData中，然后处理字符串即可。（这个在处理接收数据中再详细讨论）  </p>
 <h1 id="8194-数据库"><a href="#8194-数据库" class="headerlink" title="&#8194;数据库"></a>&#8194;数据库</h1><p>&#8194;数据库及版本：<strong>Oracle 11g</strong>  </p>
 <h2 id="8194-安装"><a href="#8194-安装" class="headerlink" title="&#8194;安装"></a>&#8194;安装</h2><h2 id="8194-建表"><a href="#8194-建表" class="headerlink" title="&#8194;建表"></a>&#8194;建表</h2><p>&#8195;Oracle数据库可以存放二维表，    </p>
 <h3 id="8194-语句"><a href="#8194-语句" class="headerlink" title="&#8194;语句"></a>&#8194;语句</h3><h3 id="8194-结构"><a href="#8194-结构" class="headerlink" title="&#8194;结构"></a>&#8194;结构</h3><h2 id="8194-与C-连接"><a href="#8194-与C-连接" class="headerlink" title="&#8194;与C#连接"></a>&#8194;与C#连接</h2><h1 id="8194-绘图"><a href="#8194-绘图" class="headerlink" title="&#8194;绘图"></a>&#8194;绘图</h1><h2 id="8194-概述-3"><a href="#8194-概述-3" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h2><p>&#8195;绘图部分实现的功能：  </p>
@@ -605,7 +611,7 @@ MouseUp()
 <li>动态展现4H内的实时数据，直观感受为：曲线不停右移，旧数据从右端消失，新数据加到左端。  </li>
 <li>查看历史，缩放选取。（如下所示）       </li>
 </ul>
-<div align="center"><img width="1190" height="526" data-src="/2019/11/19/Sensorproject/3-1.gif"></div>
+<div align="center"><img width="1190" height="526" data-src="Sensorproject/3-1.gif"></div>
 
 <h2 id="8194-实时曲线"><a href="#8194-实时曲线" class="headerlink" title="&#8194;实时曲线"></a>&#8194;实时曲线</h2><h2 id="8194-查看历史"><a href="#8194-查看历史" class="headerlink" title="&#8194;查看历史"></a>&#8194;查看历史</h2><h1 id="8194-通用"><a href="#8194-通用" class="headerlink" title="&#8194;通用"></a>&#8194;通用</h1><p>&#8195;：：</p>
 ]]></content>
@@ -623,38 +629,16 @@ MouseUp()
     <title>《爱如半夜汽笛》</title>
     <url>/2019/11/14/DistantWhistle/</url>
     <content><![CDATA[<blockquote>
-<p>女孩问男孩：“你喜欢我喜欢到什么程度？”</p>
-</blockquote>
-<a id="more"></a>
-<blockquote>
-<p>少年想了想，用沉静的声音说：“半夜汽笛那个程度。”</p>
-</blockquote>
-<blockquote>
+<p>女孩问男孩：“你喜欢我喜欢到什么程度？”<br><a id="more"></a><br>少年想了想，用沉静的声音说：“半夜汽笛那个程度。”</p>
 <p>少女默默地等待下文，里面肯定有什么故事。 </p>
-</blockquote>
-<blockquote>
 <p>“一次，半夜突然醒来，”他开始讲述，“确切时间不清楚，大约两三点吧。也就那个时间，什么时候并不重要。总之是夜深时分，我完完全全孤单一人，身边谁也没有，好吗？请你想象一下，四下漆黑一片，什么也看不见，什么也听不见，就连时钟声都听不见，也可能钟停了。我忽然觉得自己正被隔离开来，远离自己认识的人，远离自己熟悉的场所，远得无法置信。在这广大世界上不为任何人所爱，不为任何人理解，不为任何人记起，我发现自己成了这样的存在。”</p>
-</blockquote>
-<blockquote>
 <p>“即使我就这么消失不见，也没有人察觉，那种心情简直就像被塞进厚铁箱沉入深海底。由于气压的关系，心脏开始痛，痛得像要咔哧咔哧裂成两半，这滋味你可知道。”</p>
-</blockquote>
-<blockquote>
 <p>少女点点头，想必她是知道的。</p>
-</blockquote>
-<blockquote>
 <p>少年继续说道，“这大概是人活着的过程中所能体验到的最难以忍受的一种感觉，又伤心又难过，<br>恨不得直接死掉算了。不，不是这样，不是死掉算了，而是假如放在那里不管，就真的死掉了。因为铁箱里的空气越来越稀薄了，这可不是什么比喻，是真的，这也就是深夜里孤单单醒来的含义，这你也明白？”</p>
-</blockquote>
-<blockquote>
 <p>少女再次默默点头，少年停了一会儿。</p>
-</blockquote>
-<blockquote>
 <p>“不过当时听见很远很远的地方有汽笛声，非常非常遥远，到底什么地方有铁路呢？莫名其妙，总之就那么远，声音若有若无，但我知道那是火车的汽笛声，肯定是！黑暗中我竖耳细听，于是又一次听到了汽笛声。很快，我的心脏不再痛了，时针开始走动，铁箱朝海面慢慢浮升，而这都是因为那微弱的汽笛声的关系。”</p>
-</blockquote>
-<blockquote>
 <p>汽笛声的确微弱，听见没听见都分不清，而我就像爱那汽笛一样爱你。</p>
-</blockquote>
-<blockquote>
-<p><strong><p align="right">——村上春树</p></strong>  </p>
+<p><strong><p align="right">------村上春树</p></strong>  </p>
 </blockquote>
 ]]></content>
       <categories>

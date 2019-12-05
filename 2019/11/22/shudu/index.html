@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 4.0.0">
@@ -64,10 +64,10 @@
 <meta property="og:site_name" content="界外的博客">
 <meta property="og:description" content="&amp;#8195;主要分享一下解数独的源代码，用到了比较重要的回溯算法！">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;22&#x2F;shudu&#x2F;1.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;22&#x2F;shudu&#x2F;shudu&#x2F;1.png&#x2F;">
 <meta property="og:updated_time" content="2019-11-29T10:02:39.209Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;22&#x2F;shudu&#x2F;1.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;22&#x2F;shudu&#x2F;shudu&#x2F;1.png&#x2F;">
 
 <link rel="canonical" href="http://yoursite.com/2019/11/22/shudu/">
 
@@ -112,12 +112,12 @@
   .use-motion .logo-line-before i { left: initial; }
   .use-motion .logo-line-after i { right: initial; }
   </style>
-</noscript>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
     <div class="headband"></div>
 <a href="https://github.com/SYWPrivate/SYWPrivate.github.io" target="_blank" rel="noopener" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -317,115 +317,115 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>&#8195;主要分享一下解数独的源代码，用到了比较重要的回溯算法！</p>
-<a id="more"></a>
+        <p>&#8195;主要分享一下解数独的源代码，用到了比较重要的回溯算法！<br><a id="more"></a></p>
 <center>程序界面</center> 
 
-<div align="center"><img width="400" height="400" data-src="/2019/11/22/shudu/1.png"></div>  
+<div align="center"><img width="400" height="400" data-src="shudu/1.png/"></div>  
 
 <p>源代码：</p>
-<pre><code class="C#"><span class="keyword">namespace</span> <span class="title">shudu</span>
+<pre><code class="lang-C#">namespace shudu
 {
-    <span class="keyword">public</span> <span class="keyword">partial</span> <span class="keyword">class</span> <span class="title">form</span> : <span class="title">Form</span>
+    public partial class form : Form
     {
-        <span class="function"><span class="keyword">public</span> <span class="title">form</span>(<span class="params"></span>)</span>
-<span class="function"></span>        {
+        public form()
+        {
             InitializeComponent();
         }
 
-        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Form1_Load</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span>
-<span class="function"></span>        {
-            data.ColumnCount = <span class="number">9</span>;
-            data.RowCount = <span class="number">9</span>;
-            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">9</span>; i++)
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            data.ColumnCount = 9;
+            data.RowCount = 9;
+            for (int i = 0; i &lt; 9; i++)
             {
-                data.Columns[i].Width = <span class="number">41</span>;
-                data.Rows[i].Height = <span class="number">40</span>;
+                data.Columns[i].Width = 41;
+                data.Rows[i].Height = 40;
             }
-            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">9</span>; i++)
+            for (int i = 0; i &lt; 9; i++)
             {
-                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">9</span>; j++)
+                for (int j = 0; j &lt; 9; j++)
                 {
-                    data.Rows[i].Cells[j].Value = <span class="string">""</span>;
+                    data.Rows[i].Cells[j].Value = &quot;&quot;;
                 }
             }
         }
 
-        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">button1_Click</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span>
-<span class="function"></span>        {
+        private void button1_Click(object sender, EventArgs e)
+        {
 
-            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">9</span>; i++)
-                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">9</span>; j++)
+            for (int i = 0; i &lt; 9; i++)
+                for (int j = 0; j &lt; 9; j++)
                 {
-                    <span class="keyword">if</span> (data.Rows[i].Cells[j].Value.ToString() == <span class="string">""</span>)
-                        data.Rows[i].Cells[j].Value = <span class="string">"."</span>;
+                    if (data.Rows[i].Cells[j].Value.ToString() == &quot;&quot;)
+                        data.Rows[i].Cells[j].Value = &quot;.&quot;;
                 }
             solveSudoku();
         }
-        <span class="keyword">bool</span> solved = <span class="literal">false</span>;
-        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">solveSudoku</span>(<span class="params"></span>)</span>
-<span class="function"></span>        {
-            recursive(<span class="number">0</span>, <span class="number">0</span>);
+        bool solved = false;
+        private void solveSudoku()
+        {
+            recursive(0, 0);
         }
-        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">recursive</span>(<span class="params"><span class="keyword">int</span> row, <span class="keyword">int</span> col</span>)</span>
-<span class="function"></span>        {
-            <span class="keyword">if</span> (data.Rows[row].Cells[col].Value.ToString()==<span class="string">"."</span>)
+        private void recursive(int row, int col)
+        {
+            if (data.Rows[row].Cells[col].Value.ToString()==&quot;.&quot;)
             {
-                <span class="keyword">int</span> i = <span class="number">1</span>;
-                <span class="keyword">for</span> (; i &lt; <span class="number">10</span>; i++)
-                    <span class="keyword">if</span> (TF(i, row, col))
+                int i = 1;
+                for (; i &lt; 10; i++)
+                    if (TF(i, row, col))
                     {
                         write(i, row, col);
                         writenext(row, col);
-                        <span class="keyword">if</span> (!solved) del( row, col);
+                        if (!solved) del( row, col);
                     }
             }
-            <span class="keyword">else</span> writenext( row, col);
+            else writenext( row, col);
         }
-        <span class="function"><span class="keyword">private</span>  <span class="keyword">bool</span> <span class="title">TF</span>(<span class="params"> <span class="keyword">int</span> num, <span class="keyword">int</span> row, <span class="keyword">int</span> col</span>)</span>
-<span class="function"></span>        {
-            <span class="keyword">int</span> rowindex = row / <span class="number">3</span>, colindex = col / <span class="number">3</span>;
-            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++)
-                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">3</span>; j++)
+        private  bool TF( int num, int row, int col)
+        {
+            int rowindex = row / 3, colindex = col / 3;
+            for (int i = 0; i &lt; 3; i++)
+                for (int j = 0; j &lt; 3; j++)
                 {
-                    <span class="keyword">if</span> (data.Rows[rowindex * <span class="number">3</span> + i].Cells[colindex * <span class="number">3</span> + j].Value.ToString() == num.ToString())
-                        <span class="keyword">return</span> <span class="literal">false</span>;
+                    if (data.Rows[rowindex * 3 + i].Cells[colindex * 3 + j].Value.ToString() == num.ToString())
+                        return false;
                 }
-            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">9</span>; i++)
+            for (int i = 0; i &lt; 9; i++)
             {
-                <span class="keyword">if</span> (data.Rows[row].Cells[i].Value.ToString() == num.ToString() || data.Rows[i].Cells[col].Value.ToString() == num.ToString())
-                    <span class="keyword">return</span> <span class="literal">false</span>;
+                if (data.Rows[row].Cells[i].Value.ToString() == num.ToString() || data.Rows[i].Cells[col].Value.ToString() == num.ToString())
+                    return false;
             }
-            <span class="keyword">return</span> <span class="literal">true</span>;
+            return true;
         }
-        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">write</span>(<span class="params"> <span class="keyword">int</span> num, <span class="keyword">int</span> row, <span class="keyword">int</span> col</span>)</span>
-<span class="function"></span>        {
+        private void write( int num, int row, int col)
+        {
             data.Rows[row].Cells[col].Value = num.ToString();
         }
-        <span class="function"><span class="keyword">private</span>  <span class="keyword">void</span> <span class="title">writenext</span>(<span class="params"><span class="keyword">int</span> row, <span class="keyword">int</span> col</span>)</span>
-<span class="function"></span>        {
-            <span class="keyword">if</span> (row == <span class="number">8</span> &amp;&amp; col == <span class="number">8</span>) solved = <span class="literal">true</span>;
-            <span class="keyword">else</span> <span class="keyword">if</span> (col &lt; <span class="number">8</span>) recursive(row, col + <span class="number">1</span>);
-            <span class="keyword">else</span> <span class="keyword">if</span> (row &lt; <span class="number">8</span>) recursive(row + <span class="number">1</span>, <span class="number">0</span>);
+        private  void writenext(int row, int col)
+        {
+            if (row == 8 &amp;&amp; col == 8) solved = true;
+            else if (col &lt; 8) recursive(row, col + 1);
+            else if (row &lt; 8) recursive(row + 1, 0);
         }
-        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">del</span>(<span class="params"><span class="keyword">int</span> row, <span class="keyword">int</span> col</span>)</span>
-<span class="function"></span>        {
-            data.Rows[row].Cells[col].Value = <span class="string">"."</span>;
+        private void del(int row, int col)
+        {
+            data.Rows[row].Cells[col].Value = &quot;.&quot;;
         }
 
-        <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">button2_Click</span>(<span class="params"><span class="keyword">object</span> sender, EventArgs e</span>)</span>
-<span class="function"></span>        {
-            solved = <span class="literal">false</span>;
-            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">9</span>; i++)
+        private void button2_Click(object sender, EventArgs e)
+        {
+            solved = false;
+            for (int i = 0; i &lt; 9; i++)
             {
-                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">9</span>; j++)
+                for (int j = 0; j &lt; 9; j++)
                 {
-                    data.Rows[i].Cells[j].Value = <span class="string">""</span>;
+                    data.Rows[i].Cells[j].Value = &quot;&quot;;
                 }
             }
         }
     }
-}    </code></pre>
+}
+</code></pre>
 <p>&#8195;程序也放上来，大家可以下下来玩玩。<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL1NZV1ByaXZhdGUvU1lXUHJpdmF0ZS5naXRodWIuaW8vcmF3L21hc3Rlci8yMDE5LzExLzIyL3NodWR1L3NodWR1LmV4ZQ==" title="https://github.com/SYWPrivate/SYWPrivate.github.io/raw/master/2019/11/22/shudu/shudu.exe">点击下载<i class="fa fa-external-link"></i></span><br><strong>&#8195;每次求解后，若要求新数独，请刷新充填。</strong><br>&#8195;若要只改变部分格内的值（改变或删除），就继续求解，需要在源代码内加入<code>data_CellValueChanged()</code>函数。我就不多说啦！</p>
 
     </div>
@@ -658,6 +658,8 @@
   
 
   
+
+  
   <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
   <script>
       window.addEventListener('load', () => {
@@ -694,7 +696,7 @@ NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
     serverURLs: ''
   });
 }, window.Valine);
-</script>
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </body>
 </html>
