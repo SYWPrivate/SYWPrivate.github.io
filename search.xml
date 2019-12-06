@@ -285,10 +285,47 @@ $content-desktop-largest        = 900px;  </code></pre>
     <title>C#随记</title>
     <url>/2019/11/25/C-Notes/</url>
     <content><![CDATA[<h1 id="8194-概述"><a href="#8194-概述" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h1><ul>
-<li>写C#窗体程序的相关记录。本文仅仅是自己的一些见解和遇到的问题，<strong>并不完全正确！请注意！</strong> <a id="more"></a>
-<h1 id="8194-问题"><a href="#8194-问题" class="headerlink" title="&#8194;问题"></a>&#8194;问题</h1></li>
+<li>写C#程序的相关记录。本文仅仅是自己的一些见解和遇到的问题，<strong>欢迎留言指教、讨论！</strong> <a id="more"></a>
+<h1 id="8194-基础"><a href="#8194-基础" class="headerlink" title="&#8194;基础"></a>&#8194;基础</h1></li>
 </ul>
-<h2 id="8194-程序调试运行无反应"><a href="#8194-程序调试运行无反应" class="headerlink" title="&#8194;程序调试运行无反应"></a>&#8194;程序调试运行无反应</h2><ul>
+<h2 id="8194-Class（类）"><a href="#8194-Class（类）" class="headerlink" title="&#8194;Class（类）"></a>&#8194;Class（类）</h2><pre><code class="C#"><span class="keyword">using</span> System;
+<span class="keyword">namespace</span> <span class="title">SYW</span>
+{
+   <span class="keyword">class</span> <span class="title">Common</span> <span class="comment">//尽量不写代码</span>
+   { 
+     <span class="comment">//方法1</span>
+     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sayhello</span>(<span class="params"></span>)  <span class="comment">//这是一个方法，也是动作</span></span>
+<span class="function"></span>     {
+       Console.WriteLine(<span class="string">"hello!"</span>);
+     }
+     <span class="comment">//方法2  你好</span>
+     <span class="comment">//方法3  我好</span>
+
+     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">common</span>(<span class="params"></span>) <span class="comment">//构造函数，可写参数。</span></span>
+<span class="function"></span>     {
+       <span class="comment">//初始化，默认执行</span>
+     }
+     ~Common() <span class="comment">//析构函数，无参数，无返回值，其它地方完全访问不到。</span>
+     {
+       <span class="comment">//结束程序时执行</span>
+       <span class="comment">//例：</span>
+       <span class="comment">//如果这个类Common,负责处理串口，开始时打开了串口ComPort;</span>
+       ComPort.Close();
+     }
+   }
+   <span class="keyword">class</span> <span class="title">main</span>  <span class="comment">//注意，我写了两个类</span>
+   {
+     <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span>
+<span class="function"></span>     {
+       Common objCommon=<span class="keyword">new</span> Common(); <span class="comment">//1.构造函数已经执行；2.没写构造函数的，也执行了；3.Common(参数，...)，这里可以写参数的（参数化构造函数）。</span>
+       objCommon.sayhello();<span class="comment">//执行了方法1</span>
+         <span class="comment">//随便执行什么（Common里写得方法）</span>
+     }
+   }<span class="comment">//执行析构函数。。。</span>
+}<span class="comment">//随笔，随笔。。。</span>
+
+<span class="comment">//附：主函数里new了objCommon,其实Common.sayhello();也行</span></code></pre>
+<h1 id="8194-问题"><a href="#8194-问题" class="headerlink" title="&#8194;问题"></a>&#8194;问题</h1><h2 id="8194-程序调试运行无反应"><a href="#8194-程序调试运行无反应" class="headerlink" title="&#8194;程序调试运行无反应"></a>&#8194;程序调试运行无反应</h2><ul>
 <li>加载各个窗体时，有一个窗体初始化函数内，写了一个<strong>需要一直循环的函数</strong>。点击调试运行时，初始化函数一直在运行，所以界面加载不出来，看起来就毫无反应。</li>
 <li><strong>解：</strong> 写了个线程，加载时打开线程，在线程中<code>while(true){...}</code>做需要一直做的事，就行了。<h1 id="8194-随笔"><a href="#8194-随笔" class="headerlink" title="&#8194;随笔"></a>&#8194;随笔</h1></li>
 </ul>
