@@ -285,10 +285,11 @@ $content-desktop-largest        = 900px;  </code></pre>
     <title>C#随记</title>
     <url>/2019/11/25/C-Notes/</url>
     <content><![CDATA[<h1 id="8194-概述"><a href="#8194-概述" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h1><ul>
-<li>写C#程序的相关记录。本文仅仅是自己的一些见解和遇到的问题，<strong>欢迎留言指教、讨论！</strong> <a id="more"></a>
-<h1 id="8194-基础"><a href="#8194-基础" class="headerlink" title="&#8194;基础"></a>&#8194;基础</h1></li>
+<li>写C#程序的相关记录。本文仅仅是自己的一些见解和遇到的问题，<strong>欢迎留言指教、讨论！</strong> <a id="more"></a>    
+
+</li>
 </ul>
-<h2 id="8194-Class（类）"><a href="#8194-Class（类）" class="headerlink" title="&#8194;Class（类）"></a>&#8194;Class（类）</h2><pre><code class="C#"><span class="keyword">using</span> System;
+<h1 id="8194-基础"><a href="#8194-基础" class="headerlink" title="&#8194;基础"></a>&#8194;基础</h1><h2 id="8194-Class（类）"><a href="#8194-Class（类）" class="headerlink" title="&#8194;Class（类）"></a>&#8194;Class（类）</h2><pre><code class="C#"><span class="keyword">using</span> System;
 <span class="keyword">namespace</span> <span class="title">SYW</span>
 {
    <span class="keyword">class</span> <span class="title">Common</span> <span class="comment">//尽量不写代码</span>
@@ -651,9 +652,9 @@ MouseUp()
         <category>C#</category>
       </categories>
       <tags>
-        <tag>数据库</tag>
         <tag>C#窗体程序</tag>
         <tag>通讯</tag>
+        <tag>数据库</tag>
         <tag>绘图</tag>
       </tags>
   </entry>
