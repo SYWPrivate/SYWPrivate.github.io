@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>注释</title>
+    <url>/2019/12/09/CommentNotes/</url>
+    <content><![CDATA[<p>&#8195;<strong>注释相关的知识（简要）</strong>  </p>
+<a id="more"></a>
+
+<h1 id="8194-常用标识"><a href="#8194-常用标识" class="headerlink" title="&#8194;常用标识"></a>&#8194;常用标识</h1><pre><code class="C#"><span class="comment">//<span class="doctag">TODO:</span>未做的事（提醒别人完成）</span>
+<span class="comment">//<span class="doctag">FIXME:</span>已知的问题（告知别人）</span>
+<span class="comment">//HACK:粗糙的方案、代码（提醒别人完善）</span>
+<span class="comment">//<span class="doctag">XXX:</span>危险！（严重问题）</span></code></pre>
+<p>&#8195;依次打开：工具-&gt;选项-&gt;环境-&gt;任务列表，按下图所示，3步添加标识。<br>&#8195;(英文路径)Steps:Tools-&gt;Options-&gt;Environment-&gt;Task List<br>&#8195;一般将FIXME、XXX置为高（!High）。</p>
+<div align="center"><img width="744" height="487" data-src="/2019/12/09/CommentNotes/1.png"></div>  
+&#8195;快捷键： Ctrl + \ + T,打开任务列表。或者：视图->任务列表。  
+<div align="center"><img width="467" height="405" data-src="/2019/12/09/CommentNotes/2.png"></div>  
+
+<h1 id="8194-XML注释"><a href="#8194-XML注释" class="headerlink" title="&#8194;XML注释"></a>&#8194;XML注释</h1><p>&#8195;此类注释可以生成XML文件。     </p>
+]]></content>
+      <categories>
+        <category>C#</category>
+      </categories>
+      <tags>
+        <tag>C#窗体程序</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>有趣的蛋蛋</title>
     <url>/2019/12/09/funeggs/</url>
     <content><![CDATA[<p>&#8195;<strong>记录的都是亲身经历，自己测量的数据，稍有偏差！</strong>   </p>
@@ -162,16 +186,20 @@ $content-desktop-largest        = 900px;  </code></pre>
 <p align="right">---马良《坦白书》</p>    
 </blockquote>
 <blockquote>
-<p>&#8195;一生中总会遇到这样的时候，你的内心已经兵荒马乱天翻地覆了，可是在别人看来你只是比平时沉默了一点，没人会觉得奇怪。这种战争，注定单枪匹马。</p>
-<p align="right">---白岩松《痛并快乐着》</p>   
-</blockquote>
-<blockquote>
 <p>&#8195;这些年一直在提醒自己一件事情，千万不要感动自己，大部分人看似努力，不过是愚蠢导致的。什么熬夜看书到天亮，连续几天睡几个小时，多久没放假案了。如果这些东西也值得炫耀，那么富士康流水线上任何一个人都比你努力的多了。人难免天生有自怜情绪，唯有时刻保持清醒，才能看清真正的价值在哪里。  </p>
 <p align="right">---于宙《我们这一代人的困惑》</p>   
 </blockquote>
 <h1 id="8194-爱情"><a href="#8194-爱情" class="headerlink" title="&#8194;爱情"></a>&#8194;爱情</h1><blockquote>
 <p>&#8195;我希望有个如你一般的人，如山间清爽的风，如古城温暖的光。从清晨到傍晚，由山野到书房。只要最后是你，就好。</p>
-<p align="right">---《从你的全世界路过》</p> </blockquote>
+<p align="right">---《从你的全世界路过》</p>   
+</blockquote>
+<h1 id="8194-孤独"><a href="#8194-孤独" class="headerlink" title="&#8194;孤独"></a>&#8194;孤独</h1><blockquote>
+<p>&#8195;一生中总会遇到这样的时候，你的内心已经兵荒马乱天翻地覆了，可是在别人看来你只是比平时沉默了一点，没人会觉得奇怪。这种战争，注定单枪匹马。</p>
+<p align="right">---白岩松《痛并快乐着》</p>     
+</blockquote>
+<blockquote>
+<p>&#8195;你如果<br>&#8195;缓缓把手举起来<br>&#8195;举到顶<br>&#8195;再突然张开五指<br>&#8195;那恭喜你<br>&#8195;你刚刚给自己放了个烟花  </p>
+<p align="right">---里尔克《一次最多放两个》</p>   </blockquote>
 ]]></content>
       <categories>
         <category>文学</category>
@@ -364,7 +392,19 @@ $content-desktop-largest        = 900px;  </code></pre>
 <li><strong>缺点：</strong> 绘制动图有点费劲，<code>Graphics.Clear(60,255,255,255);</code>//Clear函数只能以指定颜色重绘画布Bitmap，参数1：透明度（可不写），参数234：三原色。<h3 id="8194-控件Panel"><a href="#8194-控件Panel" class="headerlink" title="&#8194;控件Panel"></a>&#8194;控件Panel</h3></li>
 </ul>
 <p>&#8195;Panel外观：Backgroundimage，可以Panel.Backgroundimage=Bitmap加载图画。而且Panel.Paint事件可以在加载的背景上绘图。  </p>
-<h1 id="8194-知识点"><a href="#8194-知识点" class="headerlink" title="&#8194;知识点"></a>&#8194;知识点</h1><h2 id="8194-Time"><a href="#8194-Time" class="headerlink" title="&#8194;Time"></a>&#8194;Time</h2><h3 id="8194-时间格式"><a href="#8194-时间格式" class="headerlink" title="&#8194;时间格式"></a>&#8194;时间格式</h3><p><code>DateTime TimeNow= DateTime.Now.ToString();//2019-12-12 1:12:12 Length=18</code></p>
+<h1 id="8194-知识点"><a href="#8194-知识点" class="headerlink" title="&#8194;知识点"></a>&#8194;知识点</h1><h2 id="8194-App-config"><a href="#8194-App-config" class="headerlink" title="&#8194;App.config"></a>&#8194;App.config</h2><h3 id="8194-添加"><a href="#8194-添加" class="headerlink" title="&#8194;添加"></a>&#8194;添加</h3><p>&#8195;右击（项目）-&gt;添加-&gt;新建项-&gt;Visual C#项-&gt;应用程序配置文件。打开文件如下：  </p>
+<pre><code class="C#">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"utf-8"</span> ?&gt;
+&lt;configuration&gt;
+&lt;/configuration&gt;</code></pre>
+<p> &#8195;添加本地Oracle数据库连接，名称是<code>name=&quot;ConnectionString&quot;</code> ,随便起。</p>
+<pre><code class="C#">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"utf-8"</span> ?&gt;
+&lt;configuration&gt;
+  &lt;connectionStrings&gt;
+    &lt;<span class="keyword">add</span> name=<span class="string">"ConnectionString"</span> connectionString=<span class="string">"Data Source= (DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = HYDB)));User Id=XXX;Password=XXX;"</span>/&gt;
+  &lt;/connectionStrings&gt;
+&lt;/configuration&gt;  </code></pre>
+<h3 id="8194-获取"><a href="#8194-获取" class="headerlink" title="&#8194;获取"></a>&#8194;获取</h3><p>&#8195;<code>public static string strConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings[&quot;ConnectionString&quot;].ToString();</code>   </p>
+<h2 id="8194-Time"><a href="#8194-Time" class="headerlink" title="&#8194;Time"></a>&#8194;Time</h2><h3 id="8194-时间格式"><a href="#8194-时间格式" class="headerlink" title="&#8194;时间格式"></a>&#8194;时间格式</h3><p><code>DateTime TimeNow= DateTime.Now.ToString();//2019-12-12 1:12:12 Length=18</code></p>
 <ul>
 <li>我们需要的是<strong>固定长度和格式</strong>的时间或字符串。<br><code>&quot;2019-12-12 01:12:12//Length=19&quot;</code>  </li>
 <li>所以<code>DateTime TimeNow= DateTime.Now.ToString(&quot;yyyy/MM/dd HH:mm:ss&quot;);//是必须的</code>   </li>
@@ -457,7 +497,7 @@ MouseUp()
     <url>/2019/11/22/oraclestate/</url>
     <content><![CDATA[<h1 id="8194-基础语句"><a href="#8194-基础语句" class="headerlink" title="&#8194;基础语句"></a>&#8194;基础语句</h1><h2 id="8194-概述"><a href="#8194-概述" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h2><ul>
 <li>Oracle语句与SQL语句还是有很多不一样的地方。</li>
-<li>都是些基础的，毕竟我也是业余的。  </li>
+<li>都是些基础的，复杂的再说吧！  </li>
 </ul><h2 id="8194-查询"><a href="#8194-查询" class="headerlink" title="&#8194;查询"></a>&#8194;查询</h2><h3 id="8194-时间"><a href="#8194-时间" class="headerlink" title="&#8194;时间"></a>&#8194;时间</h3><p><code>select * from 表名 where sysdate-1 &lt;=Time  //Time为表中，时间列，列名（此句：查找一天内数据）</code><br><code>select * from 表名 where sysdate-1/24 &lt;=Time  //Time为表中，时间列，列名（此句：查找1H内数据）</code> </p>]]></content>
       <categories>
         <category>Oracle</category>
