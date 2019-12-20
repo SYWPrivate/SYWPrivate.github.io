@@ -56,18 +56,18 @@
   };
 </script>
 
-  <meta name="description" content="&amp;#8195;本文只针对我遇到的情况，next\source\css\目录下没有custom文件，如何修改各种样式，仅供参考。">
-<meta name="keywords" content="随记">
+  <meta name="description" content="&amp;#8195;关于plsql远程登录Oracle的相关配置，本机不用安装Oracle。本机有的也可配置连接。&amp;#8195;如有问题，欢迎留言。">
+<meta name="keywords" content="数据库">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo Next6.0">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;27&#x2F;HexoNotes&#x2F;index.html">
+<meta property="og:title" content="Plsql远程或本地登录Oracle">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;16&#x2F;PlsqlLoginOracle&#x2F;index.html">
 <meta property="og:site_name" content="界外的博客">
-<meta property="og:description" content="&amp;#8195;本文只针对我遇到的情况，next\source\css\目录下没有custom文件，如何修改各种样式，仅供参考。">
+<meta property="og:description" content="&amp;#8195;关于plsql远程登录Oracle的相关配置，本机不用安装Oracle。本机有的也可配置连接。&amp;#8195;如有问题，欢迎留言。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-04T01:42:09.214Z">
+<meta property="og:updated_time" content="2019-12-20T09:21:04.093Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2019/11/27/HexoNotes/">
+<link rel="canonical" href="http://yoursite.com/2019/12/16/PlsqlLoginOracle/">
 
 
 <script id="page-configurations">
@@ -81,7 +81,7 @@
   };
 </script>
 
-  <title>Hexo Next6.0 | 界外的博客</title>
+  <title>Plsql远程或本地登录Oracle | 界外的博客</title>
   
 
 
@@ -220,7 +220,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/27/HexoNotes/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/16/PlsqlLoginOracle/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -233,7 +233,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          Hexo Next6.0
+          Plsql远程或本地登录Oracle
         </h2>
 
         <div class="post-meta">
@@ -243,14 +243,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-11-27 13:23:33" itemprop="dateCreated datePublished" datetime="2019-11-27T13:23:33+08:00">2019-11-27</time>
+              <time title="创建时间：2019-12-16 18:02:04" itemprop="dateCreated datePublished" datetime="2019-12-16T18:02:04+08:00">2019-12-16</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-04 09:42:09" itemprop="dateModified" datetime="2019-12-04T09:42:09+08:00">2019-12-04</time>
+                <time title="修改时间：2019-12-20 17:21:04" itemprop="dateModified" datetime="2019-12-20T17:21:04+08:00">2019-12-20</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -258,8 +258,8 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%85%B6%E4%BB%96/" itemprop="url" rel="index">
-                    <span itemprop="name">其他</span>
+                  <a href="/categories/Oracle/" itemprop="url" rel="index">
+                    <span itemprop="name">Oracle</span>
                   </a>
                 </span>
             </span>
@@ -280,8 +280,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2019/11/27/HexoNotes/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/11/27/HexoNotes/" itemprop="commentCount"></span>
+    <a title="valine" href="/2019/12/16/PlsqlLoginOracle/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/12/16/PlsqlLoginOracle/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -295,11 +295,11 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <!-- <p><span>本文标题:</span><a href="/2019/11/27/HexoNotes/">Hexo Next6.0</a></p>  -->
+  <!-- <p><span>本文标题:</span><a href="/2019/12/16/PlsqlLoginOracle/">Plsql远程或本地登录Oracle</a></p>  -->
   <!-- <p><span>文章作者:</span><a href="/" title="访问 界外 的个人博客">界外</a></p>  -->
-  <!-- <p><span>发布时间:</span>2019年11月27日 - 13:11</p> -->
-  <!-- <p><span>最后更新:</span>2019年12月04日 - 09:12</p>  -->
-  <p><span>原始链接:</span><a href="/2019/11/27/HexoNotes/" title="Hexo Next6.0">http://yoursite.com/2019/11/27/HexoNotes/</a></p>
+  <!-- <p><span>发布时间:</span>2019年12月16日 - 18:12</p> -->
+  <!-- <p><span>最后更新:</span>2019年12月20日 - 17:12</p>  -->
+  <p><span>原始链接:</span><a href="/2019/12/16/PlsqlLoginOracle/" title="Plsql远程或本地登录Oracle">http://yoursite.com/2019/12/16/PlsqlLoginOracle/</a></p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)"> BY-NC-ND 4.0 </a> 转载请注明出处。</p>  
 </div>
 
@@ -315,47 +315,38 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>&#8195;本文只针对我遇到的情况，next\source\css\目录下没有custom文件，如何修改各种样式，仅供参考。  </p>
-<a id="more"></a>    
-<h1 id="8194-字色"><a href="#8194-字色" class="headerlink" title="&#8194;字色"></a>&#8194;字色</h1><p>&#8195;在next\source\css_variables\base.styl文件中<br>&#8195;<strong>$grey-dim  = #666;</strong> 这个颜色是写文章普通用字的颜色，就是写的最多的字的颜色，改成自己需要的即可。  </p>
-<ul>
-<li>例：$grey-dim  = #000;（黑色）  </li>
+        <p>&#8195;关于plsql远程登录Oracle的相关配置，本机不用安装Oracle。本机有的也可配置连接。<br>&#8195;如有问题，欢迎留言。  </p>
+<a id="more"></a>       
+
+<p>&#8195;注：所要连接的Oracle，本文简称：远库；如果你连本地数据库，我也暂时用远库指代。</p>
+<h1 id="8194-条件"><a href="#8194-条件" class="headerlink" title="&#8194;条件"></a>&#8194;条件</h1><ul>
+<li>官方文件instantclient_11_2，请到官网下载。  </li>
+<li>plsql登录程序。</li>
+<li>tnsnames.ora文件</li>
 </ul>
-<h1 id="8194-文章背景"><a href="#8194-文章背景" class="headerlink" title="&#8194;文章背景"></a>&#8194;文章背景</h1><p>&#8195;在next\source\css_schemes\Muse\_menu.styl文件中（注：_schemes\Muse的Muse是主题配置文件中所选用的主题，请进入你选用的主题文件夹），加入：  </p>
-<pre><code class="CSS"><span class="selector-class">.main-inner</span> {
-        background: #f5f5dc;//文章背景颜色
-        opacity: 0.8;//文章背景透明度
-}</code></pre>
-<h1 id="8194-网页背景图片"><a href="#8194-网页背景图片" class="headerlink" title="&#8194;网页背景图片"></a>&#8194;网页背景图片</h1><p>&#8195;在博客源目录\source_data中创建styles.styl文件，写入代码：  </p>
-<pre><code class="CSS"><span class="selector-tag">body</span> { 
-   <span class="attribute">background-image</span>:<span class="built_in">url</span>(/images/back.png); 
-   <span class="attribute">background-repeat</span>: no-repeat;
-   <span class="attribute">background-attachment</span>:fixed;
-   <span class="attribute">background-position</span>:<span class="number">50%</span> <span class="number">50%</span>;
-   }</code></pre>
+<h1 id="8194-tnsnames-ora文件"><a href="#8194-tnsnames-ora文件" class="headerlink" title="&#8194;tnsnames.ora文件"></a>&#8194;tnsnames.ora文件</h1><p>&#8195;本机连数据库：将C:\app\product\11.2.0\dbhome_1\NETWORK\ADMIN下的tnsnames.ora和listener.ora都复制到instantclient_11_2里。（远程连接的忽略此步骤）<br>&#8195;我就随一个路径：C:\app\product\plsqldev\instantclient_11_2，一般都放到instantclient_11_2里。<br>&#8195;新建文件tnsnames.ora，若已有此文件，就新增一个用户。<br>&#8195;内容如下：  </p>
+<pre><code class="CSS">Database =      
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.1.1)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = orcl)
+    )
+  )  </code></pre>
 <ul>
-<li>本地文件夹：博客源目录\public\images</li>
-<li>外部链接直接写入<code>url(...);</code>括号内。    </li>
+<li>Database是登录远库时Database框里填的内容。（例1：Test ；例2：10.230.22.33:11521/aabbccdd）    </li>
+<li>HOST是远库主机IP。</li>
+<li>SERVICE_NAME是远库的库名，一般安装时默认为：orcl，如果你改了，希望你记得。  </li>
+<li>这三个值改成你自己的，第一个建议复制粘贴覆盖掉Database。 </li>
 </ul>
-<h1 id="8194-侧边栏背景图片"><a href="#8194-侧边栏背景图片" class="headerlink" title="&#8194;侧边栏背景图片"></a>&#8194;侧边栏背景图片</h1><p>&#8195;在next\source\css_schemes\Muse（最后这个目录为自己所选的风格）文件夹中，_sidebar.styl文件中  </p>
-<pre><code class="CSS"><span class="selector-class">.sidebar</span> {
-  <span class="attribute">transition</span>: all .<span class="number">4s</span>;
-  width: $sidebar-desktop;   #前两行本来就有，下面是加入的图片背景
-  <span class="selector-tag">background</span>: <span class="selector-tag">url</span>(……);
-  <span class="selector-tag">background-size</span>: <span class="selector-tag">cover</span>;
-  <span class="selector-tag">background-position</span><span class="selector-pseudo">:center</span>;
-  <span class="selector-tag">background-repeat</span><span class="selector-pseudo">:no-repeat</span>;
-  <span class="selector-tag">p</span>,<span class="selector-tag">span</span>,<span class="selector-tag">a</span> {<span class="attribute">color</span>: <span class="number">#222</span>;}   #侧边栏部分字体颜色
-}  </code></pre>
-<ul>
-<li>外部链接直接写入<code>url(...);</code>括号内。   </li>
-</ul>
-<h1 id="8194-文章宽度"><a href="#8194-文章宽度" class="headerlink" title="&#8194;文章宽度"></a>&#8194;文章宽度</h1><p>&#8195;在next\source\css_variables\base.styl文件内：  </p>
-<pre><code class="CSS">$content-desktop                = 700px;
-$content-desktop-large          = 800px;
-$content-desktop-largest        = 900px;  </code></pre>
-<p>&#8195;这三行控制文章在不同屏幕下的显示宽度。</p>
-<h1 id="8194-Muse风格侧边栏宽度"><a href="#8194-Muse风格侧边栏宽度" class="headerlink" title="&#8194;Muse风格侧边栏宽度"></a>&#8194;Muse风格侧边栏宽度</h1><p>&#8195;在next\source\css_variables\Muse.styl文件内：<br><code>$sidebar-width= hexo-config(&#39;sidebar.width&#39;) is a &#39;unit&#39; ? hexo-config(&#39;sidebar.width&#39;) : 320;</code><br>&#8195;改后面的数字即可。</p>
+<h1 id="8194-路径配置"><a href="#8194-路径配置" class="headerlink" title="&#8194;路径配置"></a>&#8194;路径配置</h1><h2 id="8194-系统变量"><a href="#8194-系统变量" class="headerlink" title="&#8194;系统变量"></a>&#8194;系统变量</h2><p>&#8195;Win10打开方式：此电脑-&gt;属性-&gt;高级系统设置-&gt;环境变量-&gt;系统变量<br>&#8195;变量名：TNS_ADMIN<br>&#8195;变量值：C:\app\product\plsqldev\instantclient_11_2<br>&#8195;说明：变量值是tnsnames.ora所在路径。  </p>
+<h2 id="8194-plsql配置"><a href="#8194-plsql配置" class="headerlink" title="&#8194;plsql配置"></a>&#8194;plsql配置</h2><ol>
+<li>双击登录程序打开登录界面，单机Cancel(取消)直接无用户登录。  </li>
+<li>Tools-&gt;Preferences,看到最下面一个框名为：OCI library。  </li>
+<li>值为：C:\app\product\plsqldev\instantclient_11_2\oci.dll  </li>
+<li>点击Apply-&gt;OK，退出重新登录，以你的用户身份登录即可。</li>
+</ol>
 
     </div>
 
@@ -374,24 +365,21 @@ $content-desktop-largest        = 900px;  </code></pre>
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/%E9%9A%8F%E8%AE%B0/" rel="tag"><i class="fa fa-tag"></i> 随记</a>
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag"><i class="fa fa-tag"></i> 数据库</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/2019/11/26/WordsCollection/" rel="next" title="文字之美">
-                  <i class="fa fa-chevron-left"></i> 文字之美
+                <a href="/2019/12/09/CommentNotes/" rel="next" title="注释">
+                  <i class="fa fa-chevron-left"></i> 注释
                 </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/2019/11/28/GoogleBackground/" rel="prev" title="改变谷歌背景">
-                  改变谷歌背景 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
       </footer>
@@ -431,7 +419,7 @@ $content-desktop-largest        = 900px;  </code></pre>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-字色"><span class="nav-number">1.</span> <span class="nav-text"> 字色</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-文章背景"><span class="nav-number">2.</span> <span class="nav-text"> 文章背景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-网页背景图片"><span class="nav-number">3.</span> <span class="nav-text"> 网页背景图片</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-侧边栏背景图片"><span class="nav-number">4.</span> <span class="nav-text"> 侧边栏背景图片</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-文章宽度"><span class="nav-number">5.</span> <span class="nav-text"> 文章宽度</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-Muse风格侧边栏宽度"><span class="nav-number">6.</span> <span class="nav-text"> Muse风格侧边栏宽度</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-条件"><span class="nav-number">1.</span> <span class="nav-text"> 条件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-tnsnames-ora文件"><span class="nav-number">2.</span> <span class="nav-text"> tnsnames.ora文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-路径配置"><span class="nav-number">3.</span> <span class="nav-text"> 路径配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-系统变量"><span class="nav-number">3.1.</span> <span class="nav-text"> 系统变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-plsql配置"><span class="nav-number">3.2.</span> <span class="nav-text"> plsql配置</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -596,7 +584,7 @@ $content-desktop-largest        = 900px;  </code></pre>
       quicklink({
         timeout: 3000,
         priority: true,
-        ignores: [uri => uri.includes('#'),uri => uri == 'http://yoursite.com/2019/11/27/HexoNotes/',]
+        ignores: [uri => uri.includes('#'),uri => uri == 'http://yoursite.com/2019/12/16/PlsqlLoginOracle/',]
       });
       });
   </script>

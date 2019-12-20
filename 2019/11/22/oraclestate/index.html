@@ -56,15 +56,15 @@
   };
 </script>
 
-  <meta name="description" content="&amp;#8194;基础语句&amp;#8194;概述 Oracle语句与SQL语句还是有很多不一样的地方。 都是些基础的，复杂的再说吧！   &amp;#8194;查询&amp;#8194;时间select * from 表名 where sysdate-1 &amp;lt;=Time  &#x2F;&#x2F;Time为表中，时间列，列名（此句：查找一天内数据）select * from 表名 where sysdate-1&#x2F;24 &amp;lt;=Time">
+  <meta name="description" content="&amp;#8194;基础语句&amp;#8194;概述 Oracle语句与SQL语句还是有很多不一样的地方。   都是些基础的，复杂的再说吧！">
 <meta name="keywords" content="数据库">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Oracle语句">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;22&#x2F;oraclestate&#x2F;index.html">
 <meta property="og:site_name" content="界外的博客">
-<meta property="og:description" content="&amp;#8194;基础语句&amp;#8194;概述 Oracle语句与SQL语句还是有很多不一样的地方。 都是些基础的，复杂的再说吧！   &amp;#8194;查询&amp;#8194;时间select * from 表名 where sysdate-1 &amp;lt;=Time  &#x2F;&#x2F;Time为表中，时间列，列名（此句：查找一天内数据）select * from 表名 where sysdate-1&#x2F;24 &amp;lt;=Time">
+<meta property="og:description" content="&amp;#8194;基础语句&amp;#8194;概述 Oracle语句与SQL语句还是有很多不一样的地方。   都是些基础的，复杂的再说吧！">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-10T08:59:30.737Z">
+<meta property="og:updated_time" content="2019-12-20T09:15:47.026Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/2019/11/22/oraclestate/">
@@ -250,7 +250,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-10 16:59:30" itemprop="dateModified" datetime="2019-12-10T16:59:30+08:00">2019-12-10</time>
+                <time title="修改时间：2019-12-20 17:15:47" itemprop="dateModified" datetime="2019-12-20T17:15:47+08:00">2019-12-20</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -298,7 +298,7 @@
   <!-- <p><span>本文标题:</span><a href="/2019/11/22/oraclestate/">Oracle语句</a></p>  -->
   <!-- <p><span>文章作者:</span><a href="/" title="访问 界外 的个人博客">界外</a></p>  -->
   <!-- <p><span>发布时间:</span>2019年11月22日 - 14:11</p> -->
-  <!-- <p><span>最后更新:</span>2019年12月10日 - 16:12</p>  -->
+  <!-- <p><span>最后更新:</span>2019年12月20日 - 17:12</p>  -->
   <p><span>原始链接:</span><a href="/2019/11/22/oraclestate/" title="Oracle语句">http://yoursite.com/2019/11/22/oraclestate/</a></p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)"> BY-NC-ND 4.0 </a> 转载请注明出处。</p>  
 </div>
@@ -316,9 +316,21 @@
 
       
         <h1 id="8194-基础语句"><a href="#8194-基础语句" class="headerlink" title="&#8194;基础语句"></a>&#8194;基础语句</h1><h2 id="8194-概述"><a href="#8194-概述" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h2><ul>
-<li>Oracle语句与SQL语句还是有很多不一样的地方。</li>
-<li>都是些基础的，复杂的再说吧！  </li>
-</ul><h2 id="8194-查询"><a href="#8194-查询" class="headerlink" title="&#8194;查询"></a>&#8194;查询</h2><h3 id="8194-时间"><a href="#8194-时间" class="headerlink" title="&#8194;时间"></a>&#8194;时间</h3><p><code>select * from 表名 where sysdate-1 &lt;=Time  //Time为表中，时间列，列名（此句：查找一天内数据）</code><br><code>select * from 表名 where sysdate-1/24 &lt;=Time  //Time为表中，时间列，列名（此句：查找1H内数据）</code> </p>
+<li>Oracle语句与SQL语句还是有很多不一样的地方。  </li>
+<li>都是些基础的，复杂的再说吧！      <a id="more"></a>       
+
+</li>
+</ul>
+<h2 id="8194-查询"><a href="#8194-查询" class="headerlink" title="&#8194;查询"></a>&#8194;查询</h2><p><code>select * from table       //显示表table中所有数据</code>     </p>
+<h3 id="8194-时间"><a href="#8194-时间" class="headerlink" title="&#8194;时间"></a>&#8194;时间</h3><p><code>select * from table where sysdate-1 &lt;=Time  //Time为表table中，时间列，列名（此句：查找一天内数据）</code><br><code>select * from table where sysdate-1/24 &lt;=Time  //Time为表table中，时间列，列名（此句：查找1H内数据）</code>       </p>
+<h3 id="8194-排序"><a href="#8194-排序" class="headerlink" title="&#8194;排序"></a>&#8194;排序</h3><p><code>select * from table1 order by field1,field2 [desc]</code></p>
+<h3 id="8194-求和"><a href="#8194-求和" class="headerlink" title="&#8194;求和"></a>&#8194;求和</h3><p><code>select sum(field1) as sumvalue from table1</code>     </p>
+<h3 id="8194-平均"><a href="#8194-平均" class="headerlink" title="&#8194;平均"></a>&#8194;平均</h3><p><code>select avg(field1) as avgvalue from table1</code>    </p>
+<h3 id="8194-最大-最小"><a href="#8194-最大-最小" class="headerlink" title="&#8194;最大/最小"></a>&#8194;最大/最小</h3><p><code>select max(field1) as maxvalue from table1</code><br><code>select min(field1) as maxvalue from table1</code>  </p>
+<h2 id="8194-插入"><a href="#8194-插入" class="headerlink" title="&#8194;插入"></a>&#8194;插入</h2><p><code>insert into table1(field1,field2) values(value1,value2)</code>    </p>
+<h2 id="8194-删除"><a href="#8194-删除" class="headerlink" title="&#8194;删除"></a>&#8194;删除</h2><p><code>delete from table1 where 范围</code>  </p>
+<h2 id="8194-更新（改）"><a href="#8194-更新（改）" class="headerlink" title="&#8194;更新（改）"></a>&#8194;更新（改）</h2><p><code>update table1 set field1=value1 where 范围</code>  </p>
+
     </div>
 
     
@@ -393,7 +405,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-基础语句"><span class="nav-number">1.</span> <span class="nav-text"> 基础语句</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-概述"><span class="nav-number">1.1.</span> <span class="nav-text"> 概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-查询"><span class="nav-number">1.2.</span> <span class="nav-text"> 查询</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8194-时间"><span class="nav-number">1.2.1.</span> <span class="nav-text"> 时间</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-基础语句"><span class="nav-number">1.</span> <span class="nav-text"> 基础语句</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-概述"><span class="nav-number">1.1.</span> <span class="nav-text"> 概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-查询"><span class="nav-number">1.2.</span> <span class="nav-text"> 查询</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#8194-时间"><span class="nav-number">1.2.1.</span> <span class="nav-text"> 时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8194-排序"><span class="nav-number">1.2.2.</span> <span class="nav-text"> 排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8194-求和"><span class="nav-number">1.2.3.</span> <span class="nav-text"> 求和</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8194-平均"><span class="nav-number">1.2.4.</span> <span class="nav-text"> 平均</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8194-最大-最小"><span class="nav-number">1.2.5.</span> <span class="nav-text"> 最大/最小</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-插入"><span class="nav-number">1.3.</span> <span class="nav-text"> 插入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-删除"><span class="nav-number">1.4.</span> <span class="nav-text"> 删除</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-更新（改）"><span class="nav-number">1.5.</span> <span class="nav-text"> 更新（改）</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -409,7 +421,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-count">16</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
