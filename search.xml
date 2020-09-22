@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>NET CLR via</title>
+    <url>/2020/09/22/NetCLRvia/</url>
+    <content><![CDATA[<h1 id="8194-概述"><a href="#8194-概述" class="headerlink" title="&#8194;概述"></a>&#8194;概述</h1><p>&#8195;<strong>C#编程基础，CLR学习记录</strong></p>
+<a id="more"></a>
+<h1 id="8194-第一部分"><a href="#8194-第一部分" class="headerlink" title="&#8194;第一部分"></a>&#8194;第一部分</h1><h2 id="8195-第1章-CLR的执行模型"><a href="#8195-第1章-CLR的执行模型" class="headerlink" title="&#8195;第1章 CLR的执行模型"></a>&#8195;第1章 CLR的执行模型</h2><h2 id="8195-第2章-生成、打包、部署和管理应用程序及类型"><a href="#8195-第2章-生成、打包、部署和管理应用程序及类型" class="headerlink" title="&#8195;第2章 生成、打包、部署和管理应用程序及类型"></a>&#8195;第2章 生成、打包、部署和管理应用程序及类型</h2><h2 id="8195-第3章-共享程序集和强命名程序集"><a href="#8195-第3章-共享程序集和强命名程序集" class="headerlink" title="&#8195;第3章 共享程序集和强命名程序集"></a>&#8195;第3章 共享程序集和强命名程序集</h2><h1 id="8194-第二部分"><a href="#8194-第二部分" class="headerlink" title="&#8194;第二部分"></a>&#8194;第二部分</h1><h2 id="8195-第4章-类型基础"><a href="#8195-第4章-类型基础" class="headerlink" title="&#8195;第4章 类型基础"></a>&#8195;第4章 类型基础</h2><h2 id="8195-第5章-基元类型、引用类型和值类型"><a href="#8195-第5章-基元类型、引用类型和值类型" class="headerlink" title="&#8195;第5章 基元类型、引用类型和值类型"></a>&#8195;第5章 基元类型、引用类型和值类型</h2><h2 id="8195-第6章-类型和成员基础"><a href="#8195-第6章-类型和成员基础" class="headerlink" title="&#8195;第6章 类型和成员基础"></a>&#8195;第6章 类型和成员基础</h2><h2 id="8195-第7章-常量和字段"><a href="#8195-第7章-常量和字段" class="headerlink" title="&#8195;第7章 常量和字段"></a>&#8195;第7章 常量和字段</h2><h2 id="8195-第8章-方法"><a href="#8195-第8章-方法" class="headerlink" title="&#8195;第8章 方法"></a>&#8195;第8章 方法</h2><h2 id="8195-第9章-参数"><a href="#8195-第9章-参数" class="headerlink" title="&#8195;第9章 参数"></a>&#8195;第9章 参数</h2><h2 id="8195-第10章-属性"><a href="#8195-第10章-属性" class="headerlink" title="&#8195;第10章 属性"></a>&#8195;第10章 属性</h2><h2 id="8195-第11章-事件"><a href="#8195-第11章-事件" class="headerlink" title="&#8195;第11章 事件"></a>&#8195;第11章 事件</h2><h2 id="8195-第12章-泛型"><a href="#8195-第12章-泛型" class="headerlink" title="&#8195;第12章 泛型"></a>&#8195;第12章 泛型</h2><h2 id="8195-第13章-接口"><a href="#8195-第13章-接口" class="headerlink" title="&#8195;第13章 接口"></a>&#8195;第13章 接口</h2>]]></content>
+      <categories>
+        <category>C#</category>
+      </categories>
+      <tags>
+        <tag>C#</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>生活随记</title>
+    <url>/2019/12/23/LifeTags/</url>
+    <content><![CDATA[<p>&#8195;生活中的小记事本  </p>
+<a id="more"></a>    
+
+<h1 id="8194-交通"><a href="#8194-交通" class="headerlink" title="&#8194;交通"></a>&#8194;交通</h1><h2 id="8194-退高铁票"><a href="#8194-退高铁票" class="headerlink" title="&#8194;退高铁票"></a>&#8194;退高铁票</h2><ul>
+<li>大于15天 ：不收费 </li>
+<li>大于2天 ：5% </li>
+<li>大于1天 ：10%</li>
+<li>小于1天 ：20%  </li>
+</ul>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>随记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Plsql远程或本地登录Oracle</title>
     <url>/2019/12/16/PlsqlLoginOracle/</url>
     <content><![CDATA[<p>&#8195;关于plsql远程登录Oracle的相关配置，本机不用安装Oracle。本机有的也可配置连接。<br>&#8195;如有问题，欢迎留言。  </p>
@@ -107,8 +140,15 @@
 <li>千字节：KB = 2^10 B</li>
 <li>兆字节：MB = 2^20 B</li>
 <li>吉字节：GB = 2^30 B</li>
-<li>太字节：TB = 2^40 B</li>
+<li>太字节：TB = 2^40 B  </li>
 </ul>
+<h2 id="8194-extern-static"><a href="#8194-extern-static" class="headerlink" title="&#8194;extern/static"></a>&#8194;extern/static</h2><ul>
+<li>extern : 修饰全局变量    </li>
+<li>static : 修饰局部变量    </li>
+</ul>
+<p>&#8195;函数声明默认为<strong>全局可见</strong>的，即extern：<br>&#8195;<code>int sum(int a,int b)</code><br>&#8195;相当于：<br>&#8195;<code>extern int sum(int a,int b)</code><br>&#8195;所以想定义为只单个.c文件可用，其他文件无法访问，则需要static修饰：<br>&#8195;<code>static int sum(int a,int b)</code>     </p>
+<p>&#8195;相反的：变量声明默认为局部的，即static:<br>&#8195;<code>int a</code><br>&#8195;相当于：<br>&#8195;<code>static int a</code><br>&#8195;要想在其他.c文件中访问，则需要extern修饰：<br>&#8195;<code>extern int a</code>    </p>
+<p>&#8195;如果不想别人修改a的值，则需要const修饰（静态的/不可变的）：<br>&#8195;<code>extern const int a</code>  </p>
 ]]></content>
       <categories>
         <category>C</category>
@@ -377,7 +417,7 @@ $content-desktop-largest        = 900px;  </code></pre>
 <li>递归-&gt;清晰  </li>
 <li>非递归-&gt;快</li>
 </ul>
-]]></content>
+<h2 id="8194-队列ADT"><a href="#8194-队列ADT" class="headerlink" title="&#8194;队列ADT"></a>&#8194;队列ADT</h2><h1 id="8194-第四章：树"><a href="#8194-第四章：树" class="headerlink" title="&#8194;第四章：树"></a>&#8194;第四章：树</h1><h2 id="8194-二叉树"><a href="#8194-二叉树" class="headerlink" title="&#8194;二叉树"></a>&#8194;二叉树</h2><h2 id="8194-查找树ADT——二叉查找树"><a href="#8194-查找树ADT——二叉查找树" class="headerlink" title="&#8194;查找树ADT——二叉查找树"></a>&#8194;查找树ADT——二叉查找树</h2><h2 id="8194-AVL树"><a href="#8194-AVL树" class="headerlink" title="&#8194;AVL树"></a>&#8194;AVL树</h2><h2 id="8194-伸展树"><a href="#8194-伸展树" class="headerlink" title="&#8194;伸展树"></a>&#8194;伸展树</h2><h2 id="8194-树的遍历"><a href="#8194-树的遍历" class="headerlink" title="&#8194;树的遍历"></a>&#8194;树的遍历</h2><h2 id="8194-B-树"><a href="#8194-B-树" class="headerlink" title="&#8194;B-树"></a>&#8194;B-树</h2><h1 id="8194-第五章：散列"><a href="#8194-第五章：散列" class="headerlink" title="&#8194;第五章：散列"></a>&#8194;第五章：散列</h1><h2 id="8194-一般想法"><a href="#8194-一般想法" class="headerlink" title="&#8194;一般想法"></a>&#8194;一般想法</h2><h2 id="8194-散列函数"><a href="#8194-散列函数" class="headerlink" title="&#8194;散列函数"></a>&#8194;散列函数</h2><h2 id="8194-分离链接法"><a href="#8194-分离链接法" class="headerlink" title="&#8194;分离链接法"></a>&#8194;分离链接法</h2><h2 id="8194-开放地址法"><a href="#8194-开放地址法" class="headerlink" title="&#8194;开放地址法"></a>&#8194;开放地址法</h2><h2 id="8194-再散列"><a href="#8194-再散列" class="headerlink" title="&#8194;再散列"></a>&#8194;再散列</h2><h2 id="8194-可扩散列"><a href="#8194-可扩散列" class="headerlink" title="&#8194;可扩散列"></a>&#8194;可扩散列</h2><h1 id="8194-第六章：优先队列（堆）"><a href="#8194-第六章：优先队列（堆）" class="headerlink" title="&#8194;第六章：优先队列（堆）"></a>&#8194;第六章：优先队列（堆）</h1>]]></content>
       <categories>
         <category>C</category>
       </categories>

@@ -64,7 +64,7 @@
 <meta property="og:site_name" content="界外的博客">
 <meta property="og:description" content="&amp;#8194;概述&amp;#8195;编程基础，随时记录。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-09T09:09:16.476Z">
+<meta property="og:updated_time" content="2020-01-02T02:23:16.281Z">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/2019/11/28/BaseCnotes/">
@@ -250,7 +250,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-09 17:09:16" itemprop="dateModified" datetime="2019-12-09T17:09:16+08:00">2019-12-09</time>
+                <time title="修改时间：2020-01-02 10:23:16" itemprop="dateModified" datetime="2020-01-02T10:23:16+08:00">2020-01-02</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -298,7 +298,7 @@
   <!-- <p><span>本文标题:</span><a href="/2019/11/28/BaseCnotes/">C语言随记</a></p>  -->
   <!-- <p><span>文章作者:</span><a href="/" title="访问 界外 的个人博客">界外</a></p>  -->
   <!-- <p><span>发布时间:</span>2019年11月28日 - 14:11</p> -->
-  <!-- <p><span>最后更新:</span>2019年12月09日 - 17:12</p>  -->
+  <!-- <p><span>最后更新:</span>2020年01月02日 - 10:01</p>  -->
   <p><span>原始链接:</span><a href="/2019/11/28/BaseCnotes/" title="C语言随记">http://yoursite.com/2019/11/28/BaseCnotes/</a></p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)"> BY-NC-ND 4.0 </a> 转载请注明出处。</p>  
 </div>
@@ -323,8 +323,15 @@
 <li>千字节：KB = 2^10 B</li>
 <li>兆字节：MB = 2^20 B</li>
 <li>吉字节：GB = 2^30 B</li>
-<li>太字节：TB = 2^40 B</li>
+<li>太字节：TB = 2^40 B  </li>
 </ul>
+<h2 id="8194-extern-static"><a href="#8194-extern-static" class="headerlink" title="&#8194;extern/static"></a>&#8194;extern/static</h2><ul>
+<li>extern : 修饰全局变量    </li>
+<li>static : 修饰局部变量    </li>
+</ul>
+<p>&#8195;函数声明默认为<strong>全局可见</strong>的，即extern：<br>&#8195;<code>int sum(int a,int b)</code><br>&#8195;相当于：<br>&#8195;<code>extern int sum(int a,int b)</code><br>&#8195;所以想定义为只单个.c文件可用，其他文件无法访问，则需要static修饰：<br>&#8195;<code>static int sum(int a,int b)</code>     </p>
+<p>&#8195;相反的：变量声明默认为局部的，即static:<br>&#8195;<code>int a</code><br>&#8195;相当于：<br>&#8195;<code>static int a</code><br>&#8195;要想在其他.c文件中访问，则需要extern修饰：<br>&#8195;<code>extern int a</code>    </p>
+<p>&#8195;如果不想别人修改a的值，则需要const修饰（静态的/不可变的）：<br>&#8195;<code>extern const int a</code>  </p>
 
     </div>
 
@@ -400,7 +407,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-概述"><span class="nav-number">1.</span> <span class="nav-text"> 概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-基础"><span class="nav-number">2.</span> <span class="nav-text"> 基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-存储单位"><span class="nav-number">2.1.</span> <span class="nav-text"> 存储单位</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-概述"><span class="nav-number">1.</span> <span class="nav-text"> 概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8194-基础"><span class="nav-number">2.</span> <span class="nav-text"> 基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-存储单位"><span class="nav-number">2.1.</span> <span class="nav-text"> 存储单位</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8194-extern-static"><span class="nav-number">2.2.</span> <span class="nav-text"> extern/static</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -416,7 +423,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-count">18</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -429,7 +436,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -467,7 +474,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2019</span>
+  <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
